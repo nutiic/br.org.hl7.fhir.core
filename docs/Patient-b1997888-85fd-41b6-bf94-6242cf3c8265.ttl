@@ -1,0 +1,174 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Patient/b1997888-85fd-41b6-bf94-6242cf3c8265> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "b1997888-85fd-41b6-bf94-6242cf3c8265"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Patient b1997888-85fd-41b6-bf94-6242cf3c8265</b></p><a name=\"b1997888-85fd-41b6-bf94-6242cf3c8265\"> </a><a name=\"hcb1997888-85fd-41b6-bf94-6242cf3c8265\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ana Beatriz Oliveira (official) Female, DoB: 2018-09-25 ( Health Card Number: NamingSystemCNS#765432109876543 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Tax ID number/34567890123 (utilização: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\"><ul><li><a href=\"tel:+553199876-5432\">+55 31 99876-5432</a></li><li>Rua da Bahia, 300, Centro, Belo Horizonte, MG, 30160-010(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Contacto nomeado: mother\">mother:</td><td colspan=\"3\"><ul><li>Juliana Cristina Oliveira (Official) (Female)</li><li>Rua da Bahia, 300, Centro, Belo Horizonte, MG, 30160-010(home)</li><li><a href=\"tel:+553199765-4321\">+55 31 99765-4321</a></li><li><a href=\"mailto:juliana.oliveira@example.com\">juliana.oliveira@example.com</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Belo Horizonte MG Brasil </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define a raça do indivíduo\"><a href=\"https://ips.saude.gov.br/fhir/v1.0.0/StructureDefinition-raca-br-ips.html\">Raça BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 02}\">Preta</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define o sexo no nascimento do paciente\"><a href=\"https://ips.saude.gov.br/fhir/v1.0.0/StructureDefinition-sexo-nascimento-br-ips.html\">Sexo no nascimento BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{http://hl7.org/fhir/administrative-gender female}\">Female</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.\"><a href=\"http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-genderIdentity.html\">Gender Identity</a></td><td colspan=\"3\"><span title=\"Códigos:{http://snomed.info/sct 446141000124107}\">Identifies as female gender</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Address.city [ fhir:value "Belo Horizonte" ] ;
+       fhir:Address.state [ fhir:value "MG" ] ;
+       fhir:Address.country [ fhir:value "Brasil" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:446141000124107 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "446141000124107" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor" ] ;
+         fhir:Coding.code [ fhir:value "02" ] ;
+         fhir:Coding.display [ fhir:value "Preta" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://ips.saude.gov.br/fhir/StructureDefinition/sexo-nascimento-br-ips" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ] ;
+         fhir:Coding.code [ fhir:value "female" ] ;
+         fhir:Coding.display [ fhir:value "Female" ]
+       ]
+     ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ] ;
+         fhir:Coding.display [ fhir:value "Tax ID number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cpf" ] ;
+     fhir:Identifier.value [ fhir:value "34567890123" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "HC" ] ;
+         fhir:Coding.display [ fhir:value "Health Card Number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cns" ] ;
+     fhir:Identifier.value [ fhir:value "765432109876543" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Oliveira" ] ;
+     fhir:HumanName.given [
+       fhir:value "Ana" ;
+       fhir:index 0
+     ], [
+       fhir:value "Beatriz" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55 31 99876-5432" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "2018-09-25"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.text [ fhir:value "Rua da Bahia, 300, Centro, Belo Horizonte, MG, 30160-010" ] ;
+     fhir:Address.line [
+       fhir:value "Rua da Bahia, 300" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Belo Horizonte" ] ;
+     fhir:Address.state [ fhir:value "MG" ] ;
+     fhir:Address.postalCode [ fhir:value "30160-010" ] ;
+     fhir:Address.country [ fhir:value "Brasil" ]
+  ] ;
+  fhir:Patient.contact [
+     fhir:index 0 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+         fhir:Coding.code [ fhir:value "MTH" ] ;
+         fhir:Coding.display [ fhir:value "mother" ]
+       ]
+     ] ;
+     fhir:Patient.contact.name [
+       fhir:HumanName.use [ fhir:value "official" ] ;
+       fhir:HumanName.family [ fhir:value "Oliveira" ] ;
+       fhir:HumanName.given [
+         fhir:value "Juliana" ;
+         fhir:index 0
+       ], [
+         fhir:value "Cristina" ;
+         fhir:index 1
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+55 31 99765-4321" ] ;
+       fhir:ContactPoint.use [ fhir:value "mobile" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "juliana.oliveira@example.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ] ;
+     fhir:Patient.contact.address [
+       fhir:Address.use [ fhir:value "home" ] ;
+       fhir:Address.text [ fhir:value "Rua da Bahia, 300, Centro, Belo Horizonte, MG, 30160-010" ] ;
+       fhir:Address.line [
+         fhir:value "Rua da Bahia, 300" ;
+         fhir:index 0
+       ] ;
+       fhir:Address.city [ fhir:value "Belo Horizonte" ] ;
+       fhir:Address.state [ fhir:value "MG" ] ;
+       fhir:Address.postalCode [ fhir:value "30160-010" ] ;
+       fhir:Address.country [ fhir:value "Brasil" ]
+     ] ;
+     fhir:Patient.contact.gender [ fhir:value "female" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Patient/b1997888-85fd-41b6-bf94-6242cf3c8265.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

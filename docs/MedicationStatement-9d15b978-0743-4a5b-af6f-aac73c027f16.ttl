@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/MedicationStatement/9d15b978-0743-4a5b-af6f-aac73c027f16> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "9d15b978-0743-4a5b-af6f-aac73c027f16"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: MedicationStatement 9d15b978-0743-4a5b-af6f-aac73c027f16</b></p><a name=\"9d15b978-0743-4a5b-af6f-aac73c027f16\"> </a><a name=\"hc9d15b978-0743-4a5b-af6f-aac73c027f16\"> </a><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medication-statement-category outpatient}\">Uso ambulatorial</span></p><p><b>medication</b>: <a href=\"Medication-3a46210c-7eb3-48ec-aa67-db7e7ee18864.html\">levofloxacino</a></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">João Carlos</a></p><p><b>effective</b>: 2024-12-01 --&gt; 2024-12-10</p><p><b>dateAsserted</b>: 2024-12-01</p><p><b>informationSource</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>reasonCode</b>: <span title=\"Códigos:{http://hl7.org/fhir/sid/icd-10 J02.9}\">Acute pharyngitis, unspecified</span></p><p><b>note</b>: </p><blockquote><div><p>Paciente relatou sintomas de dor de garganta há 3 dias.</p>\n</div></blockquote><blockquote><p><b>dosage</b></p><p><b>text</b>: Tomar 1 cápsula via oral a cada 8 horas por 7 dias.</p><p><b>timing</b>: Código , 3 por 1 day</p><p><b>route</b>: <span title=\"Códigos:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>500 mg<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigomg = 'mg')</span></td></tr></table></blockquote></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medication-statement-category" ] ;
+       fhir:Coding.code [ fhir:value "outpatient" ] ;
+       fhir:Coding.display [ fhir:value "Outpatient" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Uso ambulatorial" ]
+  ] ;
+  fhir:MedicationStatement.medicationReference [
+     fhir:link <https://br-core.saude.gov.br/fhir/Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864> ;
+     fhir:Reference.reference [ fhir:value "Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864" ] ;
+     fhir:Reference.display [ fhir:value "levofloxacino" ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "João Carlos" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-12-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2024-12-10"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2024-12-01"^^xsd:date] ;
+  fhir:MedicationStatement.informationSource [
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ] ;
+       fhir:Coding.code [ fhir:value "J02.9" ] ;
+       fhir:Coding.display [ fhir:value "Acute pharyngitis, unspecified" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Paciente relatou sintomas de dor de garganta há 3 dias." ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "Tomar 1 cápsula via oral a cada 8 horas por 7 dias." ] ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "3"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ] ;
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation" ] ;
+           fhir:Coding.code [ fhir:value "TID" ] ;
+           fhir:Coding.display [ fhir:value "TID" ]
+         ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+         fhir:Coding.code [ fhir:value "20053000" ] ;
+         fhir:Coding.display [ fhir:value "Oral use" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index 0 ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "500"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mg" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/MedicationStatement/9d15b978-0743-4a5b-af6f-aac73c027f16.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -37,7 +37,7 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: Ministério da Saúde do Brasil 
+  name: Ministério da Saúde do Brasil
   url: https://gov.br/saude
   email: contato@gointerop.com
 
@@ -58,7 +58,7 @@ jurisdiction: urn:iso:std:iso:3166#BR "Brazil"
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
 dependencies:
-  br.gov.saude.terminologia.fhir: 1.0.0
+  br.gov.saude.terminologia.fhir: 1.1.0
   br.gov.saude.ips.fhir: 1.0.0
 
 # The global property corresponds to the IG.global property, but it
@@ -95,27 +95,27 @@ dependencies:
 resources:
   AllergyIntolerance/b2549739-2479-406e-ab6e-1e4251b08bc9:
     name: Exemplo de alergia e intolerância.
-    description: Exemplo de alergia e intolerância.    
+    description: Exemplo de alergia e intolerância.
     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance
   AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34:
     name: Exemplo de alergia e intolerância.
-    description: Exemplo de alergia e intolerância.    
+    description: Exemplo de alergia e intolerância.
     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance
   #CapacidadeFuncional/ae6990a3-bf35-4758-88b8-825c9e5f0e98:
   #  name: Exemplo de capacidade funcional.
-  #  description: Exemplo de capacidade funcional.    
+  #  description: Exemplo de capacidade funcional.
   #  exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-capacidadefuncional
   CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e:
     name: Exemplo de time de cuidado.
-    description: Exemplo de time de cuidado.    
+    description: Exemplo de time de cuidado.
     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam
   CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532:
     name: Exemplo de plano de cuidado.
-    description: Exemplo de plano de cuidado.  
+    description: Exemplo de plano de cuidado.
     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careplan
   Composition/5c0878bd-a787-489d-82aa-82f4fb55909e:
     name: Exemplo de composition.
-    description: Exemplo de composition.    
+    description: Exemplo de composition.
     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition
   Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5:
      name: Exemplo de condição de saúde fictícia.
@@ -168,12 +168,12 @@ resources:
   Observation/52ba1c80-5d2c-4faf-8c90-f4363e20d7bb:
      name: Exemplo de observação.
      description: Exemplo de observação de saúde fictícia.
-     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observation  
+     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observation
 #vital signs example
 #  Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97:
 #    name: Exemplo de sinal vital.
 #    description: Exemplo de sinal vital de um paciente fictício.
-#    exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-vitalsigns 
+#    exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-vitalsigns
 # pregnancystatus
   Observation/5f147d9b-ff84-44d1-b258-e2c9284098f4:
      name: Exemplo de pregnancy status.
@@ -183,17 +183,17 @@ resources:
   Observation/02f99181-eab1-4634-9d58-508c7d4f195b:
      name: Exemplo de resultado de gravidez.
      description: Exemplo de resultado de gravidez fictícia.
-     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome   
+     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome
 # pregnancyedd
   Observation/90e2319e-dc54-4379-88f3-13c5e74e924e:
      name: Exemplo de gravidez.
      description: Exemplo de gravidez fictícia.
-     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyedd 
+     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyedd
 # ObservationBreastFeedingStatus
   #ObservationBreastFeedingStatus/d8810230-45e2-40a6-8588-ea1624030762:
    #  name: Exemplo de gravidez.
     # description: Exemplo de gravidez fictícia.
-     #exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationbreastfeedingstatus 
+     #exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationbreastfeedingstatus
 # tobaccouse
   Observation/bcdeed7f-cd8c-4d53-b61e-160471b913eb:
      name: Exemplo de uso de tabaco.
@@ -215,7 +215,7 @@ resources:
   Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae:
      name: Exemplo de organização.
      description: Exemplo de organização de saúde fictícia.
-     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization   
+     exampleCanonical: https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization
 #male
   Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e:
     name: Exemplo de paciente.
@@ -270,7 +270,7 @@ resources:
 
 #   Bundle/234c1054-83a7-4adf-9387-b673b96664d5:
 #     name: Exemplo de IPS Brasileiro.
-#     description: Exemplo de IPS Brasileiro com REL, RIA, RAC e RPM.    
+#     description: Exemplo de IPS Brasileiro com REL, RIA, RAC e RPM.
 #     exampleCanonical: https://ips.saude.gov.br/StructureDefinition/BundleBRIPS
 #   DiagnosticReport/f2ae8416-6ea8-4dbf-9147-86de7fa2490d:
 #     name: Exemplo de laudo de exame laboratorial.
@@ -372,7 +372,7 @@ pages:
   estrutura.xml:
     title: Estrutura
   modelos.xml:
-    title: Especificação    
+    title: Especificação
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -413,7 +413,7 @@ pages:
 parameters:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
-  produce-jekyll-data: true  
+  produce-jekyll-data: true
   #i18n-default-lang: pt-BR
   #translation-supplements: input/translations
 

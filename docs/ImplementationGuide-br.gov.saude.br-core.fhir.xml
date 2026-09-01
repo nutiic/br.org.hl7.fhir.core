@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="br.gov.saude.br-core.fhir"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide br.gov.saude.br-core.fhir</b></p><a name="br.gov.saude.br-core.fhir"> </a><a name="hcbr.gov.saude.br-core.fhir"> </a><h2>BRCORE</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir</pre><div><p>Guia de Implementação Core de Interoperabilidade em Saúde Digital do Brasil.</p>
+</div></div>
+  </text>
+  <url value="https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir"/>
+  <version value="1.1.0"/>
+  <name value="BRCORE"/>
+  <title value="Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1"/>
+  <status value="active"/>
+  <date value="2023-05-08"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gov.br/saude"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contato@gointerop.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Italo Macedo"/>
+    <telecom>
+      <system value="email"/>
+      <value value="italo@gointerop.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Guia de Implementação Core de Interoperabilidade em Saúde Digital do Brasil."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="br.gov.saude.br-core.fhir"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="br_gov_saude_terminologia_fhir">
+    <uri value="https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir"/>
+    <packageId value="br.gov.saude.terminologia.fhir"/>
+    <version value="dev"/>
+  </dependsOn>
+  <dependsOn id="br_gov_saude_ips_fhir">
+    <uri value="https://ips.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.ips.fhir"/>
+    <packageId value="br.gov.saude.ips.fhir"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="produce-jekyll-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://br-core.saude.gov.br/fhir/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="produce-jekyll-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://br-core.saude.gov.br/fhir/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97"/>
+      </reference>
+      <name value="07ce5462-f77b-4ad6-af8c-2f67a6500b97"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/1f311b28-03d5-411d-90a6-84edf417e01a"/>
+      </reference>
+      <name value="1f311b28-03d5-411d-90a6-84edf417e01a"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/2f42ddad-b9bb-4f68-b5b9-426054529f31"/>
+      </reference>
+      <name value="2f42ddad-b9bb-4f68-b5b9-426054529f31"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/80589c80-643e-43ea-801b-5f32616e9a27"/>
+      </reference>
+      <name value="80589c80-643e-43ea-801b-5f32616e9a27"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ae6990a3-bf35-4758-88b8-825c9e5f0e98"/>
+      </reference>
+      <name value="ae6990a3-bf35-4758-88b8-825c9e5f0e98"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-address-aldeia"/>
+      </reference>
+      <name value="Aldeia Indígena"/>
+      <description value="Extensão que permite referenciar uma aldeia indígena como parte do endereço de um indivíduo ou organização no contexto da saúde indígena brasileira."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-diagnosticreport-conduta"/>
+      </reference>
+      <name value="BR Core DiagnosticReport Conduta"/>
+      <description value="Esta extensão representa uma conduta associada ao laudo, fornecendo orientações ou sugestões baseadas nos resultados do diagnóstico para o manejo clínico do paciente."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-allergyintolerance"/>
+      </reference>
+      <name value="br-core-allergyintolerance"/>
+      <description value="Este perfil define as características mínimas para o recurso [br-core-allergyintolerance](StructureDefinition-br-core-allergyintolerance.html) registrar, pesquisar e buscar alergias/reações adversas associadas a um paciente. O perfil especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes e restringe como os elementos são usados. Além disso, fornece a base para o desenvolvimento de padrões para casos de uso específicos promove a interoperabilidade e a adoção."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-appointment"/>
+      </reference>
+      <name value="br-core-appointment"/>
+      <description value="Perfil brasileiro do recurso FHIR R4 Appointment, utilizado para agendamento de atendimentos, procedimentos e interações de cuidado no contexto do SUS, RNDS, saúde suplementar e privada, incluindo marcação, remarcação e cancelamento, bem como gestão de participantes, datas/horários e justificativas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-careteam"/>
+      </reference>
+      <name value="br-core-careteam"/>
+      <description value="Este perfil restringe o recurso [CareTeam](https://hl7.org/fhir/R4/careteam.html) que inclui todas as pessoas e organizações que planejam participar da coordenação e prestação de cuidados a um paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-composition"/>
+      </reference>
+      <name value="br-core-composition"/>
+      <description value="Um conjunto de informações relacionadas aos cuidados em sáude que são reunidas em um único bundle lógico que estabelece seu próprio contexto e atesta quem está fazendo a declaração. Uma Composition define a estrutura e o conteúdo narrativo necessários para um documento. No entanto, uma Composition sozinha não constitui um documento. Em vez disso, a Composition deve ser a primeira entrada em um Bundle onde Bundle.type=document, e quaisquer outros recursos referenciados da Composition devem ser incluídos como entradas subsequentes no Bundle (por exemplo, Patient, Practitioner, Encounter, etc.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-consent"/>
+      </reference>
+      <name value="br-core-consent"/>
+      <description value="Este perfil define as características mínimas para o recurso [br-core-consent](StructureDefinition-br-core-consent.html) registrar, pesquisar e buscar consentimentos para tratamento de dados pessoais conforme Lei Geral de Proteção de Dados (LGPD) - Lei nº 13.709/2018. O perfil especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes e restringe como os elementos são usados. Além disso, fornece a base para o desenvolvimento de padrões para casos de uso específicos promove a interoperabilidade e a adoção."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-encounter"/>
+      </reference>
+      <name value="br-core-encounter"/>
+      <description value="Uma interação entre um paciente e o(s) prestador(es) de  serviços saúde com a finalidade de fornecer serviço(s) de saúde ou avaliar o estado de saúde de um paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-healthcareservice"/>
+      </reference>
+      <name value="br-core-healthcareservice"/>
+      <description value="Este perfil restringe o recurso [HealthcareService](https://hl7.org/fhir/R4/healthcareservice.html) que representa os detalhes de um serviço de saúde disponível em um local"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-location"/>
+      </reference>
+      <name value="br-core-location"/>
+      <description value="Este perfil restringe o recurso [Location](https://hl7.org/fhir/R4/location.html) que aborda detalhes e informações da posição de um local físico onde os serviços são fornecidos e os recursos e participantes podem ser armazenados, encontrados, contidos ou acomodados"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-medication"/>
+      </reference>
+      <name value="br-core-medication"/>
+      <description value="Este recurso é uma especialização do recurso FHIR R4 [Medication](https://hl7.org/fhir/R4/medication.html) usado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração de um medicamento, bem como para fazer declarações sobre medicamentos no Brasil"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-medicationadministration"/>
+      </reference>
+      <name value="br-core-medicationadministration"/>
+      <description value="Descreve o evento de um paciente consumindo ou de algum medicamento sendo administrado a um paciente. Isso pode ser tão simples quanto engolir um comprimido ou pode ser uma infusão de longa duração. Recursos relacionados vinculam esse evento à prescrição de autorização e ao atendimento specífco entre o paciente e o profissional de saúde"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-medicationdispense"/>
+      </reference>
+      <name value="br-core-medicationdispense"/>
+      <description value="Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um  pedido de medicamentos feito por um sistema de informações"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-medicationrequest"/>
+      </reference>
+      <name value="br-core-medicationrequest"/>
+      <description value="Um pedido ou solicitação para fornecimento do medicamento e instruções para administração do medicamento a um paciente. O recurso é chamado de 'MedicationRequest' em vez de 'MedicationPrescription' ou 'MedicationOrder' para generalizar o uso em ambientes de internação e ambulatorial, incluindo planos de cuidados, etc., e para harmonizar com padrões de fluxo de trabalho"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-medicationstatement"/>
+      </reference>
+      <name value="br-core-medicationstatement"/>
+      <description value="Um registro de um medicamento que está sendo consumido por um paciente. Um recurso [br-core-medicationstatement](https://saude.gov.br/fhir/StructureDefiniton/medicationstatement.html) indica  que o paciente pode estar tomando o medicamento agora ou tomou o medicamento no passado ou tomará o medicamento no futuro. A fonte dessas informações pode ser o paciente, outra pessoa significativa (como um membro da família ou cônjuge) ou um clínico. Um cenário comum em que essas informações são capturadas é durante o processo de obtenção do histórico durante uma visita ou internação do paciente. As informações sobre medicamentos podem vir de fontes como a memória do paciente, de um frasco de prescrição ou de uma lista de medicamentos que o paciente, o clínico ou outra parte mantém.&#xA;&#xA;A principal diferença entre um recurso [br-core-medicationstatement](https://saude.gov.br/fhir/StructureDefiniton/medicationstatement.html) e um [br-core-medicationadministration](https://saude.gov.br/fhir/StructureDefiniton/medicationadministration.html) é que o último  contém informações completas sobre a administração e é baseada em informações reais sobre a administração e da pessoa que administrou o medicamento.  Um [br-core-medicationstatement](https://saude.gov.br/fhir/StructureDefiniton/medicationstatement.html#MedicationStatement) é frequentemente, se não sempre, menos específico. Não há data/hora obrigatória em que o medicamento foi administrado; na verdade, sabe-se apenas que uma fonte relatou que o paciente está tomando esse medicamento, onde detalhes como hora, quantidade ou taxa ou mesmo o produto do medicamento podem estar incompletos, ausentes ou menos precisos. Conforme dito anteriormente, as informações do [br-core-medicationstatement](https://saude.gov.br/fhir/StructureDefiniton/medicationstatement.html#MedicationStatement) podem vir da memória do paciente, de um frasco de prescrição ou de uma lista de medicamentos que o paciente, o clínico ou outra parte mantém. A administração de medicamentos é mais formal e não deixa de ter informações detalhadas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-registroatendimentoclinico"/>
+      </reference>
+      <name value="br-core-registroatendimentoclinico"/>
+      <description value="Esse perfil restringe o perfil [br-core-composition](https://br-core/saude.gov.br/fhir/StructureDefinition/br-core-composition.html) para especificar um documento clínico, o registro de atendimento clínico, definido pela [PORTARIA Nº 234, DE 18 DE JULHO DE 2022](https://www.cosemssp.org.br/wp-content/uploads/2022/07/PORTARIA-No-234-DE-18-DE-JULHO-DE-2022-PORTARIA-No-234-DE-18-DE-JULHO-DE-2022-DOU-Imprensa-Nacional.pdf), que institui o Modelo de Informação (MI) Registro de Atendimento Clínico (RAC). Este modelo compreende um conjunto essencial de elementos e dados administrativos e clínicos que fornecem um instantâneo (snapshot) das informações de uma consulta realizada a um indivíduo no âmbito da atenção básica, especializada ou domiciliar (atendimento diário). Apresenta informações relacionadas ao acompanhamento do indivíduo como medições, observações, diagnósticos e/ou problemas, exames, procedimentos, pequenas cirurgias e desfecho"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-schedule"/>
+      </reference>
+      <name value="br-core-schedule"/>
+      <description value="Perfil brasileiro do recurso FHIR R4 Schedule, utilizado para representar agendas e disponibilidades de profissionais, serviços ou locais de saúde no contexto da RNDS e sistemas de interoperabilidade, incluindo suporte a teleconsultas e telecolposcopia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-slot"/>
+      </reference>
+      <name value="br-core-slot"/>
+      <description value="Perfil brasileiro do recurso FHIR R4 Slot, utilizado para representar a disponibilidade e reservas de tempo em sistemas de agendamento, interoperabilidade e integração com a RNDS, permitindo a comunicação entre agendas, prestadores e sistemas de marcação de consultas e procedimentos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-sumarioalta"/>
+      </reference>
+      <name value="br-core-sumarioalta"/>
+      <description value="Este perfil representa as informações da alta hospitalar, conforme a [PORTARIA Nº 701, DE 29 DE SETEMBRO DE 2022](https://bvsms.saude.gov.br/bvs/saudelegis/Saes/2022/prt0701_19_10_2022.html).&#xA;“O Sumário de Alta é um documento essencial para: &#xA;-&#x9;Apoiar a comunicação das informações do sumário de alta entre os diversos níveis de atenção de modo eficiente, efetivo e a tempo, contribuindo para uma atenção coordenada entre os cuidadores do indivíduo e apoiando a continuidade dos seus cuidados;&#xA;-&#x9;Melhorar a qualidade da atenção em saúde e a segurança para o indivíduo com informações qualificadas, completas e oportunas que contribuam para uma conduta mais adequada às necessidades individuais de cada indivíduo e redução de efeitos adversos;&#xA;-&#x9;Contribuir para reduzir o número de reinternações evitáveis;&#xA;-&#x9;Garantir que um conjunto mínimo de informações clínicas padronizadas possa ser encaminhado e processado para múltiplos sistemas de informações em saúde, tais como prontuários eletrônicos dos indivíduos, registros eletrônicos em saúde e outros sistemas que utilizam as informações clínicas como insumos em seus processos de trabalho, facilitando a agregação e análise desses dados para tomada de decisão e produção de conhecimento;&#xA;-&#x9;Reduzir o custo com entradas manuais, integrações, mapeamento de sistemas independentes e manutenção dos sistemas de informação em saúde;&#xA;-&#x9;Prover aos desenvolvedores a especificação do conjunto de dados, mensagens de interface padronizada para a comunicação da alta, reduzindo o tempo entre o desenvolvimento e implantação da comunicação do sumário de alta;&#xA;-&#x9;Promover a simplificação e padronização das comunicações sobre os eventos de saúde entre os diversos envolvidos na atenção à saúde;&#xA;-&#x9;Alimentar o registro pessoal de saúde do indivíduo.”"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-capacidadefuncional"/>
+      </reference>
+      <name value="BRCoreCapacidadeFuncional"/>
+      <description value="Este perfil herda do recurso [br-core-condition](StructureDefinition-br-core-condition.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-careplan"/>
+      </reference>
+      <name value="BRCoreCarePlan"/>
+      <description value="Este perfil restringe o recurso [CarePlan](https://hl7.org/fhir/R4/careplan.html) que descreve a intenção de como um ou mais profissionais pretendem prestar cuidados a um determinado paciente, grupo ou comunidade por um período de tempo, possivelmente limitado ao cuidado de uma condição específica ou conjunto de condições"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-condition"/>
+      </reference>
+      <name value="BRCoreCondition"/>
+      <description value="Este perfil representa as restrições aplicadas ao recurso FHIR R4 [Condition](http://hl7.org/fhir/R4/condition.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-diagnosticreport"/>
+      </reference>
+      <name value="BRCoreDiagnosticReport"/>
+      <description value="Este perfil restringe o recurso [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) que representa as descobertas e a interpretação de testes diagnósticos realizados em pacientes, grupos de pacientes, dispositivos e locais, e/ou espécimes derivados destes. O relatório inclui contexto clínico, como solicitação e informações do provedor, e alguma mistura de resultados atômicos, imagens, interpretações textuais e codificadas, e representação formatada de relatórios diagnósticos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-immunization"/>
+      </reference>
+      <name value="BRCoreImmunization"/>
+      <description value="Este perfil restringe o recurso [Immunization](https://hl7.org/fhir/R4/immunization.html) que descreve o evento em que um paciente recebe uma vacina ou um registro de uma imunização conforme relatado por um paciente, um médico ou outra parte"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observation"/>
+      </reference>
+      <name value="BRCoreObservation"/>
+      <description value="O recurso [br-core-Observation](StructureDefinition-br-core-observation.html) herda do recurso FHIR R4 [observation](https://hl7.org/fhir/R4B/observation.html) e registra medidas e resumo simples feitas sobre um paciente, dispositivo ou outro assunto"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationalcoholuse"/>
+      </reference>
+      <name value="BRCoreObservationAlcoholUse"/>
+      <description value="O perfil [br-core-observationalcoholuse](StructureDefinition-br-core-observationalcoholuse.html) herda do recurso FHIR [Observation](https://hl7.org/fhir/R4/observation.html), projetado para documentar a avaliação do uso de álcool em um resumo de paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationbreastfeedingstatus"/>
+      </reference>
+      <name value="BRCoreObservationBreastfeedingStatus"/>
+      <description value="Esse recurso [br-core-observationbreastfeedingstatus](StructureDefinition-br-core-observationbreastfeedingstatus.html) é uma restrição do perfil Observation para registrar informações sobre o tipo de aleitamento materno do paciente nos seus primeiros anos de vida"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationpregnancyedd"/>
+      </reference>
+      <name value="BRCoreObservationPregnancyEDD"/>
+      <description value="Este perfil restringe o recurso [Observation](https://hl7.org/fhir/R4/observation.html) para representar a data prevista para o parto"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationpregnancyoutcome"/>
+      </reference>
+      <name value="BRCoreObservationPregnancyOutcome"/>
+      <description value="Este perfil restringe o recurso [Observation](https://hl7.org/fhir/R4/observation.html) para representar o histórico resumido dos resultados da gravidez."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationpregnancystatus"/>
+      </reference>
+      <name value="BRCoreObservationPregnancyStatus"/>
+      <description value="Este perfil restringe o recurso [Observation](https://hl7.org/fhir/R4/observation.html) para representar o estado da gravidez."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-observationtobaccouse"/>
+      </reference>
+      <name value="BRCoreObservationTobaccoUse"/>
+      <description value="O perfil [br-core-observationtobaccouse](StructureDefinition-br-core-observationtobaccouse.html) herda do recurso FHIR [Observation](https://hl7.org/fhir/R4/observation.html) para representar a avaliação sobre tabagismo em um registro de atendimento clínico ou em um sumário do paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-organization"/>
+      </reference>
+      <name value="BRCoreOrganization"/>
+      <description value="Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-patient"/>
+      </reference>
+      <name value="BRCorePatient"/>
+      <description value="Este perfil representa o perfil [br-core-patient](StructureDefinition-br-core-patient.html) com todas as informações demográficas e administrativas necessárias para descrever um paciente no Brasil, com as respectivas legislações dos elementos e domínios obrigatórios conforme abaixo. O perfil [br-core-patient](StructureDefinition-br-core-patient.html) herda do recurso FHIR R4 [Patient](https://hl7.org/fhir/R4B/patient.html) para definições de escopo e uso. Este perfil define expectativas mínimas para o recurso [br-core-patient](StructureDefinition-br-core-patient.html) registrar, pesquisar e buscar dados demográficos básicos e outras informações administrativas sobre um paciente individual. Ele especifica quais elementos principais, extensões, vocabulários e conjuntos de valores DEVEM estar presentes e restringe como os elementos são usados.  &#xD;&#xA;&#xD;&#xA;Para contemplar uma descrição do paciente com maior equidade, conforme recomendações da portaria GM/MS Nº 230, de 7 de março de 2023, foram adicionados atributos adicionais para expressar o sexo do paciente, além do sexo administrativo: sexo ao nascer descritos no ValueSet [BRSexoNascimento](https://terminologia.saude.gov.br/fhir/ValueSet/BRSexoNascimento) e identidade de gênero descrita no ValueSet [BRIdentidadeGenero](https://terminologia.saude.gov.br/fhir/ValueSet/BRIdentidadeGenero). Com relação a orientação sexual, este é um dado que pode mudar durante a vida do paciente, portanto, recomenda-se que ele seja coletado em cada evento assistencial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-practitioner"/>
+      </reference>
+      <name value="BRCorePractitioner"/>
+      <description value="O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-practitionerrole"/>
+      </reference>
+      <name value="BRCorePractitionerRole"/>
+      <description value="Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-procedure"/>
+      </reference>
+      <name value="BRCoreProcedure"/>
+      <description value="Este recurso descreve uma ação que é ou foi realizada em ou para um paciente. Pode ser uma intervenção física como uma operação, ou menos invasiva como serviços de longo prazo, aconselhamento ou hipnoterapia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-relatedperson"/>
+      </reference>
+      <name value="BRCoreRelatedPerson"/>
+      <description value="O recurso [br-core-relatedperson](StructureDefinition-br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. &#xA;&#xA;A pessoa representada pelo recurso [br-core-relatedperson](StructureDefinition-br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](StructureDefinition-br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](StructureDefinition-br-core-relatedperson.html).&#xA;&#xA;Exemplos de pessoas que podem ser um [br-core-relatedperson](StructureDefinition-br-core-relatedperson.html):&#xA;-&#x9;Esposa ou marido de um paciente&#xA;-&#x9;Parentes ou amigos de um paciente&#xA;-&#x9;Um vizinho que leva um paciente para o hospital&#xA;-&#x9;O dono ou treinador de um cavalo&#xA;-&#x9;Um advogado ou tutor do paciente&#xA;-&#x9;Um cão-guia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-servicerequest"/>
+      </reference>
+      <name value="BRCoreServiceRequest"/>
+      <description value="Este recurso restringe o recurso [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) que registra uma solicitação de serviço, como investigações diagnósticas, tratamentos ou operações a serem realizadas"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-specimen"/>
+      </reference>
+      <name value="BRCoreSpecimen"/>
+      <description value="Este perfil restringe o recurso Specimen para representar as características de amostras biológicas no contexto de resultados laboratoriais integrados a um Sumário do Paciente. O recurso Specimen descreve uma amostra utilizada para análise laboratorial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-vitalsigns"/>
+      </reference>
+      <name value="BRCoreVitalSigns"/>
+      <description value="Este perfil é baseado no perfil [VitalSigns](http://hl7.org/fhir/R4/observation-vitalsigns.html) e define restrições adicionais no recurso Observation para representar Observation de sinais vitais. Ele especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes no recurso e restringe como os elementos são usados."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/c2a71a42-d3cd-4be8-8bf4-fdddea59034f"/>
+      </reference>
+      <name value="c2a71a42-d3cd-4be8-8bf4-fdddea59034f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85"/>
+      </reference>
+      <name value="d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/d8810230-45e2-40a6-8588-ea1624030762"/>
+      </reference>
+      <name value="d8810230-45e2-40a6-8588-ea1624030762"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-address-dsei"/>
+      </reference>
+      <name value="Distrito Sanitário Especial Indígena (DSEI)"/>
+      <description value="Extensão que permite referenciar um Distrito Sanitário Especial Indígena (DSEI) como parte do endereço de um indivíduo ou organização no contexto da saúde indígena brasileira."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-address"/>
+      </reference>
+      <name value="Endereço Brasileiro"/>
+      <description value="Perfil do tipo de dado Address para uso no contexto brasileiro, incluindo extensões específicas para localização de povos indígenas através de Aldeia, DSEI (Distrito Sanitário Especial Indígena) e Polo Base."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34"/>
+      </reference>
+      <name value="Exemplo de alergia e intolerância."/>
+      <description value="Exemplo de alergia e intolerância."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/b2549739-2479-406e-ab6e-1e4251b08bc9"/>
+      </reference>
+      <name value="Exemplo de alergia e intolerância."/>
+      <description value="Exemplo de alergia e intolerância."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/5c0878bd-a787-489d-82aa-82f4fb55909e"/>
+      </reference>
+      <name value="Exemplo de composition."/>
+      <description value="Exemplo de composition."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"/>
+      </reference>
+      <name value="Exemplo de condição de saúde fictícia."/>
+      <description value="Exemplo de condição de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+      </reference>
+      <name value="Exemplo de consulta fictícia."/>
+      <description value="Exemplo de consultae fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/82c41d7b-b125-49ae-825e-8918885ba234"/>
+      </reference>
+      <name value="Exemplo de declaração de medicação."/>
+      <description value="Exemplo de declaração de medicação fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationstatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/9d15b978-0743-4a5b-af6f-aac73c027f16"/>
+      </reference>
+      <name value="Exemplo de declaração de medicação."/>
+      <description value="Exemplo de declaração de medicação fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationstatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/90e2319e-dc54-4379-88f3-13c5e74e924e"/>
+      </reference>
+      <name value="Exemplo de gravidez."/>
+      <description value="Exemplo de gravidez fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyedd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/714819de-cd07-4423-94ea-7057504a2cc8"/>
+      </reference>
+      <name value="Exemplo de imunização."/>
+      <description value="Exemplo de imunização fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba"/>
+      </reference>
+      <name value="Exemplo de locação."/>
+      <description value="Exemplo de locação."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864"/>
+      </reference>
+      <name value="Exemplo de medicação."/>
+      <description value="Exemplo de medicação fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/52ba1c80-5d2c-4faf-8c90-f4363e20d7bb"/>
+      </reference>
+      <name value="Exemplo de observação."/>
+      <description value="Exemplo de observação de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+      </reference>
+      <name value="Exemplo de organização."/>
+      <description value="Exemplo de organização de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/2b9c99c6-f9c9-42f0-a107-ed5f0d806995"/>
+      </reference>
+      <name value="Exemplo de organização."/>
+      <description value="Exemplo de organização de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae"/>
+      </reference>
+      <name value="Exemplo de organização."/>
+      <description value="Exemplo de organização de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/b1997888-85fd-41b6-bf94-6242cf3c8265"/>
+      </reference>
+      <name value="Exemplo de paciente."/>
+      <description value="Exemplo de paciente fictício."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+      </reference>
+      <name value="Exemplo de paciente."/>
+      <description value="Exemplo de paciente fictício."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617"/>
+      </reference>
+      <name value="Exemplo de paciente."/>
+      <description value="Exemplo de paciente fictício."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed"/>
+      </reference>
+      <name value="Exemplo de papel de profissional de saúde."/>
+      <description value="Exemplo de papel de profissional de saúde fictício."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532"/>
+      </reference>
+      <name value="Exemplo de plano de cuidado."/>
+      <description value="Exemplo de plano de cuidado."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/5f147d9b-ff84-44d1-b258-e2c9284098f4"/>
+      </reference>
+      <name value="Exemplo de pregnancy status."/>
+      <description value="Exemplo de pregnancy status de saúde fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancystatus"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf"/>
+      </reference>
+      <name value="Exemplo de procedimento de saúde."/>
+      <description value="Exemplo de procedimento de saúde."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      </reference>
+      <name value="Exemplo de profissional de saúde."/>
+      <description value="Exemplo de profissional de saúde fictício."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/a952a5b4-2bc5-42f8-a3de-af67ec3ea791"/>
+      </reference>
+      <name value="Exemplo de reporte de diagnóstico."/>
+      <description value="Exemplo de reporte de diagnóstico."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/02f99181-eab1-4634-9d58-508c7d4f195b"/>
+      </reference>
+      <name value="Exemplo de resultado de gravidez."/>
+      <description value="Exemplo de resultado de gravidez fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e"/>
+      </reference>
+      <name value="Exemplo de time de cuidado."/>
+      <description value="Exemplo de time de cuidado."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/f48ffa19-7af8-4377-aab8-2c98ca1ce07b"/>
+      </reference>
+      <name value="Exemplo de uma pessoa relacionada ao paciente."/>
+      <description value="Exemplo de uma pessoa relacionada ao paciente."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bcdeed7f-cd8c-4d53-b61e-160471b913eb"/>
+      </reference>
+      <name value="Exemplo de uso de tabaco."/>
+      <description value="Exemplo de uso de tabaco fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationtobaccouse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/b359a2d8-dfef-4147-b5a1-3a6437263650"/>
+      </reference>
+      <name value="Exemplo de uso de álcool."/>
+      <description value="Exemplo de uso de álcool fictícia."/>
+      <exampleCanonical value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationalcoholuse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-pesquisaclinica"/>
+      </reference>
+      <name value="Extensão de pesquisa clínica do Core do Brasil"/>
+      <description value="Este perfil de extensão representa uma pesquisa clínica"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-populacaotradicional"/>
+      </reference>
+      <name value="Extensão de populacao tradicional do Core do Brasil"/>
+      <description value="Este perfil de extensão representa um populacao tradicional com a qual uma pessoa se associa"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-povoitinerante"/>
+      </reference>
+      <name value="Extensão de povo itinerante do Core do Brasil"/>
+      <description value="Este perfil de extensão representa um povo itinerante com a qual uma pessoa se associa"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-base-legal-lgpd"/>
+      </reference>
+      <name value="Extensão do perfil BRCoreConsent define extensões específicas para atender aos requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)"/>
+      <description value="Este perfil de extensão representa um povo itinerante com a qual uma pessoa se associa"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-address-polo"/>
+      </reference>
+      <name value="Polo Base"/>
+      <description value="Extensão que permite referenciar um Polo Base como parte do endereço de um indivíduo ou organização no contexto da saúde indígena brasileira."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/7681618d-399d-4291-b321-32ce6d645088"/>
+      </reference>
+      <name value="Registro de Atendimento Clínico"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/4e14ddc8-13de-4c7f-8913-bfa81633b81b"/>
+      </reference>
+      <name value="Sumário de Alta Hospitalar"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/58a7b01f-72e8-411a-b1c0-5f7728ab7c51"/>
+      </reference>
+      <name value="UBS INDIANOPOLIS SIGMUND FREUD"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Início"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Histórico de mudanças"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Baixar"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="premissas.html"/>
+        </extension>
+        <nameUrl value="premissas.html"/>
+        <title value="Princípios, Premissas"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="estrutura.html"/>
+        </extension>
+        <nameUrl value="estrutura.html"/>
+        <title value="Estrutura"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modelos.html"/>
+        </extension>
+        <nameUrl value="modelos.html"/>
+        <title value="Especificação"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

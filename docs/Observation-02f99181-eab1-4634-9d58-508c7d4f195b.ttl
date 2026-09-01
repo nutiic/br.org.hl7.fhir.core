@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/02f99181-eab1-4634-9d58-508c7d4f195b> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "02f99181-eab1-4634-9d58-508c7d4f195b"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation 02f99181-eab1-4634-9d58-508c7d4f195b</b></p><a name=\"02f99181-eab1-4634-9d58-508c7d4f195b\"> </a><a name=\"hc02f99181-eab1-4634-9d58-508c7d4f195b\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 11640-0}\">Total de gravidezes</span></p><p><b>subject</b>: <a href=\"Patient-c3a40500-5fe8-47f1-b21a-dce205e6c617.html\">Ana Beatriz</a></p><p><b>effective</b>: 2024-12-19 14:30:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>value</b>: 1 1<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código1 = '1')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "social-history" ] ;
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11640-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11640-0" ] ;
+       fhir:Coding.display [ fhir:value "Births.total" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Total de gravidezes" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617> ;
+     fhir:Reference.reference [ fhir:value "Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617" ] ;
+     fhir:Reference.display [ fhir:value "Ana Beatriz" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2024-12-19T14:30:00Z"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/02f99181-eab1-4634-9d58-508c7d4f195b.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "7b98fd1d-5f85-40f5-9436-2c767ab734ae"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization 7b98fd1d-5f85-40f5-9436-2c767ab734ae</b></p><a name=\"7b98fd1d-5f85-40f5-9436-2c767ab734ae\"> </a><a name=\"hc7b98fd1d-5f85-40f5-9436-2c767ab734ae\"> </a><p><b>identifier</b>: Tax ID number/60643228000161 (utilização: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Aché Laboratórios Farmacêuticos S.A.</p><p><b>alias</b>: Aché</p><p><b>telecom</b>: <a href=\"tel:+55-11-1234-5678\">+55-11-1234-5678</a>, <a href=\"mailto:contato@ache.com.br\">contato@ache.com.br</a></p><p><b>address</b>: Rodovia Dom Pedro I, Km 62 Guarulhos SP 07000-000 BR (work)</p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/contactentity-type ADMIN}\">Administrative</span></p><p><b>name</b>: Departamento Administrativo</p><p><b>telecom</b>: <a href=\"tel:+55-11-1234-5679\">+55-11-1234-5679</a>, <a href=\"mailto:administrativo@ache.com.br\">administrativo@ache.com.br</a></p></blockquote></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ] ;
+         fhir:Coding.display [ fhir:value "Tax ID number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cnpj" ] ;
+     fhir:Identifier.value [ fhir:value "60643228000161" ] ;
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "CADASTRO NACIONAL DE PESSOA JURÍDICA" ]
+     ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.name [ fhir:value "Aché Laboratórios Farmacêuticos S.A."] ;
+  fhir:Organization.alias [
+     fhir:value "Aché" ;
+     fhir:index 0
+  ] ;
+  fhir:Organization.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55-11-1234-5678" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "contato@ache.com.br" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.line [
+       fhir:value "Rodovia Dom Pedro I, Km 62" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Guarulhos" ] ;
+     fhir:Address.district [ fhir:value "Ponte Grande" ] ;
+     fhir:Address.state [ fhir:value "SP" ] ;
+     fhir:Address.postalCode [ fhir:value "07000-000" ] ;
+     fhir:Address.country [ fhir:value "BR" ]
+  ] ;
+  fhir:Organization.contact [
+     fhir:index 0 ;
+     fhir:Organization.contact.purpose [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/contactentity-type" ] ;
+         fhir:Coding.code [ fhir:value "ADMIN" ] ;
+         fhir:Coding.display [ fhir:value "Administrative" ]
+       ]
+     ] ;
+     fhir:Organization.contact.name [
+       fhir:HumanName.text [ fhir:value "Departamento Administrativo" ]
+     ] ;
+     fhir:Organization.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+55-11-1234-5679" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "administrativo@ache.com.br" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

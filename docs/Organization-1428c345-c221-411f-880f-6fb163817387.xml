@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="1428c345-c221-411f-880f-6fb163817387"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Organization 1428c345-c221-411f-880f-6fb163817387</b></p><a name="1428c345-c221-411f-880f-6fb163817387"> </a><a name="hc1428c345-c221-411f-880f-6fb163817387"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>identifier</b>: Tax ID number/61590410000124 (utilização: official, ), Provider number/2079127 (utilização: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude 5}">Hospital Geral</span></p><p><b>name</b>: Hospital Sírio-Libanês</p><p><b>alias</b>: HSL</p><p><b>telecom</b>: <a href="tel:+55-11-3394-0200">+55-11-3394-0200</a>, <a href="mailto:contato@siriolibanes.com.br">contato@siriolibanes.com.br</a>, fax: +55-11-3394-0299(Work)</p><p><b>address</b>: Rua Dona Adma Jafet, 91 São Paulo SP 01308-050 BR (work)</p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/contactentity-type ADMIN}">Administrative</span></p><p><b>name</b>: Departamento Administrativo</p><p><b>telecom</b>: <a href="tel:+55-11-3394-0300">+55-11-3394-0300</a>, <a href="mailto:administracao@siriolibanes.com.br">administracao@siriolibanes.com.br</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+        <display value="Tax ID number"/>
+      </coding>
+    </type>
+    <system value="https://saude.gov.br/fhir/sid/cnpj"/>
+    <value value="61590410000124"/>
+    <assigner>
+      <display value="Cadastro Nacional da Pessoa Jurídica (CNPJ)"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+        <display value="Provider number"/>
+      </coding>
+    </type>
+    <system value="https://saude.gov.br/fhir/sid/cnes"/>
+    <value value="2079127"/>
+    <assigner>
+      <display value="Número no Cadastro Nacional de Estabelecimentos de Saúde (CNES)"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"/>
+      <code value="5"/>
+      <display value="HOSPITAL GERAL"/>
+    </coding>
+    <text value="Hospital Geral"/>
+  </type>
+  <name value="Hospital Sírio-Libanês"/>
+  <alias value="HSL"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55-11-3394-0200"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="contato@siriolibanes.com.br"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="+55-11-3394-0299"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <line value="Rua Dona Adma Jafet, 91"/>
+    <city value="São Paulo"/>
+    <district value="Bela Vista"/>
+    <state value="SP"/>
+    <postalCode value="01308-050"/>
+    <country value="BR"/>
+  </address>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <text value="Departamento Administrativo"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+55-11-3394-0300"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="administracao@siriolibanes.com.br"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+</Organization>

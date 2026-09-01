@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/bcdeed7f-cd8c-4d53-b61e-160471b913eb> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "bcdeed7f-cd8c-4d53-b61e-160471b913eb"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation bcdeed7f-cd8c-4d53-b61e-160471b913eb</b></p><a name=\"bcdeed7f-cd8c-4d53-b61e-160471b913eb\"> </a><a name=\"hcbcdeed7f-cd8c-4d53-b61e-160471b913eb\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 72166-2}\">Status de uso de tabaco</span></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">José da Silva</a></p><p><b>effective</b>: 2024-12-19 10:30:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>value</b>: <span title=\"Códigos:{http://loinc.org LA18934-2}\">uso diário ou quase diário</span></p><p><b>note</b>: </p><blockquote><div><p>Paciente é fumante desde os 18 anos, fumando aproximadamente 5 cigarros por dia.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "social-history" ] ;
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:72166-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "72166-2" ] ;
+       fhir:Coding.display [ fhir:value "Tobacco smoking status" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Status de uso de tabaco" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "José da Silva" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2024-12-19T10:30:00Z"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:LA18934-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "LA18934-2" ] ;
+       fhir:Coding.display [ fhir:value "Daily or almost daily" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "uso diário ou quase diário" ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Paciente é fumante desde os 18 anos, fumando aproximadamente 5 cigarros por dia." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/bcdeed7f-cd8c-4d53-b61e-160471b913eb.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

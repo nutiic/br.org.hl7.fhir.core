@@ -1,0 +1,343 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BR.GOV.SAUDE.BR-CORE.FHIR\80589c80-643e-43ea-801b-5f32616e9a27 - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.51"}
+    h3,h4,h5,h6{--heading-prefix:"7.51"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - STU1
+
+
+
+  <img alt="Brazil flag" src="assets/images/bra.svg" height="16" title="Brazil"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Início</a></li>
+  <li><a href="toc.html">Índice</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Premissas, princípios e convenções de design<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="premissas.html">Princípios, premissas e convenções de design</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="estrutura.html">O br-core</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modelos.html">Modelos computacionais</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Lista de artefatos</a></li>
+  <li><a href="downloads.html">Baixar</a></li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Lista de artefatos</b></a></li><li><b>80589c80-643e-43ea-801b-5f32616e9a27</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1 - Compilação de desenvolvimento local (v1.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://br-core.saude.gov.br/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="MedicationDispense-80589c80-643e-43ea-801b-5f32616e9a27.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="MedicationDispense-80589c80-643e-43ea-801b-5f32616e9a27.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="MedicationDispense-80589c80-643e-43ea-801b-5f32616e9a27.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: 80589c80-643e-43ea-801b-5f32616e9a27 - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="MedicationDispense-80589c80-643e-43ea-801b-5f32616e9a27.json" no-download="true">Raw json</a> | <a href="MedicationDispense-80589c80-643e-43ea-801b-5f32616e9a27.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense">resourceType</a>" : "MedicationDispense",
+  "<a href="http://hl7.org/fhir/R4/resource.html#MedicationDispense.id">id</a>" : "80589c80-643e-43ea-801b-5f32616e9a27",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationDispense.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: MedicationDispense 80589c80-643e-43ea-801b-5f32616e9a27&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;80589c80-643e-43ea-801b-5f32616e9a27\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc80589c80-643e-43ea-801b-5f32616e9a27\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://www.whocc.no/atc M01AX05}\&quot;&gt;Glucosamina&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\&quot;&gt;João Carlos&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\&quot;&gt;Maria Clara&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html\&quot;&gt;Clínica Geral&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 30 comprimidos&lt;/p&gt;&lt;p&gt;&lt;b&gt;daysSupply&lt;/b&gt;: 30 days&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Detalhes: UCUM códigod = 'd')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenPrepared&lt;/b&gt;: 2023-12-12 10:00:00-0300&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenHandedOver&lt;/b&gt;: 2023-12-12 10:30:00-0300&lt;/p&gt;&lt;p&gt;&lt;b&gt;destination&lt;/b&gt;: &lt;a href=\&quot;Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html\&quot;&gt;Clínica Geral&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosageInstruction&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Tomar 1 comprimido a cada 12 horas após café da manhã e jantar.&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: 2 por 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;(unit 10219000 from http://standardterms.edqm.eu)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Detalhes: standardterms.edqm.eu código10219000 = 'Tablet')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.status">status</a>" : "completed",
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.medication_x_">medicationCodeableConcept</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://www.whocc.no/atc",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "M01AX05",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "glicosamina"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Glucosamina"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.subject">subject</a>" : {
+    <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "João Carlos"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.performer">performer</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.performer.actor">actor</a>" : {
+        <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Maria Clara"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.location">location</a>" : {
+    <a href="Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Clínica Geral"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.quantity">quantity</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 30,
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "comprimidos"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.daysSupply">daysSupply</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 30,
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "days",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "d"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.whenPrepared">whenPrepared</a>" : "2023-12-12T10:00:00-03:00",
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.whenHandedOver">whenHandedOver</a>" : "2023-12-12T10:30:00-03:00",
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.destination">destination</a>" : {
+    <a href="Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Clínica Geral"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.dosageInstruction">dosageInstruction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.text">text</a>" : "Tomar 1 comprimido a cada 12 horas após café da manhã e jantar.",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">timing</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 2,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 1,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "d"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">doseAndRate</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose_x_">doseQuantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://standardterms.edqm.eu",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "10219000"
+          }
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gov.br/saude">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.br-core.fhir#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 1, 2026 10:20-0400">2026-09-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

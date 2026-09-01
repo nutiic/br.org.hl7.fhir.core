@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="5c0878bd-a787-489d-82aa-82f4fb55909e"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Composition 5c0878bd-a787-489d-82aa-82f4fb55909e</b></p><a name="5c0878bd-a787-489d-82aa-82f4fb55909e"> </a><a name="hc5c0878bd-a787-489d-82aa-82f4fb55909e"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Códigos:{http://loinc.org 11488-4}">Nota de Consulta Especializada</span></p><p><b>category</b>: <span title="Códigos:{http://loinc.org 11488-4}">Consult note</span></p><p><b>encounter</b>: <a href="Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html">Ambulatorial</a></p><p><b>date</b>: 2024-02-06 10:00:00+0000</p><p><b>author</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>title</b>: Nota de Consulta Especializada</p><p><b>confidentiality</b>: normal</p><h3>Attesters</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style="display: none">*</td><td>Professional</td><td>2024-02-06 10:30:00+0000</td><td><a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></td></tr></table><p><b>custodian</b>: <a href="Organization-1428c345-c221-411f-880f-6fb163817387.html">Hospital Sírio-Libanês</a></p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+    <text value="Nota de Consulta Especializada"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/b1997888-85fd-41b6-bf94-6242cf3c8265"/>
+    <display value="Ana Beatriz"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+    <display value="Ambulatorial"/>
+  </encounter>
+  <date value="2024-02-06T10:00:00Z"/>
+  <author>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </author>
+  <title value="Nota de Consulta Especializada"/>
+  <confidentiality value="N"/>
+  <attester>
+    <mode value="professional"/>
+    <time value="2024-02-06T10:30:00Z"/>
+    <party>
+      <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      <display value="Maria Clara"/>
+    </party>
+  </attester>
+  <custodian>
+    <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+    <display value="Hospital Sírio-Libanês"/>
+  </custodian>
+  <section>
+    <title value="Diagnósticos Avaliados"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="57852-6"/>
+        <display value="Problem list Reported"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Alergias e Intolerâncias"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+        <display value="Allergies and adverse reactions Document"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Solicitações de Procedimentos"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="42349-1"/>
+        <display value="Reason for referral (narrative)"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="ServiceRequest/d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Plano de Cuidado"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18776-5"/>
+        <display value="Plan of care note"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532"/>
+    </entry>
+  </section>
+</Composition>

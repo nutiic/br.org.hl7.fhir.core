@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "42a8e4ee-cc8b-4c07-bee2-da8fe14ada34"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: AllergyIntolerance 42a8e4ee-cc8b-4c07-bee2-da8fe14ada34</b></p><a name=\"42a8e4ee-cc8b-4c07-bee2-da8fe14ada34\"> </a><a name=\"hc42a8e4ee-cc8b-4c07-bee2-da8fe14ada34\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>clinicalStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA veneno-vespa}\">Alergia a veneno de vespa</span></p><p><b>patient</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">João Pereira</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA 10002424}\">Angioedema</span></td><td>2023-05-12</td><td>Moderate</td></tr></table></div>"
+  ] ;
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ] ;
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"] ;
+  fhir:AllergyIntolerance.category [
+     fhir:value "food" ;
+     fhir:index 0
+  ] ;
+  fhir:AllergyIntolerance.criticality [ fhir:value "high"] ;
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA" ] ;
+       fhir:Coding.code [ fhir:value "veneno-vespa" ] ;
+       fhir:Coding.display [ fhir:value "Veneno de vespa" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Alergia a veneno de vespa" ]
+  ] ;
+  fhir:AllergyIntolerance.patient [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "João Pereira" ]
+  ] ;
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0 ;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA" ] ;
+         fhir:Coding.code [ fhir:value "10002424" ] ;
+         fhir:Coding.display [ fhir:value "angioedema" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Angioedema" ]
+     ] ;
+     fhir:AllergyIntolerance.reaction.onset [ fhir:value "2023-05-12"^^xsd:date ] ;
+     fhir:AllergyIntolerance.reaction.severity [ fhir:value "moderate" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

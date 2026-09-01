@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="7681618d-399d-4291-b321-32ce6d645088"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Composition 7681618d-399d-4291-b321-32ce6d645088</b></p><a name="7681618d-399d-4291-b321-32ce6d645088"> </a><a name="hc7681618d-399d-4291-b321-32ce6d645088"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Códigos:{http://loinc.org 11488-4}">Nota de consulta</span></p><p><b>category</b>: <span title="Códigos:{http://loinc.org 11488-4}">Nota de consulta</span></p><p><b>encounter</b>: <a href="Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html">Ambulatorial</a></p><p><b>date</b>: 2024-12-19 14:30:00+0000</p><p><b>author</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>title</b>: Registro de Atendimento Clínico</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+    <text value="Nota de consulta"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+    <text value="Nota de consulta"/>
+  </category>
+  <subject>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="João Carlos Silva"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+    <display value="Ambulatorial"/>
+  </encounter>
+  <date value="2024-12-19T14:30:00Z"/>
+  <author>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </author>
+  <title value="Registro de Atendimento Clínico"/>
+  <section>
+    <title value="Diagnósticos Avaliados"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="57852-6"/>
+        <display value="Problem list Reported"/>
+      </coding>
+      <text value="Lista de Problemas - Diagnósticos Avaliados"/>
+    </code>
+    <entry>
+      <reference value="Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"/>
+      <display value="Dispnéia"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Procedimentos Realizados"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="47519-4"/>
+        <display value="Procedures Hx Doc"/>
+      </coding>
+      <text value="Procedimentos Realizados"/>
+    </code>
+    <entry>
+      <reference value="Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf"/>
+      <display value="Consulta médica em atenção primária"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Sinais Vitais"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="85354-9"/>
+        <display value="Blood pressure panel with all children optional"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97"/>
+      <display value="Vital Signs"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Alergias e Intolerâncias"/>
+    <code>
+      <coding>
+        <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA"/>
+        <code value="amendoim"/>
+        <display value="Amendoim"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34"/>
+      <display value="Allergy Intolerance"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medicamentos"/>
+    <code>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="J01MA12"/>
+        <display value="levofloxacino"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864"/>
+      <display value="Medication"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Plano de Cuidados"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18776-5"/>
+        <display value="Plan of care note"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532"/>
+      <display value="CarePlan"/>
+    </entry>
+  </section>
+</Composition>

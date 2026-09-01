@@ -1,0 +1,150 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping"
+"HealthcareService","HealthcareService","","","",0,*,"","","","null {[]} {[]}
+","The details of a healthcare service available at a location","The details of a healthcare service available at a location.","","","","","","","","","",,,,,"",,,,"HealthcareService",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Entity. Role, or Act","act[classCode=ACT][moodCode=DEF]"
+"HealthcareService.id","HealthcareService.id","","","",0,1,"","","Y","id {[]} {[]}
+","Identificador lógico deste artefato","Identificador lógico deste artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"HealthcareService.meta","HealthcareService.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadados sobre o recurso","Metadados sobre o recurso","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HealthcareService.implicitRules","HealthcareService.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","Um conjunto de regras sob as quais este conteúdo foi criado","Um conjunto de regras sob as quais este conteúdo foi criado","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HealthcareService.language","HealthcareService.language","","","",0,1,"","","","code {[]} {[]}
+","Idioma do recurso","Idioma do recurso","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HealthcareService.text","HealthcareService.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Resumo do texto do recurso em linguagem natural","Resumo do texto do recurso em linguagem natural","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"HealthcareService.contained","HealthcareService.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Recursos contidos no recurso","Recursos contidos no recurso","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"HealthcareService.extension","HealthcareService.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extensões adicionais que não fazem parte do modelo base","Extensões adicionais que não fazem parte do modelo base","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.modifierExtension","HealthcareService.modifierExtension","","","",0,*,"","Y","","Extension {[]} {[]}
+","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.identifier","HealthcareService.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+","Identificadores deste recurso","Identificadores deste recurso","","","","","","","","","",,,,,"",,,,"HealthcareService.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".id","FiveWs.identifier"
+"HealthcareService.active","HealthcareService.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
+","Se este registro está em uso ativo","Se este registro está em uso ativo","This element is labeled as a modifier because it may be used to mark that the resource was created in error.","","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"HealthcareService.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".statusCode","FiveWs.status"
+"HealthcareService.providedBy","HealthcareService.providedBy","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
+","Referência à organização que fornece este serviço","Referência à organização que fornece este serviço","This property is recommended to be the same as the Location's managingOrganization, and if not provided should be interpreted as such. If the Location does not have a managing Organization, then this property should be populated.","","","","","","","","",,,,,"",,,,"HealthcareService.providedBy",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".scopingRole.Organization"
+"HealthcareService.category","HealthcareService.category","","service category
+","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Categoria de serviço","Categoria de serviço","Selecting a Service Category then determines the list of relevant service types that can be selected in the primary service type.","","","","","","","","",,"preferred","","https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoEstabelecimentoSaude","",,,,"HealthcareService.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".code","FiveWs.class"
+"HealthcareService.type","HealthcareService.type","","service type
+","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Tipo de serviço","Tipo de serviço","","","","","","","","","",,"example","","https://terminologia.saude.gov.br/fhir/ValueSet/BRServicoEspecializado","",,,,"HealthcareService.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
+"HealthcareService.specialty","HealthcareService.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Especialidades atendidas","Especialidades atendidas","","","","","","","","","",,"preferred","","https://terminologia.saude.gov.br/fhir/ValueSet/BROcupacao","",,,,"HealthcareService.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
+"HealthcareService.location","HealthcareService.location","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
+","Referência aos locais onde o serviço pode ser prestado","Referência aos locais onde o serviço pode ser prestado","","","","","","","","","",,,,,"",,,,"HealthcareService.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".location.role[classCode=SDLOC]","FiveWs.where[x]"
+"HealthcareService.name","HealthcareService.name","","","",0,1,"","","Y","string {[]} {[]}
+","Nome do serviço","Nome do serviço","","","","","","","","","",,,,,"",,,,"HealthcareService.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".name"
+"HealthcareService.comment","HealthcareService.comment","","","",0,1,"","","Y","string {[]} {[]}
+","Comentários sobre o serviço","Comentários sobre o serviço","Would expect that a user would not see this information on a search results, and it would only be available when viewing the complete details of the service.","","","","","","","","",,,,,"",,,,"HealthcareService.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".location.role[classCode=SDLOC].desc"
+"HealthcareService.extraDetails","HealthcareService.extraDetails","","","",0,1,"","","","markdown {[]} {[]}
+","Detalhes extras sobre o serviço","Detalhes extras sobre o serviço","","","","","","","","","",,,,,"",,,,"HealthcareService.extraDetails",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].text"
+"HealthcareService.photo","HealthcareService.photo","","","",0,1,"","","Y","Attachment {[]} {[]}
+","Anexos para facilitar a identificação do serviço","Anexos para facilitar a identificação do serviço","","","","","","","","","",,,,,"",,,,"HealthcareService.photo",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=SBJ].observation.value"
+"HealthcareService.telecom","HealthcareService.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Contatos relacionados ao serviço de saúde","Contatos relacionados ao serviço de saúde","If this is empty, then refer to the location's contacts.","","","","","","","","",,,,,"",,,,"HealthcareService.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".telecom"
+"HealthcareService.coverageArea","HealthcareService.coverageArea","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
+","Área de abrangência do serviço","Área de abrangência do serviço","The locations referenced by the coverage area can include both specific locations, including areas, and also conceptual domains too (mode = kind), such as a physical area (tri-state area) and some other attribute (covered by Example Care Organization). These types of Locations are often not managed by any specific organization. This could also include generic locations such as ""in-home"".","","","","","","","","",,,,,"",,,,"HealthcareService.coverageArea",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".location.role[classCode=SDLOC].subjectOf.A_SpatialCoordinate"
+"HealthcareService.serviceProvisionCode","HealthcareService.serviceProvisionCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Condições sob as quais o serviço está disponível/oferecido","Condições sob as quais o serviço está disponível/oferecido","The provision means being commissioned by, contractually obliged or financially sourced. Types of costings that may apply to this healthcare service, such if the service may be available for free, some discounts available, or fees apply.","","","","","","","","",,"example","","https://terminologia.saude.gov.br/fhir/ValueSet/TipoConvenio","",,,,"HealthcareService.serviceProvisionCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]"
+"HealthcareService.eligibility","HealthcareService.eligibility","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Elegibilidade","Elegibilidade","","","","","","","","","",,,,,"",,,,"HealthcareService.eligibility",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HealthcareService.eligibility.id","HealthcareService.eligibility.id","","","",0,1,"","","","string {[]} {[]}
+","Identificador único para referência cruzada","Identificador único para referência cruzada","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HealthcareService.eligibility.extension","HealthcareService.eligibility.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extensões adicionais que não fazem parte do modelo de dados básico","Extensões adicionais que não fazem parte do modelo de dados básico","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.eligibility.modifierExtension","HealthcareService.eligibility.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.eligibility.code","HealthcareService.eligibility.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Valor codificado para a elegibilidade","Valor codificado para a elegibilidade","","","","","","","","","",,"example","Coded values underwhich a specific service is made available.","","",,,,"HealthcareService.eligibility.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]"
+"HealthcareService.eligibility.comment","HealthcareService.eligibility.comment","","","",0,1,"","","","markdown {[]} {[]}
+","Descreve as condições de elegibilidade do serviço","Descreve as condições de elegibilidade do serviço","The description of service eligibility should, in general, not exceed one or two paragraphs. It should be sufficient for a prospective consumer to determine if they are likely to be eligible or not. Where eligibility requirements and conditions are complex, it may simply be noted that an eligibility assessment is required. Where eligibility is determined by an outside source, such as an Act of Parliament, this should be noted, preferably with a reference to a commonly available copy of the source document such as a web page.","","","","","","","","",,,,,"",,,,"HealthcareService.eligibility.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT].text"
+"HealthcareService.program","HealthcareService.program","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Programas que este serviço atende","Programas que este serviço atende","Programs are often defined externally to an Organization, commonly by governments; e.g. Home and Community Care Programs, Homeless Program, ….","","","","","","","","",,"example","","https://terminologia.saude.gov.br/fhir/ValueSet/BRProgramaSaude","",,,,"HealthcareService.program",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PERT].observation"
+"HealthcareService.characteristic","HealthcareService.characteristic","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Características do serviço","Características do serviço","These could be such things as is wheelchair accessible.","","","","","","","","",,"example","A custom attribute that could be provided at a service (e.g. Wheelchair accessibiliy).","","",,,,"HealthcareService.characteristic",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PERT].observation"
+"HealthcareService.communication","HealthcareService.communication","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Idiomas oferecido por este serviço","Idiomas oferecido por este serviço","When using this property it indicates that the service is available with this language, it is not derived from the practitioners, and not all are required to use this language, just that this language is available while scheduling.","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"HealthcareService.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"HealthcareService.referralMethod","HealthcareService.referralMethod","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Formas pelas quais o serviço aceita referências","Formas pelas quais o serviço aceita referências","","","","","","","","","",,"example","The methods of referral can be used when referring to a specific HealthCareService resource.","http://hl7.org/fhir/ValueSet/service-referral-method|4.0.1","",,,,"HealthcareService.referralMethod",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PERT].observation"
+"HealthcareService.appointmentRequired","HealthcareService.appointmentRequired","","","",0,1,"","","","boolean {[]} {[]}
+","Se for necessário agendamento para acesso a este serviço","Se for necessário agendamento para acesso a este serviço","","","","","","","","","",,,,,"",,,,"HealthcareService.appointmentRequired",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".actrelationship[typeCode=PERT].observation"
+"HealthcareService.availableTime","HealthcareService.availableTime","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Horários de funcionamento do serviço","Horários de funcionamento do serviço","More detailed availability information may be provided in associated Schedule/Slot resources.","","","","","","","","",,,,,"",,,,"HealthcareService.availableTime",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.availableTime.id","HealthcareService.availableTime.id","","","",0,1,"","","","string {[]} {[]}
+","Identificador único para referência cruzada","Identificador único para referência cruzada","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HealthcareService.availableTime.extension","HealthcareService.availableTime.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extensões adicionais que não fazem parte do modelo de dados básico","Extensões adicionais que não fazem parte do modelo de dados básico","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.availableTime.modifierExtension","HealthcareService.availableTime.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.availableTime.daysOfWeek","HealthcareService.availableTime.daysOfWeek","","","",0,*,"","","","code {[]} {[]}
+","Dias da semana: seg, ter, qua,qui, sex, sab,dom","Dias da semana: seg, ter, qua,qui, sex, sab,dom","","","","","","","","","",,"required","The days of the week.","http://hl7.org/fhir/ValueSet/days-of-week|4.0.1","",,,,"HealthcareService.availableTime.daysOfWeek",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.availableTime.allDay","HealthcareService.availableTime.allDay","","","",0,1,"","","","boolean {[]} {[]}
+","Se disponível 24 horas","Se disponível 24 horas","","","","","","","","","",,,,,"",,,,"HealthcareService.availableTime.allDay",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.availableTime.availableStartTime","HealthcareService.availableTime.availableStartTime","","","",0,1,"","","","time {[]} {[]}
+","Horário de abertura","Horário de abertura","The time zone is expected to be for where this HealthcareService is provided at.","","","","","","","","",,,,,"",,,,"HealthcareService.availableTime.availableStartTime",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.availableTime.availableEndTime","HealthcareService.availableTime.availableEndTime","","","",0,1,"","","","time {[]} {[]}
+","Hora de fechamento","Hora de fechamento","The time zone is expected to be for where this HealthcareService is provided at.","","","","","","","","",,,,,"",,,,"HealthcareService.availableTime.availableEndTime",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.notAvailable","HealthcareService.notAvailable","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Não disponível","Não disponível","","","","","","","","","",,,,,"",,,,"HealthcareService.notAvailable",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.notAvailable.id","HealthcareService.notAvailable.id","","","",0,1,"","","","string {[]} {[]}
+","Identificador único para referência cruzada","Identificador único para referência cruzada","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HealthcareService.notAvailable.extension","HealthcareService.notAvailable.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extensões adicionais que não fazem parte do modelo de dados básico","Extensões adicionais que não fazem parte do modelo de dados básico","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.notAvailable.modifierExtension","HealthcareService.notAvailable.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HealthcareService.notAvailable.description","HealthcareService.notAvailable.description","","","",1,1,"","","","string {[]} {[]}
+","Motivo da indisponibilidade do serviço","Motivo da indisponibilidade do serviço","","","","","","","","","",,,,,"",,,,"HealthcareService.notAvailable.description",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"HealthcareService.notAvailable.during","HealthcareService.notAvailable.during","","","",0,1,"","","","Period {[]} {[]}
+","Período da indisponibilidade","Período da indisponibilidade","","","","","","","","","",,,,,"",,,,"HealthcareService.notAvailable.during",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.availabilityExceptions","HealthcareService.availabilityExceptions","","","",0,1,"","","","string {[]} {[]}
+","Descrição das exceções de disponibilidade","Descrição das exceções de disponibilidade","","","","","","","","","",,,,,"",,,,"HealthcareService.availabilityExceptions",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime"
+"HealthcareService.endpoint","HealthcareService.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1]]}
+","Endpoints técnicos que fornecem acesso a serviços eletrônicos operados para o serviço de saúde","Endpoints técnicos que fornecem acesso a serviços eletrônicos operados para o serviço de saúde","","","","","","","","","",,,,,"",,,,"HealthcareService.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="5f147d9b-ff84-44d1-b258-e2c9284098f4"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Observation 5f147d9b-ff84-44d1-b258-e2c9284098f4</b></p><a name="5f147d9b-ff84-44d1-b258-e2c9284098f4"> </a><a name="hc5f147d9b-ff84-44d1-b258-e2c9284098f4"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 82810-3}">Status da Gravidez</span></p><p><b>subject</b>: <a href="Patient-c3a40500-5fe8-47f1-b21a-dce205e6c617.html">Ana Beatriz</a></p><p><b>effective</b>: 2024-12-19 10:30:00+0000</p><p><b>performer</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>value</b>: <span title="Códigos:{http://loinc.org LA15173-0}">Grávida</span></p><p><b>note</b>: </p><blockquote><div><p>Paciente relatou estar grávida e exames confirmaram a gestação.</p>
+</div></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82810-3"/>
+      <display value="Pregnancy status"/>
+    </coding>
+    <text value="Status da Gravidez"/>
+  </code>
+  <subject>
+    <reference value="Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617"/>
+    <display value="Ana Beatriz"/>
+  </subject>
+  <effectiveDateTime value="2024-12-19T10:30:00Z"/>
+  <performer>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA15173-0"/>
+      <display value="Pregnant"/>
+    </coding>
+    <text value="Grávida"/>
+  </valueCodeableConcept>
+  <note>
+    <text value="Paciente relatou estar grávida e exames confirmaram a gestação."/>
+  </note>
+</Observation>

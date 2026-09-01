@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "d3b61455-f432-48f0-b83b-ba825922d735"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner d3b61455-f432-48f0-b83b-ba825922d735</b></p><a name=\"d3b61455-f432-48f0-b83b-ba825922d735\"> </a><a name=\"hcd3b61455-f432-48f0-b83b-ba825922d735\"> </a><p><b>identifier</b>: Cartão nacional de saúde/123456789101112 (utilização: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Maria Clara Oliveira (Official)</p><p><b>telecom</b>: <a href=\"tel:+552198765-4321\">+55 21 98765-4321</a>, <a href=\"mailto:maria.oliveira@example.com\">maria.oliveira@example.com</a></p><p><b>address</b>: Av. Central, 456, Bairro Centro, Rio de Janeiro, RJ, 20000-000(work)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cns.html\" title=\"CARTÃO NACIONAL DE SAÚDE\">NamingSystemCNS</a>/225125789542376</td><td><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 225125}\">MEDICO CLINICO</span></td><td>2010-01-01 --&gt; (em curso)</td><td><a href=\"Organization-1428c345-c221-411f-880f-6fb163817387.html\">Hospital Sírio-Libanês</a></td></tr></table></div>"
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "HC" ] ;
+         fhir:Coding.display [ fhir:value "Health Card Number" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Cartão nacional de saúde" ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cns" ] ;
+     fhir:Identifier.value [ fhir:value "123456789101112" ]
+  ] ;
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Oliveira" ] ;
+     fhir:HumanName.given [
+       fhir:value "Maria" ;
+       fhir:index 0
+     ], [
+       fhir:value "Clara" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Practitioner.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55 21 98765-4321" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "maria.oliveira@example.com" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Practitioner.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.text [ fhir:value "Av. Central, 456, Bairro Centro, Rio de Janeiro, RJ, 20000-000" ] ;
+     fhir:Address.line [
+       fhir:value "Av. Central, 456" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Rio de Janeiro" ] ;
+     fhir:Address.state [ fhir:value "RJ" ] ;
+     fhir:Address.postalCode [ fhir:value "20000-000" ] ;
+     fhir:Address.country [ fhir:value "Brasil" ]
+  ] ;
+  fhir:Practitioner.qualification [
+     fhir:index 0 ;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cns" ] ;
+       fhir:Identifier.value [ fhir:value "225125789542376" ]
+     ] ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO" ] ;
+         fhir:Coding.code [ fhir:value "225125" ] ;
+         fhir:Coding.display [ fhir:value "MEDICO CLINICO" ]
+       ]
+     ] ;
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2010-01-01"^^xsd:date ]
+     ] ;
+     fhir:Practitioner.qualification.issuer [
+       fhir:link <https://br-core.saude.gov.br/fhir/Organization/1428c345-c221-411f-880f-6fb163817387> ;
+       fhir:Reference.reference [ fhir:value "Organization/1428c345-c221-411f-880f-6fb163817387" ] ;
+       fhir:Reference.display [ fhir:value "Hospital Sírio-Libanês" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

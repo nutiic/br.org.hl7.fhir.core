@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/b359a2d8-dfef-4147-b5a1-3a6437263650> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "b359a2d8-dfef-4147-b5a1-3a6437263650"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation b359a2d8-dfef-4147-b5a1-3a6437263650</b></p><a name=\"b359a2d8-dfef-4147-b5a1-3a6437263650\"> </a><a name=\"hcb359a2d8-dfef-4147-b5a1-3a6437263650\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Histórico Social</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 74013-4}\">Número de doses de álcool ingeridos por dia</span></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">José da Silva</a></p><p><b>effective</b>: 2024-12-19</p><p><b>performer</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>value</b>: 2 bebidas/dia<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código/d = '/d')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "social-history" ] ;
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Histórico Social" ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:74013-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "74013-4" ] ;
+       fhir:Coding.display [ fhir:value "Alcoholic drinks per day" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Número de doses de álcool ingeridos por dia" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "José da Silva" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2024-12-19"^^xsd:date] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "bebidas/dia" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "/d" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/b359a2d8-dfef-4147-b5a1-3a6437263650.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

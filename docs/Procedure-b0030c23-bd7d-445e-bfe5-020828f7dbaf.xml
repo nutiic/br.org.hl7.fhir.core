@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="b0030c23-bd7d-445e-bfe5-020828f7dbaf"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Procedure b0030c23-bd7d-445e-bfe5-020828f7dbaf</b></p><a name="b0030c23-bd7d-445e-bfe5-020828f7dbaf"> </a><a name="hcb0030c23-bd7d-445e-bfe5-020828f7dbaf"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>status</b>: Completed</p><p><b>statusReason</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoProcedimentoNaoRealizado 03}">Procedimento não realizado</span></p><p><b>category</b>: <span title="Códigos:{https://fhir.ans.gov.br/CodeSystem/tuss-50 04}">Consulta</span></p><p><b>code</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTabelaSUS 0301010064}">Consulta médica em atenção primária</span></p><p><b>subject</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">João Carlos Silva</a></p><p><b>encounter</b>: <a href="Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html">Ambulatorial</a></p><p><b>performed</b>: 2023-12-12 09:00:00-0300 --&gt; 2023-12-12 10:30:00-0300</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/participant-type emergency}">Emergência</span></td><td><a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></td></tr></table><p><b>reasonCode</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 I10}">Hipertensão essencial (primária)</span></p><p><b>bodySite</b>: <span title="Códigos:">Sistema Circulatório</span></p><p><b>outcome</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento 01}">Melhora Clínica</span></p><p><b>report</b>: <a href="DiagnosticReport-a952a5b4-2bc5-42f8-a3de-af67ec3ea791.html">Relatório consulta</a></p><p><b>complicationDetail</b>: <a href="Condition-91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.html">Dispnéia</a></p><p><b>followUp</b>: <span title="Códigos:">Consulta de acompanhamento em 2 semanas</span></p><p><b>note</b>: </p><blockquote><div><p>O paciente foi orientado a fazer atividade física.</p>
+</div></blockquote></div>
+  </text>
+  <status value="completed"/>
+  <statusReason>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoProcedimentoNaoRealizado"/>
+      <code value="03"/>
+      <display value="Procedimento não realizado"/>
+    </coding>
+  </statusReason>
+  <category>
+    <coding>
+      <system value="https://fhir.ans.gov.br/CodeSystem/tuss-50"/>
+      <code value="04"/>
+      <display value="Consulta"/>
+    </coding>
+    <text value="Consulta"/>
+  </category>
+  <code>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRTabelaSUS"/>
+      <code value="0301010064"/>
+      <display value="CONSULTA MÉDICA EM ATENÇÃO PRIMÁRIA"/>
+    </coding>
+    <text value="Consulta médica em atenção primária"/>
+  </code>
+  <subject>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="João Carlos Silva"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+    <display value="Ambulatorial"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2023-12-12T09:00:00-03:00"/>
+    <end value="2023-12-12T10:30:00-03:00"/>
+  </performedPeriod>
+  <performer>
+    <function>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/participant-type"/>
+        <code value="emergency"/>
+        <display value="Emergency"/>
+      </coding>
+      <text value="Emergência"/>
+    </function>
+    <actor>
+      <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      <display value="Maria Clara"/>
+    </actor>
+  </performer>
+  <reasonCode>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"/>
+      <code value="I10"/>
+      <display value="Hipertensão essencial (primária)"/>
+    </coding>
+    <text value="Hipertensão essencial (primária)"/>
+  </reasonCode>
+  <bodySite>
+    <text value="Sistema Circulatório"/>
+  </bodySite>
+  <outcome>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento"/>
+      <code value="01"/>
+      <display value="Melhora Clínica"/>
+    </coding>
+    <text value="Melhora Clínica"/>
+  </outcome>
+  <report>
+    <reference value="DiagnosticReport/a952a5b4-2bc5-42f8-a3de-af67ec3ea791"/>
+    <display value="Relatório consulta"/>
+  </report>
+  <complicationDetail>
+    <reference value="Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"/>
+    <display value="Dispnéia"/>
+  </complicationDetail>
+  <followUp>
+    <text value="Consulta de acompanhamento em 2 semanas"/>
+  </followUp>
+  <note>
+    <text value="O paciente foi orientado a fazer atividade física."/>
+  </note>
+</Procedure>

@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "07ce5462-f77b-4ad6-af8c-2f67a6500b97"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation 07ce5462-f77b-4ad6-af8c-2f67a6500b97</b></p><a name=\"07ce5462-f77b-4ad6-af8c-2f67a6500b97\"> </a><a name=\"hc07ce5462-f77b-4ad6-af8c-2f67a6500b97\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 85354-9}\">Blood Pressure</span></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">José da Silva</a></p><p><b>encounter</b>: <a href=\"Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html\">Ambulatorial</a></p><p><b>effective</b>: 2025-01-13 08:30:00+0000</p><p><b>issued</b>: 2025-01-13 08:35:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 120 mmHg<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigomm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 80 mmHg<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigomm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ] ;
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:85354-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "85354-9" ] ;
+       fhir:Coding.display [ fhir:value "Blood pressure panel with all children optional" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Blood Pressure" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "José da Silva" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df> ;
+     fhir:Reference.reference [ fhir:value "Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df" ] ;
+     fhir:Reference.display [ fhir:value "Ambulatorial" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2025-01-13T08:30:00Z"^^xsd:dateTime] ;
+  fhir:Observation.issued [ fhir:value "2025-01-13T08:35:00Z"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8480-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8480-6" ] ;
+         fhir:Coding.display [ fhir:value "BP sys" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Systolic blood pressure" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mmHg" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8462-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8462-4" ] ;
+         fhir:Coding.display [ fhir:value "BP dias" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Diastolic blood pressure" ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "80"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mmHg" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

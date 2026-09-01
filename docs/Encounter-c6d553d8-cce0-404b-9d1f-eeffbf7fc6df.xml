@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Encounter c6d553d8-cce0-404b-9d1f-eeffbf7fc6df</b></p><a name="c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"> </a><a name="hcc6d553d8-cce0-404b-9d1f-eeffbf7fc6df"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (Ambulatory)</p><p><b>type</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado 02}">Ambulatorial</span></p><p><b>priority</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}">Rotina</span></p><p><b>subject</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">João Carlos Silva</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ADM}">Executor Primário</span></td><td><a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></td></tr></table><p><b>period</b>: 2023-12-12 09:00:00-0300 --&gt; 2023-12-12 09:30:00-0300</p><p><b>reasonCode</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 R06.0}">Dor precordial</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td><td><b>Use</b></td><td><b>Rank</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition-91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.html">Dispnéia</a></td><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/diagnosis-role CC}">Queixa Principal</span></td><td>1</td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html">HOSPITAL DIA</a></td><td>Active</td></tr></table><p><b>serviceProvider</b>: <a href="Organization-1428c345-c221-411f-880f-6fb163817387.html">Hospital Sírio-Libanês</a></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="Ambulatory"/>
+  </class>
+  <type>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado"/>
+      <code value="02"/>
+      <display value="AMBULATORIAL"/>
+    </coding>
+    <text value="Ambulatorial"/>
+  </type>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+      <code value="R"/>
+      <display value="routine"/>
+    </coding>
+    <text value="Rotina"/>
+  </priority>
+  <subject>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="João Carlos Silva"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="ADM"/>
+        <display value="admitter"/>
+      </coding>
+      <text value="Executor Primário"/>
+    </type>
+    <individual>
+      <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      <display value="Maria Clara"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2023-12-12T09:00:00-03:00"/>
+    <end value="2023-12-12T09:30:00-03:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"/>
+      <code value="R06.0"/>
+      <display value="Dispnéia"/>
+    </coding>
+    <text value="Dor precordial"/>
+  </reasonCode>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"/>
+      <display value="Dispnéia"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role"/>
+        <code value="CC"/>
+        <display value="Chief complaint"/>
+      </coding>
+      <text value="Queixa Principal"/>
+    </use>
+    <rank value="1"/>
+  </diagnosis>
+  <location>
+    <location>
+      <reference value="Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba"/>
+      <display value="HOSPITAL DIA"/>
+    </location>
+    <status value="active"/>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+    <display value="Hospital Sírio-Libanês"/>
+  </serviceProvider>
+</Encounter>

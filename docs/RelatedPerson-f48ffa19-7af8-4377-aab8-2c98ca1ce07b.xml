@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="f48ffa19-7af8-4377-aab8-2c98ca1ce07b"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: RelatedPerson f48ffa19-7af8-4377-aab8-2c98ca1ce07b</b></p><a name="f48ffa19-7af8-4377-aab8-2c98ca1ce07b"> </a><a name="hcf48ffa19-7af8-4377-aab8-2c98ca1ce07b"> </a><p><b>identifier</b>: <a href="file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cns.html" title="CARTÃO NACIONAL DE SAÚDE">NamingSystemCNS</a>/123456789012345 (utilização: official, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">José da Silva</a></p><p><b>relationship</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SPS}">Cônjuge</span></p><p><b>name</b>: Maria de Souza(Official)</p><p><b>telecom</b>: <a href="tel:+55-11-98765-4321">+55-11-98765-4321</a>, <a href="mailto:maria.souza@example.com">maria.souza@example.com</a></p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1985-06-15</p><p><b>address</b>: Rua das Flores, 123 São Paulo SP 01234-567 BR (home)</p><h3>Communications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{urn:ietf:bcp:47 pt-BR}">Portuguese (Brazil)</span></td><td>true</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://saude.gov.br/fhir/sid/cns"/>
+    <value value="123456789012345"/>
+  </identifier>
+  <active value="true"/>
+  <patient>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="José da Silva"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="SPS"/>
+      <display value="Spouse"/>
+    </coding>
+    <text value="Cônjuge"/>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <text value="Maria de Souza"/>
+    <family value="Souza"/>
+    <given value="Maria"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55-11-98765-4321"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="maria.souza@example.com"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1985-06-15"/>
+  <address>
+    <use value="home"/>
+    <type value="both"/>
+    <line value="Rua das Flores, 123"/>
+    <city value="São Paulo"/>
+    <district value="Jardim Paulista"/>
+    <state value="SP"/>
+    <postalCode value="01234-567"/>
+    <country value="BR"/>
+  </address>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="pt-BR"/>
+        <display value="Portuguese (Brazil)"/>
+      </coding>
+    </language>
+    <preferred value="true"/>
+  </communication>
+</RelatedPerson>

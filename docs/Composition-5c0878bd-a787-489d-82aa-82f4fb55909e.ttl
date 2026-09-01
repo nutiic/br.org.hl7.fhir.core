@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Composition/5c0878bd-a787-489d-82aa-82f4fb55909e> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "5c0878bd-a787-489d-82aa-82f4fb55909e"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Composition 5c0878bd-a787-489d-82aa-82f4fb55909e</b></p><a name=\"5c0878bd-a787-489d-82aa-82f4fb55909e\"> </a><a name=\"hc5c0878bd-a787-489d-82aa-82f4fb55909e\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Códigos:{http://loinc.org 11488-4}\">Nota de Consulta Especializada</span></p><p><b>category</b>: <span title=\"Códigos:{http://loinc.org 11488-4}\">Consult note</span></p><p><b>encounter</b>: <a href=\"Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html\">Ambulatorial</a></p><p><b>date</b>: 2024-02-06 10:00:00+0000</p><p><b>author</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>title</b>: Nota de Consulta Especializada</p><p><b>confidentiality</b>: normal</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Professional</td><td>2024-02-06 10:30:00+0000</td><td><a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-1428c345-c221-411f-880f-6fb163817387.html\">Hospital Sírio-Libanês</a></p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Nota de Consulta Especializada" ]
+  ] ;
+  fhir:Composition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b1997888-85fd-41b6-bf94-6242cf3c8265> ;
+     fhir:Reference.reference [ fhir:value "Patient/b1997888-85fd-41b6-bf94-6242cf3c8265" ] ;
+     fhir:Reference.display [ fhir:value "Ana Beatriz" ]
+  ] ;
+  fhir:Composition.encounter [
+     fhir:link <https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df> ;
+     fhir:Reference.reference [ fhir:value "Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df" ] ;
+     fhir:Reference.display [ fhir:value "Ambulatorial" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2024-02-06T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Nota de Consulta Especializada"] ;
+  fhir:Composition.confidentiality [ fhir:value "N"] ;
+  fhir:Composition.attester [
+     fhir:index 0 ;
+     fhir:Composition.attester.mode [ fhir:value "professional" ] ;
+     fhir:Composition.attester.time [ fhir:value "2024-02-06T10:30:00Z"^^xsd:dateTime ] ;
+     fhir:Composition.attester.party [
+       fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara" ]
+     ]
+  ] ;
+  fhir:Composition.custodian [
+     fhir:link <https://br-core.saude.gov.br/fhir/Organization/1428c345-c221-411f-880f-6fb163817387> ;
+     fhir:Reference.reference [ fhir:value "Organization/1428c345-c221-411f-880f-6fb163817387" ] ;
+     fhir:Reference.display [ fhir:value "Hospital Sírio-Libanês" ]
+  ] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "Diagnósticos Avaliados" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:57852-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "57852-6" ] ;
+         fhir:Coding.display [ fhir:value "Problem list Reported" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5> ;
+       fhir:Reference.reference [ fhir:value "Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Composition.section.title [ fhir:value "Alergias e Intolerâncias" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:48765-2 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "48765-2" ] ;
+         fhir:Coding.display [ fhir:value "Allergies and adverse reactions Document" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34> ;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Composition.section.title [ fhir:value "Solicitações de Procedimentos" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:42349-1 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "42349-1" ] ;
+         fhir:Coding.display [ fhir:value "Reason for referral (narrative)" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/ServiceRequest/d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Composition.section.title [ fhir:value "Plano de Cuidado" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:18776-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "18776-5" ] ;
+         fhir:Coding.display [ fhir:value "Plan of care note" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532> ;
+       fhir:Reference.reference [ fhir:value "CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Composition/5c0878bd-a787-489d-82aa-82f4fb55909e.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

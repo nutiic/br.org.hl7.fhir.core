@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Organization/2b9c99c6-f9c9-42f0-a107-ed5f0d806995> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "2b9c99c6-f9c9-42f0-a107-ed5f0d806995"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization 2b9c99c6-f9c9-42f0-a107-ed5f0d806995</b></p><a name=\"2b9c99c6-f9c9-42f0-a107-ed5f0d806995\"> </a><a name=\"hc2b9c99c6-f9c9-42f0-a107-ed5f0d806995\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>identifier</b>: Tax ID number/12345678909 (utilização: official, ), Provider number/7654321 (utilização: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude 22}\">Consultório Médico</span></p><p><b>name</b>: Consultório Dr. José Silva</p><p><b>alias</b>: Consultório José Silva</p><p><b>telecom</b>: <a href=\"tel:+55-11-98765-4321\">+55-11-98765-4321</a>, <a href=\"mailto:contato@consultoriojosesilva.com.br\">contato@consultoriojosesilva.com.br</a></p><p><b>address</b>: Rua das Clínicas, 123 São Paulo SP 01000-000 BR (work)</p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/contactentity-type ADMIN}\">Administrative</span></p><p><b>name</b>: Secretaria Administrativa</p><p><b>telecom</b>: <a href=\"tel:+55-11-98765-4321\">+55-11-98765-4321</a>, <a href=\"mailto:administracao@consultoriojosesilva.com.br\">administracao@consultoriojosesilva.com.br</a></p></blockquote></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ] ;
+         fhir:Coding.display [ fhir:value "Tax ID number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cpf" ] ;
+     fhir:Identifier.value [ fhir:value "12345678909" ] ;
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Número do CPF" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PRN" ] ;
+         fhir:Coding.display [ fhir:value "Provider number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cnes" ] ;
+     fhir:Identifier.value [ fhir:value "7654321" ] ;
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Número CNES - Cadastro Nacional de Estabelecimentos de Saúde" ]
+     ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude" ] ;
+       fhir:Coding.code [ fhir:value "22" ] ;
+       fhir:Coding.display [ fhir:value "CONSULTORIO ISOLADO" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Consultório Médico" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Consultório Dr. José Silva"] ;
+  fhir:Organization.alias [
+     fhir:value "Consultório José Silva" ;
+     fhir:index 0
+  ] ;
+  fhir:Organization.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55-11-98765-4321" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "contato@consultoriojosesilva.com.br" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.line [
+       fhir:value "Rua das Clínicas, 123" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "São Paulo" ] ;
+     fhir:Address.district [ fhir:value "Centro" ] ;
+     fhir:Address.state [ fhir:value "SP" ] ;
+     fhir:Address.postalCode [ fhir:value "01000-000" ] ;
+     fhir:Address.country [ fhir:value "BR" ]
+  ] ;
+  fhir:Organization.contact [
+     fhir:index 0 ;
+     fhir:Organization.contact.purpose [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/contactentity-type" ] ;
+         fhir:Coding.code [ fhir:value "ADMIN" ] ;
+         fhir:Coding.display [ fhir:value "Administrative" ]
+       ]
+     ] ;
+     fhir:Organization.contact.name [
+       fhir:HumanName.text [ fhir:value "Secretaria Administrativa" ]
+     ] ;
+     fhir:Organization.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+55-11-98765-4321" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "administracao@consultoriojosesilva.com.br" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Organization/2b9c99c6-f9c9-42f0-a107-ed5f0d806995.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

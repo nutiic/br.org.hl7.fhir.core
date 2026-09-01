@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="58a7b01f-72e8-411a-b1c0-5f7728ab7c51"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: HealthcareService 58a7b01f-72e8-411a-b1c0-5f7728ab7c51</b></p><a name="58a7b01f-72e8-411a-b1c0-5f7728ab7c51"> </a><a name="hc58a7b01f-72e8-411a-b1c0-5f7728ab7c51"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>identifier</b>: <a href="file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cnes.html" title="CADASTRO NACIONAL DE ESTABELECIMENTOS DE SAÚDE">NamingSystemCNES</a>/2788578</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization-2b9c99c6-f9c9-42f0-a107-ed5f0d806995.html">Consultório Dr. José Silva</a></p><p><b>category</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude 2}">CENTRO DE SAUDE/UNIDADE BASICA</span></p><p><b>type</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude 2}">CENTRO DE SAUDE/UNIDADE BASICA</span></p><p><b>name</b>: UBS INDIANOPOLIS SIGMUND FREUD</p><p><b>telecom</b>: <a href="tel:+55113394-0200">+55 11 3394-0200</a>, <a href="mailto:administracao@consultoriojosesilva.com.br">administracao@consultoriojosesilva.com.br</a></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Tuesday, Wednesday, Thursday, Friday</p></blockquote><p><b>availabilityExceptions</b>: 24 X 7</p></div>
+  </text>
+  <identifier>
+    <system value="https://saude.gov.br/fhir/sid/cnes"/>
+    <value value="2788578"/>
+  </identifier>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/2b9c99c6-f9c9-42f0-a107-ed5f0d806995"/>
+    <display value="Consultório Dr. José Silva"/>
+  </providedBy>
+  <category>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"/>
+      <code value="2"/>
+      <display value="CENTRO DE SAUDE/UNIDADE BASICA"/>
+    </coding>
+  </category>
+  <type>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"/>
+      <code value="2"/>
+      <display value="CENTRO DE SAUDE/UNIDADE BASICA"/>
+    </coding>
+  </type>
+  <name value="UBS INDIANOPOLIS SIGMUND FREUD"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55 11 3394-0200"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="administracao@consultoriojosesilva.com.br"/>
+    <use value="work"/>
+  </telecom>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+  </availableTime>
+  <availabilityExceptions value="24 X 7"/>
+</HealthcareService>

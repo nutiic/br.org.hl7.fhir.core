@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="7b98fd1d-5f85-40f5-9436-2c767ab734ae"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Organization 7b98fd1d-5f85-40f5-9436-2c767ab734ae</b></p><a name="7b98fd1d-5f85-40f5-9436-2c767ab734ae"> </a><a name="hc7b98fd1d-5f85-40f5-9436-2c767ab734ae"> </a><p><b>identifier</b>: Tax ID number/60643228000161 (utilização: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Aché Laboratórios Farmacêuticos S.A.</p><p><b>alias</b>: Aché</p><p><b>telecom</b>: <a href="tel:+55-11-1234-5678">+55-11-1234-5678</a>, <a href="mailto:contato@ache.com.br">contato@ache.com.br</a></p><p><b>address</b>: Rodovia Dom Pedro I, Km 62 Guarulhos SP 07000-000 BR (work)</p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/contactentity-type ADMIN}">Administrative</span></p><p><b>name</b>: Departamento Administrativo</p><p><b>telecom</b>: <a href="tel:+55-11-1234-5679">+55-11-1234-5679</a>, <a href="mailto:administrativo@ache.com.br">administrativo@ache.com.br</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+        <display value="Tax ID number"/>
+      </coding>
+    </type>
+    <system value="https://saude.gov.br/fhir/sid/cnpj"/>
+    <value value="60643228000161"/>
+    <assigner>
+      <display value="CADASTRO NACIONAL DE PESSOA JURÍDICA"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name value="Aché Laboratórios Farmacêuticos S.A."/>
+  <alias value="Aché"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55-11-1234-5678"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="contato@ache.com.br"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <line value="Rodovia Dom Pedro I, Km 62"/>
+    <city value="Guarulhos"/>
+    <district value="Ponte Grande"/>
+    <state value="SP"/>
+    <postalCode value="07000-000"/>
+    <country value="BR"/>
+  </address>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <text value="Departamento Administrativo"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+55-11-1234-5679"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="administrativo@ache.com.br"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+</Organization>

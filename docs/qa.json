@@ -1,0 +1,20 @@
+{
+  "url" : "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir",
+  "name" : "BRCORE",
+  "title" : "Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1",
+  "description" : "Guia de Implementação Core de Interoperabilidade em Saúde Digital do Brasil.",
+  "ig-date" : "2023-05-08",
+  "status" : "active",
+  "package-id" : "br.gov.saude.br-core.fhir",
+  "ig-ver" : "1.1.0",
+  "date" : "Tue, 01 Sep, 2026 10:20:38 -0400",
+  "dateISO8601" : "2026-09-01T10:20:38-04:00",
+  "errs" : 13,
+  "warnings" : 141,
+  "hints" : 148,
+  "suppressed-hints" : 107,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2514504688
+}

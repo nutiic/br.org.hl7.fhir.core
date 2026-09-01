@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Condition 91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5</b></p><a name=\"91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5\"> </a><a name=\"hc91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>clinicalStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico 01}\">Principal</span></p><p><b>severity</b>: <span title=\"Códigos:{http://snomed.info/sct 6736007}\">Moderate severity</span></p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 B34.2}\">Infecção por coronavírus de localização não especificada</span></p><p><b>bodySite</b>: <span title=\"Códigos:{http://snomed.info/sct 80891009}\">Coração</span></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">João Carlos Silva</a></p><p><b>encounter</b>: <a href=\"Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html\">Ambulatorial</a></p><p><b>onset</b>: 2024-03-28</p><p><b>recordedDate</b>: 2024-04-05 10:00:00+0000</p><p><b>recorder</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>asserter</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 R50.9}, {https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 R05}\">Febre não especificada</span></td><td><a href=\"Observation-07ce5462-f77b-4ad6-af8c-2f67a6500b97.html\">Vital Signs</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Paciente apresentou melhora significativa após início do tratamento com antibióticos.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ] ;
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico" ] ;
+       fhir:Coding.code [ fhir:value "01" ] ;
+       fhir:Coding.display [ fhir:value "Principal" ]
+     ]
+  ] ;
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:6736007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "6736007" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10" ] ;
+       fhir:Coding.code [ fhir:value "B34.2" ] ;
+       fhir:Coding.display [ fhir:value "Infecção por coronavírus de localização não especificada" ]
+     ]
+  ] ;
+  fhir:Condition.bodySite [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:80891009 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "80891009" ] ;
+       fhir:Coding.display [ fhir:value "Heart structure (body structure)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Coração" ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.type [ fhir:value "Patient" ] ;
+     fhir:Reference.display [ fhir:value "João Carlos Silva" ]
+  ] ;
+  fhir:Condition.encounter [
+     fhir:link <https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df> ;
+     fhir:Reference.reference [ fhir:value "Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df" ] ;
+     fhir:Reference.display [ fhir:value "Ambulatorial" ]
+  ] ;
+  fhir:Condition.onsetDateTime [ fhir:value "2024-03-28"^^xsd:date] ;
+  fhir:Condition.recordedDate [ fhir:value "2024-04-05T10:00:00Z"^^xsd:dateTime] ;
+  fhir:Condition.recorder [
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Condition.asserter [
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Condition.evidence [
+     fhir:index 0 ;
+     fhir:Condition.evidence.code [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10" ] ;
+         fhir:Coding.code [ fhir:value "R50.9" ] ;
+         fhir:Coding.display [ fhir:value "Febre não especificada" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10" ] ;
+         fhir:Coding.code [ fhir:value "R05" ] ;
+         fhir:Coding.display [ fhir:value "Tosse" ]
+       ]
+     ] ;
+     fhir:Condition.evidence.detail [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97> ;
+       fhir:Reference.reference [ fhir:value "Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97" ] ;
+       fhir:Reference.display [ fhir:value "Vital Signs" ]
+     ]
+  ] ;
+  fhir:Condition.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Paciente apresentou melhora significativa após início do tratamento com antibióticos." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

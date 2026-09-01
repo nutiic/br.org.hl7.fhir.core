@@ -1,0 +1,386 @@
+{
+  "package": "br.gov.saude.br-core.fhir",
+  "version": "1.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BR",
+  "extensions": [
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-aldeia",
+      "title": "Aldeia Indígena",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei",
+      "title": "Distrito Sanitário Especial Indígena (DSEI)",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo",
+      "title": "Polo Base",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd",
+      "title": "Extensão do perfil BRCoreConsent define extensões específicas para atender aos requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport-conduta",
+      "title": "BR Core DiagnosticReport Conduta",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica",
+      "title": "Extensão de pesquisa clínica do Core do Brasil",
+      "types": [
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional",
+      "title": "Extensão de populacao tradicional do Core do Brasil",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante",
+      "title": "Extensão de povo itinerante do Core do Brasil",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance",
+        "title": "br-core-allergyintolerance"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-appointment",
+        "title": "br-core-appointment"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-condition",
+        "title": "BRCoreCondition"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careplan",
+        "title": "BRCoreCarePlan"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam",
+        "title": "br-core-careteam"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-sumarioalta",
+        "title": "br-core-sumarioalta"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent",
+        "title": "br-core-consent"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport",
+        "title": "BRCoreDiagnosticReport"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-encounter",
+        "title": "br-core-encounter"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
+        "title": "br-core-healthcareservice"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-immunization",
+        "title": "BRCoreImmunization"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
+        "title": "br-core-location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication",
+        "title": "br-core-medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationadministration",
+        "title": "br-core-medicationadministration"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationdispense",
+        "title": "br-core-medicationdispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationrequest",
+        "title": "br-core-medicationrequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationstatement",
+        "title": "br-core-medicationstatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-vitalsigns",
+        "title": "BRCoreVitalSigns"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
+        "title": "BRCoreOrganization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient",
+        "title": "BRCorePatient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner",
+        "title": "BRCorePractitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
+        "title": "BRCorePractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-procedure",
+        "title": "BRCoreProcedure"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
+        "title": "BRCoreRelatedPerson"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-schedule",
+        "title": "br-core-schedule"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-servicerequest",
+        "title": "BRCoreServiceRequest"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-slot",
+        "title": "br-core-slot"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-specimen",
+        "title": "BRCoreSpecimen"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-aldeia": [
+      "Address"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei": [
+      "Address"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo": [
+      "Address"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd": [
+      "Consent"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport-conduta": [
+      "DiagnosticReport"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica": [
+      "Immunization.protocolApplied"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional": [
+      "Patient"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/identidade-genero-br-ips": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/povo-indigena-br-ips": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/sexo-nascimento-br-ips": [
+      "Patient"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/90e2319e-dc54-4379-88f3-13c5e74e924e> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "90e2319e-dc54-4379-88f3-13c5e74e924e"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation 90e2319e-dc54-4379-88f3-13c5e74e924e</b></p><a name=\"90e2319e-dc54-4379-88f3-13c5e74e924e\"> </a><a name=\"hc90e2319e-dc54-4379-88f3-13c5e74e924e\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 11778-8}\">Data estimada do parto</span></p><p><b>subject</b>: <a href=\"Patient-c3a40500-5fe8-47f1-b21a-dce205e6c617.html\">Maria Fernanda Souza (official) Female, DoB: 1992-07-15 ( Health Card Number: NamingSystemCNS#876543210987654 (use: official, ))</a></p><p><b>effective</b>: 2020-01-10</p><p><b>performer</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>value</b>: 2020-05-02</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "social-history" ] ;
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11778-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11778-8" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Data estimada do parto" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617> ;
+     fhir:Reference.reference [ fhir:value "Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-01-10"^^xsd:date] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Observation.valueDateTime [ fhir:value "2020-05-02"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Observation/90e2319e-dc54-4379-88f3-13c5e74e924e.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

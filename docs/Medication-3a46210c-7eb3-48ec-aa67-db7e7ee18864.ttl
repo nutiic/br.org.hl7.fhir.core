@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "3a46210c-7eb3-48ec-aa67-db7e7ee18864"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Medication 3a46210c-7eb3-48ec-aa67-db7e7ee18864</b></p><a name=\"3a46210c-7eb3-48ec-aa67-db7e7ee18864\"> </a><a name=\"hc3a46210c-7eb3-48ec-aa67-db7e7ee18864\"> </a><p><b>code</b>: <span title=\"Códigos:{http://www.whocc.no/atc J01MA12}\">Levofloxacino; sistêmico</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-7b98fd1d-5f85-40f5-9436-2c767ab734ae.html\">Aché Laboratórios Farmacêuticos S.A.</a></p></div>"
+  ] ;
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.code [ fhir:value "J01MA12" ] ;
+       fhir:Coding.display [ fhir:value "levofloxacino" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Levofloxacino; sistêmico" ]
+  ] ;
+  fhir:Medication.status [ fhir:value "active"] ;
+  fhir:Medication.manufacturer [
+     fhir:link <https://br-core.saude.gov.br/fhir/Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae> ;
+     fhir:Reference.reference [ fhir:value "Organization/7b98fd1d-5f85-40f5-9436-2c767ab734ae" ] ;
+     fhir:Reference.display [ fhir:value "Aché Laboratórios Farmacêuticos S.A." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

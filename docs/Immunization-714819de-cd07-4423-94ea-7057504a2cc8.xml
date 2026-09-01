@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="714819de-cd07-4423-94ea-7057504a2cc8"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Immunization 714819de-cd07-4423-94ea-7057504a2cc8</b></p><a name="714819de-cd07-4423-94ea-7057504a2cc8"> </a><a name="hc714819de-cd07-4423-94ea-7057504a2cc8"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>identifier</b>: <code>https://hospital.example.org/immunizations</code>/IMM12345</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRImunobiologico 87}">Vacina PFIZER COMINARTY COVID-19</span></p><p><b>patient</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">José da Silva</a></p><p><b>occurrence</b>: 2024-06-01 14:30:00+0000</p><p><b>primarySource</b>: true</p><p><b>reportOrigin</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRegistroOrigem 2}">Vaccination abroad</span></p><p><b>location</b>: <a href="Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html">Clínica Geral - Enfermaria Norte</a></p><p><b>manufacturer</b>: Pfizer</p><p><b>lotNumber</b>: 12345AB</p><p><b>expirationDate</b>: 2024-12-31</p><p><b>site</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRLocalAplicacao 20}">Face Anterolateral Externa do Braço Esquerdo</span></p><p><b>route</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRViaAdministracao 10890}">Intramuscular</span></p><p><b>doseQuantity</b>: 0.3 mL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomL = 'mL')</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 223505}">ENFERMEIRO</span></td><td><a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></td></tr></table><p><b>reasonCode</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BREstrategiaVacinacao 1}">Rotina</span></p><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td/><td>COVID-19 Primary Series</td><td><span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 U04}">Síndrome respiratória aguda grave [severe acute respiratory syndrome SARS]</span></td><td>1</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://hospital.example.org/immunizations"/>
+    <value value="IMM12345"/>
+  </identifier>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRImunobiologico"/>
+      <code value="87"/>
+      <display value="COVID-19 PFIZER - COMIRNATY"/>
+    </coding>
+    <text value="Vacina PFIZER COMINARTY COVID-19"/>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="José da Silva"/>
+  </patient>
+  <occurrenceDateTime value="2024-06-01T14:30:00Z"/>
+  <primarySource value="true"/>
+  <reportOrigin>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRRegistroOrigem"/>
+      <code value="2"/>
+      <display value="Vaccination abroad"/>
+    </coding>
+  </reportOrigin>
+  <location>
+    <reference value="Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba"/>
+    <display value="Clínica Geral - Enfermaria Norte"/>
+  </location>
+  <manufacturer>
+    <display value="Pfizer"/>
+  </manufacturer>
+  <lotNumber value="12345AB"/>
+  <expirationDate value="2024-12-31"/>
+  <site>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRLocalAplicacao"/>
+      <code value="20"/>
+      <display value="Face Anterolateral Externa do Braço Esquerdo"/>
+    </coding>
+  </site>
+  <route>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRViaAdministracao"/>
+      <code value="10890"/>
+      <display value="Intramuscular"/>
+    </coding>
+  </route>
+  <doseQuantity>
+    <value value="0.3"/>
+    <unit value="mL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL"/>
+  </doseQuantity>
+  <performer>
+    <function>
+      <coding>
+        <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+        <code value="223505"/>
+        <display value="ENFERMEIRO"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      <display value="Maria Clara"/>
+    </actor>
+  </performer>
+  <reasonCode>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BREstrategiaVacinacao"/>
+      <code value="1"/>
+      <display value="Rotina"/>
+    </coding>
+  </reasonCode>
+  <protocolApplied>
+    <extension url="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica">
+      <extension url="numeroProtocoloEstudoANVISA">
+        <valueString value="12345-ANVISA"/>
+      </extension>
+      <extension url="numeroVersaoProtocoloEstudo">
+        <valueString value="v1.0"/>
+      </extension>
+      <extension url="numeroRegistroVacinaAnvisa">
+        <valueString value="98765-VAC"/>
+      </extension>
+    </extension>
+    <series value="COVID-19 Primary Series"/>
+    <targetDisease>
+      <coding>
+        <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"/>
+        <code value="U04"/>
+        <display value="Síndrome respiratória aguda grave [severe acute respiratory syndrome SARS]"/>
+      </coding>
+    </targetDisease>
+    <doseNumberString value="1"/>
+  </protocolApplied>
+</Immunization>

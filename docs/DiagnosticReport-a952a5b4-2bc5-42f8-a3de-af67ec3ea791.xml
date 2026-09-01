@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="a952a5b4-2bc5-42f8-a3de-af67ec3ea791"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: DiagnosticReport a952a5b4-2bc5-42f8-a3de-af67ec3ea791</b></p><a name="a952a5b4-2bc5-42f8-a3de-af67ec3ea791"> </a><a name="hca952a5b4-2bc5-42f8-a3de-af67ec3ea791"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><h2><span title="Códigos:{http://loinc.org 85354-9}">Blood pressure panel with all children optional</span> (<span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado 145}">SERVICO DE DIAGNOSTICO DE LABORATORIO CLINICO</span>) </h2><table class="grid"><tr><td>Assunto</td><td>Ana Beatriz Oliveira (official) Female, DoB: 2018-09-25 ( Health Card Number: NamingSystemCNS#765432109876543 (use: official, ))</td></tr><tr><td>Quando Para</td><td>2024-12-19 14:30:00+0000</td></tr><tr><td>Comunicado</td><td>2024-12-19 16:00:00+0000</td></tr><tr><td>Intérprete</td><td> <a href="Organization-1428c345-c221-411f-880f-6fb163817387.html">Hospital Sírio-Libanês</a></td></tr></table><p><b>Detalhes do relatório</b></p><table class="grid"><tr><td><b>Código</b></td><td><b>Valor</b></td><td><b>Bandeiras</b></td><td><b>Nota</b></td><td><b>Quando Para</b></td><td><b>Comunicado</b></td></tr><tr><td><a href="Observation-07ce5462-f77b-4ad6-af8c-2f67a6500b97.html"><span title="Códigos:{http://loinc.org 85354-9}">Blood Pressure</span></a></td><td/><td>Final</td><td/><td>2025-01-13 08:30:00+0000</td><td>2025-01-13 08:35:00+0000</td></tr><tr><td><a href="Observation-52ba1c80-5d2c-4faf-8c90-f4363e20d7bb.html"><span title="Códigos:{http://loinc.org 24331-1}">Colesterol total e frações</span></a></td><td/><td>Final</td><td><blockquote><div><p>Paciente orientado para seguir com dieta saudável e exercícios para gerenciar colesterol</p>
+</div></blockquote></td><td>2025-01-13 08:00:00+0000</td><td>2025-01-13 08:30:00+0000</td></tr></table><p>Resultados dentro dos limites normais.</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado"/>
+      <code value="145"/>
+      <display value="SERVICO DE DIAGNOSTICO DE LABORATORIO CLINICO"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85354-9"/>
+      <display value="Blood pressure panel with all children optional"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b1997888-85fd-41b6-bf94-6242cf3c8265"/>
+    <display value="Ana Beatriz"/>
+  </subject>
+  <effectiveDateTime value="2024-12-19T14:30:00Z"/>
+  <issued value="2024-12-19T16:00:00Z"/>
+  <performer>
+    <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+    <display value="Hospital Sírio-Libanês"/>
+  </performer>
+  <result>
+    <reference value="Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97"/>
+    <display value="Blood Pressure"/>
+  </result>
+  <result>
+    <reference value="Observation/52ba1c80-5d2c-4faf-8c90-f4363e20d7bb"/>
+    <display value="Colesterol total e frações"/>
+  </result>
+  <conclusion value="Resultados dentro dos limites normais."/>
+</DiagnosticReport>

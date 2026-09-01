@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Encounter c6d553d8-cce0-404b-9d1f-eeffbf7fc6df</b></p><a name=\"c6d553d8-cce0-404b-9d1f-eeffbf7fc6df\"> </a><a name=\"hcc6d553d8-cce0-404b-9d1f-eeffbf7fc6df\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (Ambulatory)</p><p><b>type</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado 02}\">Ambulatorial</span></p><p><b>priority</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">Rotina</span></p><p><b>subject</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">João Carlos Silva</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ADM}\">Executor Primário</span></td><td><a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></td></tr></table><p><b>period</b>: 2023-12-12 09:00:00-0300 --&gt; 2023-12-12 09:30:00-0300</p><p><b>reasonCode</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 R06.0}\">Dor precordial</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td><td><b>Use</b></td><td><b>Rank</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.html\">Dispnéia</a></td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/diagnosis-role CC}\">Queixa Principal</span></td><td>1</td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html\">HOSPITAL DIA</a></td><td>Active</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-1428c345-c221-411f-880f-6fb163817387.html\">Hospital Sírio-Libanês</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "Ambulatory" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado" ] ;
+       fhir:Coding.code [ fhir:value "02" ] ;
+       fhir:Coding.display [ fhir:value "AMBULATORIAL" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Ambulatorial" ]
+  ] ;
+  fhir:Encounter.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActPriority" ] ;
+       fhir:Coding.code [ fhir:value "R" ] ;
+       fhir:Coding.display [ fhir:value "routine" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Rotina" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "João Carlos Silva" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "ADM" ] ;
+         fhir:Coding.display [ fhir:value "admitter" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Executor Primário" ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2023-12-12T09:00:00-03:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2023-12-12T09:30:00-03:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10" ] ;
+       fhir:Coding.code [ fhir:value "R06.0" ] ;
+       fhir:Coding.display [ fhir:value "Dispnéia" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Dor precordial" ]
+  ] ;
+  fhir:Encounter.diagnosis [
+     fhir:index 0 ;
+     fhir:Encounter.diagnosis.condition [
+       fhir:link <https://br-core.saude.gov.br/fhir/Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5> ;
+       fhir:Reference.reference [ fhir:value "Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5" ] ;
+       fhir:Reference.display [ fhir:value "Dispnéia" ]
+     ] ;
+     fhir:Encounter.diagnosis.use [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/diagnosis-role" ] ;
+         fhir:Coding.code [ fhir:value "CC" ] ;
+         fhir:Coding.display [ fhir:value "Chief complaint" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Queixa Principal" ]
+     ] ;
+     fhir:Encounter.diagnosis.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index 0 ;
+     fhir:Encounter.location.location [
+       fhir:link <https://br-core.saude.gov.br/fhir/Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba> ;
+       fhir:Reference.reference [ fhir:value "Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba" ] ;
+       fhir:Reference.display [ fhir:value "HOSPITAL DIA" ]
+     ] ;
+     fhir:Encounter.location.status [ fhir:value "active" ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://br-core.saude.gov.br/fhir/Organization/1428c345-c221-411f-880f-6fb163817387> ;
+     fhir:Reference.reference [ fhir:value "Organization/1428c345-c221-411f-880f-6fb163817387" ] ;
+     fhir:Reference.display [ fhir:value "Hospital Sírio-Libanês" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,113 @@
+# BR.GOV.SAUDE.BR-CORE.FHIR\80589c80-643e-43ea-801b-5f32616e9a27 - FHIR v4.0.1
+
+* [**Table of Contents**](toc.md)
+* [**Lista de artefatos**](artifacts.md)
+* **80589c80-643e-43ea-801b-5f32616e9a27**
+
+## Example MedicationDispense: 80589c80-643e-43ea-801b-5f32616e9a27
+
+| |
+| :--- |
+|  |
+
+**status**: Completed
+
+**medication**: Glucosamina
+
+**subject**: [João Carlos](Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.md)
+
+### Performers
+
+| | |
+| :--- | :--- |
+| - | **Actor** |
+| * | [Maria Clara](Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.md) |
+
+**location**: [Clínica Geral](Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.md)
+
+**quantity**: 30 comprimidos
+
+**daysSupply**: 30 days (Detalhes: UCUM códigod = 'd')
+
+**whenPrepared**: 2023-12-12 10:00:00-0300
+
+**whenHandedOver**: 2023-12-12 10:30:00-0300
+
+**destination**: [Clínica Geral](Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.md)
+
+> **dosageInstruction****text**: Tomar 1 comprimido a cada 12 horas após café da manhã e jantar.**timing**: 2 por 1 day
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | (unit 10219000 from http://standardterms.edqm.eu) (Detalhes: standardterms.edqm.eu código10219000 = 'Tablet') |
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "MedicationDispense",
+  "id" : "80589c80-643e-43ea-801b-5f32616e9a27",
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "M01AX05",
+      "display" : "glicosamina"
+    }],
+    "text" : "Glucosamina"
+  },
+  "subject" : {
+    "reference" : "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e",
+    "display" : "João Carlos"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735",
+      "display" : "Maria Clara"
+    }
+  }],
+  "location" : {
+    "reference" : "Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba",
+    "display" : "Clínica Geral"
+  },
+  "quantity" : {
+    "value" : 30,
+    "unit" : "comprimidos"
+  },
+  "daysSupply" : {
+    "value" : 30,
+    "unit" : "days",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "d"
+  },
+  "whenPrepared" : "2023-12-12T10:00:00-03:00",
+  "whenHandedOver" : "2023-12-12T10:30:00-03:00",
+  "destination" : {
+    "reference" : "Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba",
+    "display" : "Clínica Geral"
+  },
+  "dosageInstruction" : [{
+    "text" : "Tomar 1 comprimido a cada 12 horas após café da manhã e jantar.",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 2,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "10219000"
+      }
+    }]
+  }]
+}
+
+```

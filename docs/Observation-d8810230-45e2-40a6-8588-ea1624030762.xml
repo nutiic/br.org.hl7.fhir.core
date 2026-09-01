@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="d8810230-45e2-40a6-8588-ea1624030762"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Observation d8810230-45e2-40a6-8588-ea1624030762</b></p><a name="d8810230-45e2-40a6-8588-ea1624030762"> </a><a name="hcd8810230-45e2-40a6-8588-ea1624030762"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 80441-9}">Status de Aleitamento Materno</span></p><p><b>subject</b>: <a href="Patient-c3a40500-5fe8-47f1-b21a-dce205e6c617.html">Ana Beatriz</a></p><p><b>effective</b>: 2024-12-19 10:30:00+0000</p><p><b>performer</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>note</b>: </p><blockquote><div><p>Paciente está amamentando exclusivamente com leite materno desde o nascimento do bebê.</p>
+</div></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="80441-9"/>
+      <display value="Breast milk andor formula intake panel"/>
+    </coding>
+    <text value="Status de Aleitamento Materno"/>
+  </code>
+  <subject>
+    <reference value="Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617"/>
+    <display value="Ana Beatriz"/>
+  </subject>
+  <effectiveDateTime value="2024-12-19T10:30:00Z"/>
+  <performer>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </performer>
+  <note>
+    <text value="Paciente está amamentando exclusivamente com leite materno desde o nascimento do bebê."/>
+  </note>
+</Observation>

@@ -1,0 +1,1096 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "systems" : ["http://hl7.org/fhir/address-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.69"],
+    "sources" : ["2.16.840.1.113883.4.642.3.69"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "systems" : ["http://hl7.org/fhir/address-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.67"],
+    "sources" : ["2.16.840.1.113883.4.642.3.67"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentCancellationReason",
+    "title" : "Appointment cancellation reason",
+    "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1381"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1381"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentStatus",
+    "title" : "AppointmentStatus",
+    "description" : "The free/busy status of an appointment.",
+    "systems" : ["http://hl7.org/fhir/appointmentstatus"],
+    "oids" : ["2.16.840.1.113883.4.642.3.484"],
+    "sources" : ["2.16.840.1.113883.4.642.3.484"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/body-site",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTBodyStructures",
+    "title" : "SNOMED CT Body Structures",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.141"],
+    "sources" : ["2.16.840.1.113883.4.642.3.141"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.238"],
+    "sources" : ["2.16.840.1.113883.4.642.3.238"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.241"],
+    "sources" : ["2.16.840.1.113883.4.642.3.241"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.162"],
+    "sources" : ["2.16.840.1.113883.4.642.3.162"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosisRole",
+    "title" : "DiagnosisRole",
+    "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+    "oids" : ["2.16.840.1.113883.4.642.3.49"],
+    "sources" : ["2.16.840.1.113883.4.642.3.49"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentSectionCodes",
+    "title" : "Document Section Codes",
+    "description" : "Document section codes (LOINC codes used in CCDA sections).",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.237"],
+    "sources" : ["2.16.840.1.113883.4.642.3.237"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDocumentTypeCodes",
+    "title" : "FHIR Document Type Codes",
+    "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.240"],
+    "sources" : ["2.16.840.1.113883.4.642.3.240"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DocumentClassValueSet",
+    "title" : "Document Class Value Set",
+    "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.244"],
+    "sources" : ["2.16.840.1.113883.4.642.3.244"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.262"],
+    "sources" : ["2.16.840.1.113883.4.642.3.262"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Identifier Type Codes",
+    "title" : "IdentifierType",
+    "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+    "oids" : ["2.16.840.1.113883.4.642.3.45"],
+    "sources" : ["2.16.840.1.113883.4.642.3.45"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "systems" : ["http://hl7.org/fhir/identifier-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.57"],
+    "sources" : ["2.16.840.1.113883.4.642.3.57"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationFundingSource",
+    "title" : "Immunization Funding Source",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-funding-source"],
+    "oids" : ["2.16.840.1.113883.4.642.3.293"],
+    "sources" : ["2.16.840.1.113883.4.642.3.293"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.322"],
+    "sources" : ["2.16.840.1.113883.4.642.3.322"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "systems" : ["http://hl7.org/fhir/list-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.318"],
+    "sources" : ["2.16.840.1.113883.4.642.3.318"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/location-physical-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.328"],
+    "sources" : ["2.16.840.1.113883.4.642.3.328"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Performer Function Codes",
+    "title" : "Medication administration  performer  function  codes",
+    "description" : "MedicationAdministration Performer Function Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/med-admin-perform-function"],
+    "oids" : ["2.16.840.1.113883.4.642.3.349"],
+    "sources" : ["2.16.840.1.113883.4.642.3.349"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantRequired",
+    "title" : "ParticipantRequired",
+    "description" : "Is the Participant required to attend the appointment.",
+    "systems" : ["http://hl7.org/fhir/participantrequired"],
+    "oids" : ["2.16.840.1.113883.4.642.3.488"],
+    "sources" : ["2.16.840.1.113883.4.642.3.488"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/participationstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipationStatus",
+    "title" : "ParticipationStatus",
+    "description" : "The Participation status of an appointment.",
+    "systems" : ["http://hl7.org/fhir/participationstatus"],
+    "oids" : ["2.16.840.1.113883.4.642.3.486"],
+    "sources" : ["2.16.840.1.113883.4.642.3.486"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+    "title" : "SNOMED CT Reason Medication Not Given Codes",
+    "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.342"],
+    "sources" : ["2.16.840.1.113883.4.642.3.342"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/slotstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SlotStatus",
+    "title" : "SlotStatus",
+    "description" : "The free/busy status of the slot.",
+    "systems" : ["http://hl7.org/fhir/slotstatus"],
+    "oids" : ["2.16.840.1.113883.4.642.3.482"],
+    "sources" : ["2.16.840.1.113883.4.642.3.482"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRSpecimenCollectionMethod",
+    "title" : "FHIR Specimen Collection Method",
+    "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.468"],
+    "sources" : ["2.16.840.1.113883.4.642.3.468"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/edd-method-uv-ips",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "PregnancyExpectedDeliveryDateMethodUvIps",
+    "title" : "Pregnancy Expected Delivery Date Method - IPS",
+    "description" : "IPS Expected Delivery Date Method",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "MedicineDoseFormUvIps",
+    "title" : "Medicine Doseform - IPS",
+    "description" : "EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:  \n[Concept Status] = ‘Current’ AND  \n[Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND  \n[Domain] = 'Human and Veterinary'  \n\nPDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'",
+    "systems" : ["http://standardterms.edqm.eu"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-medication.html" : "br-core-medication"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "MedicineRouteOfAdministrationUvIps",
+    "title" : "Medicine Route of Administration - IPS",
+    "description" : "EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:  \n[Concept Status] = ‘Current’ AND  \n[Concept Class] = 'ROA' AND  \n[Domain] = 'Human and Veterinary'  \n\nROA = 'Route of administration'",
+    "systems" : ["http://standardterms.edqm.eu"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/pregnancies-summary-uv-ips",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "PregnanciesSummaryUvIps",
+    "title" : "Pregnancies Summary - IPS",
+    "description" : "IPS Pregnancies Summary",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "PregnancyStatusUvIps",
+    "title" : "Pregnancy Status - IPS",
+    "description" : "IPS Pregnancy Status",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0276",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSAppointmentReasonCodes",
+    "title" : "hl7VS-appointmentReasonCodes",
+    "description" : "Value Set of codes that describe the kind of appointment or the reason why an appointment has been scheduled.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
+    "oids" : ["2.16.840.1.113883.21.181"],
+    "sources" : ["2.16.840.1.113883.21.181"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSSpecimenCondition",
+    "title" : "hl7VS-specimenCondition",
+    "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+    "oids" : ["2.16.840.1.113883.21.333"],
+    "sources" : ["2.16.840.1.113883.21.333"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "v3 Code System ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActEncounterCode",
+    "title" : "ActEncounterCode",
+    "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "oids" : ["2.16.840.1.113883.1.11.13955"],
+    "sources" : ["2.16.840.1.113883.1.11.13955"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+    "version" : "2014-03-26",
+    "status" : "active",
+    "name" : "v3.ConfidentialityClassification",
+    "title" : "V3 Value SetConfidentialityClassification",
+    "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+    "oids" : ["2.16.840.1.113883.1.11.10228"],
+    "sources" : ["2.16.840.1.113883.1.11.10228"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-composition.html" : "br-core-composition"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRAlergenos",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRAlergenos",
+    "title" : "BR Alergenos",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRImunobiologico",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRAtendimentoPrestado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRAtendimentoPrestado",
+    "title" : "BR Atendimento Prestado",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCIAP2",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCIAP2",
+    "title" : "BRCIAP 2",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCIAP2"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCID10",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCID10",
+    "title" : "BRCID 10",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BRCOREN",
+    "title" : "Conselhos regionais de Enfermagem do Brasil",
+    "description" : "Conjunto de todos os conselhos regionais de enfermagem do Brasil",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BRCRF",
+    "title" : "Conselhos regionais de Farmácia do Brasil",
+    "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BRCRM",
+    "title" : "Conselhos regionais de Medicina do Brasil",
+    "description" : "Conjunto de todos os conselhos regionais de medicina do Brasil",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BRCRO",
+    "title" : "Conselhos regionais de Odontologia do Brasil",
+    "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCaraterAtendimento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCaraterAtendimento",
+    "title" : "BR Carater Atendimento",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCaraterAtendimento"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCaraterAtendimentoMIRA",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCaraterAtendimentoMIRA",
+    "title" : "BR Carater Atendimento MIRA",
+    "description" : "",
+    "systems" : ["http://hl7.org/fhir/request-priority"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCategoriaDiagnostico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCategoriaDiagnostico",
+    "title" : "BR Categoria Diagnostico",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCategoriaProcedimento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCategoriaProcedimento",
+    "title" : "BR Categoria Procedimento",
+    "description" : "",
+    "systems" : ["https://fhir.ans.gov.br/CodeSystem/tuss-50",
+    "https://fhir.ans.gov.br/CodeSystem/tuss-51",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubGrupoTabelaSUS"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCondutaColposcopia",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCondutaColposcopia",
+    "title" : "BRCondutaColposcopia",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCondutaColposcopia"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-diagnosticreport-conduta.html" : "BR Core DiagnosticReport Conduta"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRDesfechoProcedimento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRDesfechoProcedimento",
+    "title" : "BR Desfecho Procedimento",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRDose",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRDose",
+    "title" : "BR Dose",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRDose"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRElegibilidadeImunobiologico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRElegibilidadeImunobiologico",
+    "title" : "BR Elegibilidade Imunobiologico",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRElegibilidadeImunobiologico"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BREstrategiaVacinacao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BREstrategiaVacinacao",
+    "title" : "BR Estrategia Vacinacao",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BREstrategiaVacinacao"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFormaOrganizacaoTabelaSUS",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRFormaOrganizacaoTabelaSUS",
+    "title" : "BRFormaOrganizacaoTabelaSUS",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRFormaOrganizacaoTabelaSUS"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFreqUsoSubstancia",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRFreqUsoSubstancia",
+    "title" : "BRFreqUsoSubstancia",
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRImunobiologico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRImunobiologico",
+    "title" : "BR Imunobiologico",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRImunobiologico"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRInstalacoesFisicas",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRInstalacoesFisicas",
+    "title" : "BR Instalacoes Fisicas",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRInstalacoesFisicas"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-location.html" : "br-core-location"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRLocalAplicacao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRLocalAplicacao",
+    "title" : "BR Local Aplicacao",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRLocalAplicacao"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRModalidadeAssistencial",
+    "title" : "BR Modalidade Assistencial",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMotivoDesfecho",
+    "title" : "BR Motivo Desfecho",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoDesfecho"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoProcedimentoNaoRealizado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMotivoProcedimentoNaoRealizado",
+    "title" : "BR Motivo Procedimento Nao Realizado",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoProcedimentoNaoRealizado"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROcupacao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BROcupacao",
+    "title" : "BR Ocupacao",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BROutrosProfissionais",
+    "title" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+    "description" : "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRPopulacaoTradicional",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRPopulacaoTradicional",
+    "title" : "BR Populacao Tradicional",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRPopulacaoTradicional"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-populacaotradicional.html" : "Extensão de populacao tradicional do Core do Brasil"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRPovoItinerante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRPovoItinerante",
+    "title" : "BR Povo Itinerante",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRPovoItinerante"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-povoitinerante.html" : "Extensão de povo itinerante do Core do Brasil"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProblemaDiagnostico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProblemaDiagnostico",
+    "title" : "BR Problema Diagnostico",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProcedencia",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProcedencia",
+    "title" : "BR Procedencia",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRProcedencia"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProcedimentosNacionais",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProcedimentosNacionais",
+    "title" : "BR Procedimentos Nacionais",
+    "description" : "",
+    "systems" : ["https://fhir.ans.gov.br/CodeSystem/tuss-22"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProgramaSaude",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProgramaSaude",
+    "title" : "BR Programa Saude",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRProgramaSaude"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRReacoesAdversasMedDRA",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRReacoesAdversasMedDRA",
+    "title" : "BR Reacoes Adversas Med DRA",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRReasonEncounter",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRReasonEncounter",
+    "title" : "BR Reason Encounter",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRRegistroOrigem",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRRegistroOrigem",
+    "title" : "BR Registro Origem",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRRegistroOrigem"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRResponsabilidadeParticipante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRResponsabilidadeParticipante",
+    "title" : "BR Responsabilidade Participante",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRResponsabilidadeParticipante"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRServicoEspecializado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRServicoEspecializado",
+    "title" : "BR Servico Especializado",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
+    "StructureDefinition-br-core-location.html" : "br-core-location"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRSinaisVitais",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRSinaisVitais",
+    "title" : "BR Sinais Vitais",
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTerminologiaSuspeitaDiagnostica",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTerminologiaSuspeitaDiagnostica",
+    "title" : "BR Terminologia Suspeita Diagnostica",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoAleitamentoMaterno",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoAleitamentoMaterno",
+    "title" : "BR Tipo Aleitamento Materno",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAleitamentoMaterno"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoAmostra",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoAmostra",
+    "title" : "BR Tipo Amostra",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAmostraGAL",
+    "http://terminology.hl7.org/CodeSystem/v2-0487"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoDocumentoIndividuo",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoDocumentoIndividuo",
+    "title" : "BR Tipo Documento Individuo",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoIdentificador",
+    "http://terminology.hl7.org/CodeSystem/v2-0203"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoEstabelecimentoSaude",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoEstabelecimentoSaude",
+    "title" : "BR Tipo Estabelecimento Saude",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoParticipante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoParticipante",
+    "title" : "BR Tipo Participante",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoParticipante"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRViaAdministracao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRViaAdministracao",
+    "title" : "BR Via Administracao",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRViaAdministracao"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/TipoConvenio",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "TipoConvenio",
+    "title" : "Tipo Convenio",
+    "description" : "",
+    "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/TipoConvenio"],
+    "uses" : {
+    },
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+  }]
+}

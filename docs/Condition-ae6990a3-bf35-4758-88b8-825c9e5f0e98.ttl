@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Condition/ae6990a3-bf35-4758-88b8-825c9e5f0e98> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ae6990a3-bf35-4758-88b8-825c9e5f0e98"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Condition ae6990a3-bf35-4758-88b8-825c9e5f0e98</b></p><a name=\"ae6990a3-bf35-4758-88b8-825c9e5f0e98\"> </a><a name=\"hcae6990a3-bf35-4758-88b8-825c9e5f0e98\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>category</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico 02}\">Secundário</span></p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 T13.6}\">Amputação traumática de membro inferior, nível não especificado</span></p><p><b>subject</b>: <a href=\"Patient-b1997888-85fd-41b6-bf94-6242cf3c8265.html\">Ana Beatriz</a></p></div>"
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico" ] ;
+       fhir:Coding.code [ fhir:value "02" ] ;
+       fhir:Coding.display [ fhir:value "Secundário" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10" ] ;
+       fhir:Coding.code [ fhir:value "T13.6" ] ;
+       fhir:Coding.display [ fhir:value "Amputação traumática de membro inferior, nível não especificado" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Amputação traumática de membro inferior, nível não especificado" ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b1997888-85fd-41b6-bf94-6242cf3c8265> ;
+     fhir:Reference.reference [ fhir:value "Patient/b1997888-85fd-41b6-bf94-6242cf3c8265" ] ;
+     fhir:Reference.display [ fhir:value "Ana Beatriz" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Condition/ae6990a3-bf35-4758-88b8-825c9e5f0e98.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

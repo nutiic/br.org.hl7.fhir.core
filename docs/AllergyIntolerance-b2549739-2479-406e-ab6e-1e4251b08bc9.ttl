@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/AllergyIntolerance/b2549739-2479-406e-ab6e-1e4251b08bc9> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "b2549739-2479-406e-ab6e-1e4251b08bc9"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: AllergyIntolerance b2549739-2479-406e-ab6e-1e4251b08bc9</b></p><a name=\"b2549739-2479-406e-ab6e-1e4251b08bc9\"> </a><a name=\"hcb2549739-2479-406e-ab6e-1e4251b08bc9\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>clinicalStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento BR0299656}\">Alergia a lidocaína</span></p><p><b>patient</b>: <a href=\"Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html\">João Carlos Silva</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Severity</b></td><td><b>ExposureRoute</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento BR0299656}\">LIDOCAÍNA, CLORIDRATO + CLORETO DE BENZALCÔNIO 20 + 1,3 MG/ML SPRAY TÓPICO 50 ML</span></td><td><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA 10002424}\">Angioedema</span></td><td>Severe</td><td><span title=\"Códigos:{http://standardterms.edqm.eu 20045000}\">Intravenosa</span></td></tr></table></div>"
+  ] ;
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ] ;
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"] ;
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication" ;
+     fhir:index 0
+  ] ;
+  fhir:AllergyIntolerance.criticality [ fhir:value "high"] ;
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento" ] ;
+       fhir:Coding.code [ fhir:value "BR0299656" ] ;
+       fhir:Coding.display [ fhir:value "LIDOCAÍNA, CLORIDRATO + CLORETO DE BENZALCÔNIO 20 + 1,3 MG/ML SPRAY TÓPICO 50 ML" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Alergia a lidocaína" ]
+  ] ;
+  fhir:AllergyIntolerance.patient [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "João Carlos Silva" ]
+  ] ;
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0 ;
+     fhir:AllergyIntolerance.reaction.substance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento" ] ;
+         fhir:Coding.code [ fhir:value "BR0299656" ] ;
+         fhir:Coding.display [ fhir:value "LIDOCAÍNA, CLORIDRATO + CLORETO DE BENZALCÔNIO 20 + 1,3 MG/ML SPRAY TÓPICO 50 ML" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "LIDOCAÍNA, CLORIDRATO + CLORETO DE BENZALCÔNIO 20 + 1,3 MG/ML SPRAY TÓPICO 50 ML" ]
+     ] ;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA" ] ;
+         fhir:Coding.code [ fhir:value "10002424" ] ;
+         fhir:Coding.display [ fhir:value "angioedema" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Angioedema" ]
+     ] ;
+     fhir:AllergyIntolerance.reaction.severity [ fhir:value "severe" ] ;
+     fhir:AllergyIntolerance.reaction.exposureRoute [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+         fhir:Coding.code [ fhir:value "20045000" ] ;
+         fhir:Coding.display [ fhir:value "Intravenous use" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Intravenosa" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/AllergyIntolerance/b2549739-2479-406e-ab6e-1e4251b08bc9.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

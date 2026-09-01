@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BR.GOV.SAUDE.BR-CORE.FHIR\Princípios, Premissas - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - STU1
+
+
+
+  <img alt="Brazil flag" src="assets/images/bra.svg" height="16" title="Brazil"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Início</a></li>
+  <li><a href="toc.html">Índice</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Premissas, princípios e convenções de design<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="premissas.html">Princípios, premissas e convenções de design</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="estrutura.html">O br-core</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modelos.html">Modelos computacionais</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Lista de artefatos</a></li>
+  <li><a href="downloads.html">Baixar</a></li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Princípios, Premissas</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1 - Compilação de desenvolvimento local (v1.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://br-core.saude.gov.br/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <h2>Princípios, Premissas</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <a name="premissas"> </a>
+  
+  <p align="justify">
+    O br-core foi projetado como o núcleo padronizado de interoperabilidade para todos os sistemas de saúde no Brasil, e sua aplicação universal é fundamentada em princípios e premissas que garantem eficiência, consistência e alinhamento com padrões globais. 
+  </p>
+    <h2><strong>Princípios e Premissas</strong></h2>
+    <p>O br-core foi projetado como o núcleo padronizado de interoperabilidade para todos os sistemas de saúde no Brasil, e sua aplicação universal é fundamentada em princípios e premissas que garantem eficiência, consistência e alinhamento com padrões globais.</p>
+
+    <h3>Princípios Fundamentais</h3>
+  <ul>
+    <li>Promover a interoperabilidade técnica e semântica, permitindo que diferentes sistemas e tecnologias se conectem e troquem informações de maneira consistente;</li>
+    <li>Ser baseado no HL7 FHIR R4, assegurando a conformidade com os padrões internacionais mais amplamente adotados, como SNOMED CT e LOINC; </li>
+    <li>Definir um único conjunto de perfis e modelos que unificam a representação de dados de saúde no Brasil, para reduzir a fragmentação causada por padrões proprietários ou regionais, promovendo uma base comum para todos os atores do sistema;</li>
+    <li>Adotar a modelagem canônica com o objetivo de minimizar a necessidade de customizações e extensões para atender a necessidades específicas, sem comprometer a conformidade com o padrão global;</li>
+    <li>Apoiar diversos casos de uso, incluindo atenção primária, hospitalar, domiciliar, regulação, vigilância epidemiológica e saúde pública;</li>
+    <li>Evitar redundâncias e promovendo eficiência e cuidados integrados reforçando que os dados coletados em uma consulta devem ser reutilizados em relatórios de saúde pública ou faturamento;</li>
+    <li>Facilitar a implementação e manutenção de sistemas, reduzindo custos de integração e desenvolvimento;</li>
+    <li>Oferecer governança técnica e semântica, com validações consistentes baseadas em terminologias padronizadas e processos robustos;</li>
+  </ul>
+  <p align="justify">Premissas que Fundamentaram o br-core</p>
+
+    <h3>Premissas</h3>
+    <ul>
+        <li><strong>Adoção de Modelos Abertos:</strong> Diferentemente da abordagem fechada da RNDS, o br-core utiliza modelos abertos do FHIR, alinhando-se com padrões globais e proporcionando maior flexibilidade.</li>
+        <li><strong>Centralidade no Paciente:</strong> O br-core prioriza o acesso seguro e integrado às informações de saúde dos pacientes, promovendo cuidados centrados e de alta qualidade.</li>
+        <li><strong>Suporte a Múltiplos Contextos:</strong> Foi projetado para atender a uma ampla gama de cenários, incluindo regulação, integração de prontuários eletrônicos, faturamento, monitoramento epidemiológico e saúde pública.</li>
+        <li><strong>Escalabilidade Nacional e Global:</strong> Destaca-se por operar em diferentes escalas, conectando dados locais a redes nacionais e internacionais, assegurando interoperabilidade e continuidade de cuidado.</li>
+        <li><strong>Flexibilidade e Adaptação:</strong> Aceita extensões para necessidades locais sem perder conformidade com padrões globais.</li>
+        <li><strong>Eficiência e Reuso:</strong> Permite reutilização de dados para múltiplos propósitos, como faturamento e relatórios de saúde pública, otimizando recursos.</li>
+        <li><strong>Conformidade e Governança:</strong> Promove governança semântica e técnica, com uso de terminologias padronizadas e processos de validação.</li>
+    </ul>
+  <h2>Convenções de Design</h2>
+  <p>As convenções e o design do BR-Core são orientados para melhorar a interoperabilidade e a padronização dos dados de saúde no Brasil. Ao adaptar e evoluir os padrões da RNDS, o BR-Core fornece uma base sólida para o desenvolvimento e a integração de sistemas de informação em saúde, promovendo uma melhor comunicação e coordenação entre os diferentes atores do setor de saúde.</p>
+  <p>As convenções de design herdam os requisitos dos Guias Nacionais do HL7 e incorporam os registros da recente proposta de Framework de Guias Nacionais do HL7. </p>
+  <p>Os Guias Nacionais do HL7 (Health Level Seven) são desenvolvidos para promover a interoperabilidade entre sistemas de informação em saúde, adaptando padrões internacionais às condições locais. Eles abrangem uma ampla gama de áreas, como registros clínicos, administração de saúde, segurança da informação, entre outros.</p>
+<h3>Requisitos dos Guias Nacionais do HL7</h3>
+<ul>
+<li><strong>Interoperabilidade:</strong> Os guias nacionais devem garantir que os sistemas de saúde possam trocar informações de maneira eficiente e segura, promovendo a continuidade do cuidado ao paciente.</li>
+<li><strong>Conformidade com Padrões Internacionais:</strong> Adaptação dos padrões internacionais do HL7 às necessidades locais, mantendo a conformidade com as normas globais para garantir a interoperabilidade em um contexto mais amplo.</li>
+<li><strong>Flexibilidade e Extensibilidade:</strong> Os guias devem ser flexíveis o suficiente para acomodar diferentes necessidades locais e permitir a extensão dos perfis conforme necessário, sem comprometer a compatibilidade com os padrões internacionais.</li>
+<li><strong>Simplificação e Clareza:</strong> As regras e especificações devem ser claras e simples, facilitando a implementação e a validação dos dados. Isso inclui a redução de regras condicionais complexas que possam dificultar a adoção dos padrões.</li>
+<li><strong>Governança e Atualização Contínua:</strong> Estabelecimento de um processo robusto de governança para garantir que os guias e suas tabelas de referência sejam continuamente atualizados e revisados para atender às necessidades emergentes do sistema de saúde.</li>
+</ul>
+
+<h3>Design Específico para BR-Core</h3>
+
+<li><strong>Modelo de Informação:</strong> Segue o modelo da RNDS e adota o perfil R4 canônico para garantir consistência, versatilidade e conformidade com os padrões. Adota os perfis da RNDS apenas quando há regulamentações nacionais que tornam um elemento obrigatório ou quando é necessário usar Codesystems e ValueSets específicos do Brasil.</li>
+<li><strong>Especialização de Perfis Observation:</strong></li>
+  <ul>
+    <li><strong>ObservationAlcoholUse:</strong> Adaptado para registrar dados sobre o uso de álcool.</li>
+    <li><strong>ObservationBreastfeeding:</strong> Focado em documentar informações sobre amamentação.</li>
+    <li><strong>ObservationSmokingStatus:</strong> Especializado para registrar o status de tabagismo do paciente.</li>
+  <li><strong>Governança dos Sistemas Terminológicos:</strong> Os sistemas terminológicos são atualizados e governados por sistemas de gestão de terminologias, garantindo que estejam sempre atualizados e compatíveis com os codesystems e valuesets usados no IG BR.</li> 
+  </ul>
+
+<p>Os modelos propostos para o BR-Core foram validados com a equipe técnica da SEIDIGI do Ministério da Saúde, visando garantir que atendessem RNDS mas também às necessidades práticas do sistema de saúde brasileiro.</
+
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gov.br/saude">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.br-core.fhir#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 1, 2026 10:20-0400">2026-09-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

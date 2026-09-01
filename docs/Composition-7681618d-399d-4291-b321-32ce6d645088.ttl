@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Composition/7681618d-399d-4291-b321-32ce6d645088> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "7681618d-399d-4291-b321-32ce6d645088"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Composition 7681618d-399d-4291-b321-32ce6d645088</b></p><a name=\"7681618d-399d-4291-b321-32ce6d645088\"> </a><a name=\"hc7681618d-399d-4291-b321-32ce6d645088\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Códigos:{http://loinc.org 11488-4}\">Nota de consulta</span></p><p><b>category</b>: <span title=\"Códigos:{http://loinc.org 11488-4}\">Nota de consulta</span></p><p><b>encounter</b>: <a href=\"Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html\">Ambulatorial</a></p><p><b>date</b>: 2024-12-19 14:30:00+0000</p><p><b>author</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>title</b>: Registro de Atendimento Clínico</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Nota de consulta" ]
+  ] ;
+  fhir:Composition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Nota de consulta" ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e> ;
+     fhir:Reference.reference [ fhir:value "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e" ] ;
+     fhir:Reference.display [ fhir:value "João Carlos Silva" ]
+  ] ;
+  fhir:Composition.encounter [
+     fhir:link <https://br-core.saude.gov.br/fhir/Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df> ;
+     fhir:Reference.reference [ fhir:value "Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df" ] ;
+     fhir:Reference.display [ fhir:value "Ambulatorial" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2024-12-19T14:30:00Z"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Registro de Atendimento Clínico"] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "Diagnósticos Avaliados" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:57852-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "57852-6" ] ;
+         fhir:Coding.display [ fhir:value "Problem list Reported" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Lista de Problemas - Diagnósticos Avaliados" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5> ;
+       fhir:Reference.reference [ fhir:value "Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5" ] ;
+       fhir:Reference.display [ fhir:value "Dispnéia" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Composition.section.title [ fhir:value "Procedimentos Realizados" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:47519-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "47519-4" ] ;
+         fhir:Coding.display [ fhir:value "Procedures Hx Doc" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Procedimentos Realizados" ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf> ;
+       fhir:Reference.reference [ fhir:value "Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf" ] ;
+       fhir:Reference.display [ fhir:value "Consulta médica em atenção primária" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Composition.section.title [ fhir:value "Sinais Vitais" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:85354-9 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "85354-9" ] ;
+         fhir:Coding.display [ fhir:value "Blood pressure panel with all children optional" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97> ;
+       fhir:Reference.reference [ fhir:value "Observation/07ce5462-f77b-4ad6-af8c-2f67a6500b97" ] ;
+       fhir:Reference.display [ fhir:value "Vital Signs" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Composition.section.title [ fhir:value "Alergias e Intolerâncias" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA" ] ;
+         fhir:Coding.code [ fhir:value "amendoim" ] ;
+         fhir:Coding.display [ fhir:value "Amendoim" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34> ;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/42a8e4ee-cc8b-4c07-bee2-da8fe14ada34" ] ;
+       fhir:Reference.display [ fhir:value "Allergy Intolerance" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Composition.section.title [ fhir:value "Medicamentos" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+         fhir:Coding.code [ fhir:value "J01MA12" ] ;
+         fhir:Coding.display [ fhir:value "levofloxacino" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864> ;
+       fhir:Reference.reference [ fhir:value "Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864" ] ;
+       fhir:Reference.display [ fhir:value "Medication" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Composition.section.title [ fhir:value "Plano de Cuidados" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:18776-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "18776-5" ] ;
+         fhir:Coding.display [ fhir:value "Plan of care note" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://br-core.saude.gov.br/fhir/CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532> ;
+       fhir:Reference.reference [ fhir:value "CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532" ] ;
+       fhir:Reference.display [ fhir:value "CarePlan" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Composition/7681618d-399d-4291-b321-32ce6d645088.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

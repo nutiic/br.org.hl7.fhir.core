@@ -28,3 +28,15 @@ else
 		echo IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 	fi
 fi
+
+OUTPUT_DIR=${OUTPUT_DIR:-docs}
+
+if [ -d "output" ]; then
+  echo "Moving generated site from output/ to $OUTPUT_DIR/"
+  rm -rf "$OUTPUT_DIR"
+  mkdir -p "$OUTPUT_DIR"
+  mv output/* "$OUTPUT_DIR"
+  echo "Site copied to $OUTPUT_DIR/"
+else
+  echo "No output/ folder generated; nothing to copy."
+fi

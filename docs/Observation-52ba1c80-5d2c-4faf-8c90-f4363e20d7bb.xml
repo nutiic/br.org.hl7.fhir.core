@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="52ba1c80-5d2c-4faf-8c90-f4363e20d7bb"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Observation 52ba1c80-5d2c-4faf-8c90-f4363e20d7bb</b></p><a name="52ba1c80-5d2c-4faf-8c90-f4363e20d7bb"> </a><a name="hc52ba1c80-5d2c-4faf-8c90-f4363e20d7bb"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 24331-1}">Colesterol total e frações</span></p><p><b>subject</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">José da Silva</a></p><p><b>encounter</b>: <a href="Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.html">Ambulatorial</a></p><p><b>effective</b>: 2025-01-13 08:00:00+0000</p><p><b>issued</b>: 2025-01-13 08:30:00+0000</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></li><li><a href="Organization-1428c345-c221-411f-880f-6fb163817387.html">Hospital Sírio-Libanês</a></li></ul><p><b>note</b>: </p><blockquote><div><p>Paciente orientado para seguir com dieta saudável e exercícios para gerenciar colesterol</p>
+</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 2093-3}">Colesterol Total</span></p><p><b>value</b>: 190 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>125 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>200 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>Normal</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 13457-7}">LDL Cholesterol</span></p><p><b>value</b>: 130 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>0 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>100 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>Normal</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 2085-9}">HDL Cholesterol</span></p><p><b>value</b>: 45 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>40 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>60 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>Normal</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 2571-8}">Triglycerides</span></p><p><b>value</b>: 150 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>0 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>150 mg/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigomg/dL = 'mg/dL')</span></td><td>Normal</td></tr></table></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24331-1"/>
+      <display value="Lipid 1996 Pnl SerPl"/>
+    </coding>
+    <text value="Colesterol total e frações"/>
+  </code>
+  <subject>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="José da Silva"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df"/>
+    <display value="Ambulatorial"/>
+  </encounter>
+  <effectiveDateTime value="2025-01-13T08:00:00Z"/>
+  <issued value="2025-01-13T08:30:00Z"/>
+  <performer>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </performer>
+  <performer>
+    <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+    <display value="Hospital Sírio-Libanês"/>
+  </performer>
+  <note>
+    <text value="Paciente orientado para seguir com dieta saudável e exercícios para gerenciar colesterol"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Colest SerPl-mCnc"/>
+      </coding>
+      <text value="Colesterol Total"/>
+    </code>
+    <valueQuantity>
+      <value value="190"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </valueQuantity>
+    <referenceRange>
+      <low>
+        <value value="125"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </low>
+      <high>
+        <value value="200"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </high>
+      <text value="Normal"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+      <text value="LDL Cholesterol"/>
+    </code>
+    <valueQuantity>
+      <value value="130"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </valueQuantity>
+    <referenceRange>
+      <low>
+        <value value="0"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </low>
+      <high>
+        <value value="100"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </high>
+      <text value="Normal"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+      <text value="HDL Cholesterol"/>
+    </code>
+    <valueQuantity>
+      <value value="45"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </valueQuantity>
+    <referenceRange>
+      <low>
+        <value value="40"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </low>
+      <high>
+        <value value="60"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </high>
+      <text value="Normal"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+      <text value="Triglycerides"/>
+    </code>
+    <valueQuantity>
+      <value value="150"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </valueQuantity>
+    <referenceRange>
+      <low>
+        <value value="0"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </low>
+      <high>
+        <value value="150"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </high>
+      <text value="Normal"/>
+    </referenceRange>
+  </component>
+</Observation>

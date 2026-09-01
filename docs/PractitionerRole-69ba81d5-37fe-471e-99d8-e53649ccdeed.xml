@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="69ba81d5-37fe-471e-99d8-e53649ccdeed"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: PractitionerRole 69ba81d5-37fe-471e-99d8-e53649ccdeed</b></p><a name="69ba81d5-37fe-471e-99d8-e53649ccdeed"> </a><a name="hc69ba81d5-37fe-471e-99d8-e53649ccdeed"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>identifier</b>: Número de Registro no Conselho Federal de Medicina/123456-SP (utilização: official, )</p><p><b>active</b>: true</p><p><b>period</b>: 2020-01-10 --&gt; (em curso)</p><p><b>practitioner</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>organization</b>: <a href="Organization-2b9c99c6-f9c9-42f0-a107-ed5f0d806995.html">Consultório Médico</a></p><p><b>code</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 225120}">MEDICO CARDIOLOGISTA</span></p><p><b>specialty</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 225120}">MEDICO CARDIOLOGISTA</span></p><p><b>location</b>: <a href="Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.html">Clínica Geral</a></p><p><b>healthcareService</b>: <a href="HealthcareService-58a7b01f-72e8-411a-b1c0-5f7728ab7c51.html">UBS INDIANOPOLIS SIGMUND FREUD</a></p><p><b>telecom</b>: <a href="tel:+552112345-6789">+55 21 12345-6789</a>, <a href="mailto:contact@hospitalexemplo.com">contact@hospitalexemplo.com</a></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Tuesday, Wednesday, Thursday, Friday</p><p><b>availableStartTime</b>: 08:00:00</p><p><b>availableEndTime</b>: 17:00:00</p></blockquote><h3>NotAvailables</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>During</b></td></tr><tr><td style="display: none">*</td><td>On leave</td><td>2024-01-01 --&gt; 2024-01-10</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MD"/>
+        <display value="Medical License number"/>
+      </coding>
+      <text value="Número de Registro no Conselho Federal de Medicina"/>
+    </type>
+    <system value="https://saude.gov.br/fhir/sid/crm-sp"/>
+    <value value="123456-SP"/>
+  </identifier>
+  <active value="true"/>
+  <period>
+    <start value="2020-01-10"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+    <display value="Maria Clara"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/2b9c99c6-f9c9-42f0-a107-ed5f0d806995"/>
+    <display value="Consultório Médico"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+      <code value="225120"/>
+      <display value="MEDICO CARDIOLOGISTA"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+      <code value="225120"/>
+      <display value="MEDICO CARDIOLOGISTA"/>
+    </coding>
+  </specialty>
+  <location>
+    <reference value="Location/9fea09cf-0529-4f7d-bad0-80cd5fd00cba"/>
+    <display value="Clínica Geral"/>
+  </location>
+  <healthcareService>
+    <reference value="HealthcareService/58a7b01f-72e8-411a-b1c0-5f7728ab7c51"/>
+    <display value="UBS INDIANOPOLIS SIGMUND FREUD"/>
+  </healthcareService>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55 21 12345-6789"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="contact@hospitalexemplo.com"/>
+    <use value="work"/>
+  </telecom>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <availableStartTime value="08:00:00"/>
+    <availableEndTime value="17:00:00"/>
+  </availableTime>
+  <notAvailable>
+    <description value="On leave"/>
+    <during>
+      <start value="2024-01-01"/>
+      <end value="2024-01-10"/>
+    </during>
+  </notAvailable>
+</PractitionerRole>

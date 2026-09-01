@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "0af04a2a-5174-438d-85ae-fc83df65541e"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CareTeam 0af04a2a-5174-438d-85ae-fc83df65541e</b></p><a name=\"0af04a2a-5174-438d-85ae-fc83df65541e\"> </a><a name=\"hc0af04a2a-5174-438d-85ae-fc83df65541e\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial 04}\">Time de Coordenação de Cuidado</span></p><p><b>name</b>: Equipe de Saúde da Família - Unidade São Paulo</p><p><b>subject</b>: <a href=\"Patient-b1997888-85fd-41b6-bf94-6242cf3c8265.html\">Ana Beatriz</a></p><blockquote><p><b>participant</b></p><p><b>role</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PRF}\">performer</span></p><p><b>member</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>onBehalfOf</b>: <a href=\"Organization-1428c345-c221-411f-880f-6fb163817387.html\">Hospital Sírio-Libanês</a></p><p><b>period</b>: 2023-01-01 --&gt; (em curso)</p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 225125}\">MEDICO CLINICO</span></p><p><b>member</b>: <a href=\"Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html\">Maria Clara</a></p><p><b>period</b>: 2023-01-01 --&gt; (em curso)</p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization-1428c345-c221-411f-880f-6fb163817387.html\">Hospital Sírio-Libanês</a></p><p><b>telecom</b>: <a href=\"tel:+551198765-4321\">+55 11 98765-4321</a></p></div>"
+  ] ;
+  fhir:CareTeam.status [ fhir:value "active"] ;
+  fhir:CareTeam.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial" ] ;
+       fhir:Coding.code [ fhir:value "04" ] ;
+       fhir:Coding.display [ fhir:value "Atenção Hospitalar" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Time de Coordenação de Cuidado" ]
+  ] ;
+  fhir:CareTeam.name [ fhir:value "Equipe de Saúde da Família - Unidade São Paulo"] ;
+  fhir:CareTeam.subject [
+     fhir:link <https://br-core.saude.gov.br/fhir/Patient/b1997888-85fd-41b6-bf94-6242cf3c8265> ;
+     fhir:Reference.reference [ fhir:value "Patient/b1997888-85fd-41b6-bf94-6242cf3c8265" ] ;
+     fhir:Reference.display [ fhir:value "Ana Beatriz" ]
+  ] ;
+  fhir:CareTeam.participant [
+     fhir:index 0 ;
+     fhir:CareTeam.participant.role [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "PRF" ] ;
+         fhir:Coding.display [ fhir:value "performer" ]
+       ]
+     ] ;
+     fhir:CareTeam.participant.member [
+       fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara" ]
+     ] ;
+     fhir:CareTeam.participant.onBehalfOf [
+       fhir:link <https://br-core.saude.gov.br/fhir/Organization/1428c345-c221-411f-880f-6fb163817387> ;
+       fhir:Reference.reference [ fhir:value "Organization/1428c345-c221-411f-880f-6fb163817387" ] ;
+       fhir:Reference.display [ fhir:value "Hospital Sírio-Libanês" ]
+     ] ;
+     fhir:CareTeam.participant.period [
+       fhir:Period.start [ fhir:value "2023-01-01"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CareTeam.participant.role [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO" ] ;
+         fhir:Coding.code [ fhir:value "225125" ] ;
+         fhir:Coding.display [ fhir:value "MEDICO CLINICO" ]
+       ]
+     ] ;
+     fhir:CareTeam.participant.member [
+       fhir:link <https://br-core.saude.gov.br/fhir/Practitioner/d3b61455-f432-48f0-b83b-ba825922d735> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara" ]
+     ] ;
+     fhir:CareTeam.participant.period [
+       fhir:Period.start [ fhir:value "2023-01-01"^^xsd:date ]
+     ]
+  ] ;
+  fhir:CareTeam.managingOrganization [
+     fhir:index 0 ;
+     fhir:link <https://br-core.saude.gov.br/fhir/Organization/1428c345-c221-411f-880f-6fb163817387> ;
+     fhir:Reference.reference [ fhir:value "Organization/1428c345-c221-411f-880f-6fb163817387" ] ;
+     fhir:Reference.display [ fhir:value "Hospital Sírio-Libanês" ]
+  ] ;
+  fhir:CareTeam.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55 11 98765-4321" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

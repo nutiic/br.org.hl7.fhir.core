@@ -1,0 +1,753 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "oids" : ["2.16.840.1.113883.4.642.4.70"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "oids" : ["2.16.840.1.113883.4.642.4.68"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/appointmentstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentStatus",
+    "title" : "AppointmentStatus",
+    "description" : "The free/busy status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.485"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.239"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "oids" : ["2.16.840.1.113883.4.642.4.263"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/participantrequired",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantRequired",
+    "title" : "ParticipantRequired",
+    "description" : "Is the Participant required to attend the appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.489"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-participantrequired.html" : "ParticipantRequired"
+  },
+  {
+    "url" : "http://hl7.org/fhir/participationstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipationStatus",
+    "title" : "ParticipationStatus",
+    "description" : "The Participation status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.487"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "RequestPriority",
+    "description" : "Identifies the level of importance to be assigned to actioning the request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.116"],
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCaraterAtendimentoMIRA.html" : "BR Carater Atendimento MIRA"
+  },
+  {
+    "url" : "http://hl7.org/fhir/slotstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SlotStatus",
+    "title" : "SlotStatus",
+    "description" : "The free/busy status of the slot.",
+    "oids" : ["2.16.840.1.113883.4.642.4.483"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-slotstatus.html" : "SlotStatus"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-edd-method-uv-ips.html" : "Pregnancy Expected Delivery Date Method - IPS",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRFreqUsoSubstancia.html" : "BRFreqUsoSubstancia",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRSinaisVitais.html" : "BR Sinais Vitais",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancy-status-uv-ips.html" : "Pregnancy Status - IPS",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancies-summary-uv-ips.html" : "Pregnancies Summary - IPS",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+    "version" : "2.1.1",
+    "status" : "active",
+    "name" : "AppointmentCancellationReason",
+    "title" : "Appointment cancellation reason",
+    "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1382"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html" : "Appointment cancellation reason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "DiagnosisRole",
+    "title" : "Diagnosis Role",
+    "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnosis-role.html" : "DiagnosisRole"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ImmunizationFundingSource",
+    "title" : "Immunization Funding Source",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1100"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-funding-source.html" : "Immunization Funding Source"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationAdministrationPerformerFunctionCodes",
+    "title" : "MedicationAdministration Performer Function Codes",
+    "description" : "MedicationAdministration Performer Function Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoDocumentoIndividuo.html" : "BR Tipo Documento Individuo",
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "AppointmentReason",
+    "title" : "appointmentReason",
+    "description" : "Code system of concepts used to describe the kind of appointment or the reason why an appointment has been scheduled.  Used in HL7 Version 2.x messaging in the ARQ segment.",
+    "oids" : ["2.16.840.1.113883.18.169"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenType",
+    "title" : "specimenType",
+    "description" : "HL7-defined code system of concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system 2.16.840.1.113883.18.28) which conflated specimen types and specimen collection methods.   Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.311"],
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoAmostra.html" : "BR Tipo Amostra"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenCondition",
+    "title" : "specimenCondition",
+    "description" : "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.317"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "11.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRAlergenosCBARA",
+    "title" : "BRAlergenosCBARA",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAlergenos.html" : "BR Alergenos"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRAtendimentoPrestado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRAtendimentoPrestado",
+    "title" : "BRAtendimentoPrestado",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAtendimentoPrestado.html" : "BR Atendimento Prestado"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCBO",
+    "title" : "BRCBO",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROcupacao.html" : "BR Ocupacao"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCIAP2",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCIAP2",
+    "title" : "BRCIAP2",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCIAP2.html" : "BRCIAP 2"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCID10",
+    "title" : "BRCID10",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCID10.html" : "BRCID 10",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProblemaDiagnostico.html" : "BR Problema Diagnostico",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTerminologiaSuspeitaDiagnostica.html" : "BR Terminologia Suspeita Diagnostica",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReasonEncounter.html" : "BR Reason Encounter"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCaraterAtendimento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCaraterAtendimento",
+    "title" : "BRCaraterAtendimento",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCaraterAtendimento.html" : "BR Carater Atendimento"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCategoriaDiagnostico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRCategoriaDiagnostico",
+    "title" : "BRCategoriaDiagnostico",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCategoriaDiagnostico.html" : "BR Categoria Diagnostico"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+    "version" : "1.1.0",
+    "status" : "draft",
+    "name" : "BRConselhoProfissional",
+    "title" : "Conselhos profissionais de saúde do Brasil",
+    "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRDesfechoProcedimento",
+    "title" : "BRDesfechoProcedimento",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRDesfechoProcedimento.html" : "BR Desfecho Procedimento"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRDose",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRDose",
+    "title" : "BRDose",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRDose.html" : "BR Dose"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRElegibilidadeImunobiologico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRElegibilidadeImunobiologico",
+    "title" : "BRElegibilidadeImunobiologico",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRElegibilidadeImunobiologico.html" : "BR Elegibilidade Imunobiologico"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BREstrategiaVacinacao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BREstrategiaVacinacao",
+    "title" : "BREstrategiaVacinacao",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BREstrategiaVacinacao.html" : "BR Estrategia Vacinacao"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRFormaOrganizacaoTabelaSUS",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRFormaOrganizacaoTabelaSUS",
+    "title" : "BRFormaOrganizacaoTabelaSUS",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRFormaOrganizacaoTabelaSUS.html" : "BRFormaOrganizacaoTabelaSUS"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRImunobiologico",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRImunobiologico",
+    "title" : "BRImunobiologico",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAlergenos.html" : "BR Alergenos",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRImunobiologico.html" : "BR Imunobiologico"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRInstalacoesFisicas",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRInstalacoesFisicas",
+    "title" : "BRInstalacoesFisicas",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRInstalacoesFisicas.html" : "BR Instalacoes Fisicas"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRLocalAplicacao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRLocalAplicacao",
+    "title" : "BRLocalAplicacao",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRLocalAplicacao.html" : "BR Local Aplicacao"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedDRA",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMedDRA",
+    "title" : "BRMedDRA",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReacoesAdversasMedDRA.html" : "BR Reacoes Adversas Med DRA"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMedicamento",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMedicamento",
+    "title" : "BRMedicamento",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAlergenos.html" : "BR Alergenos"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRModalidadeAssistencial",
+    "title" : "BRModalidadeAssistencial",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRModalidadeAssistencial.html" : "BR Modalidade Assistencial"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoDesfecho",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMotivoDesfecho",
+    "title" : "BRMotivoDesfecho",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRMotivoDesfecho.html" : "BR Motivo Desfecho"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoProcedimentoNaoRealizado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRMotivoProcedimentoNaoRealizado",
+    "title" : "BRMotivoProcedimentoNaoRealizado",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRMotivoProcedimentoNaoRealizado.html" : "BR Motivo Procedimento Nao Realizado"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRPopulacaoTradicional",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRPopulacaoTradicional",
+    "title" : "BRPopulacaoTradicional",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRPopulacaoTradicional.html" : "BR Populacao Tradicional"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRPovoItinerante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRPovoItinerante",
+    "title" : "BRPovoItinerante",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRPovoItinerante.html" : "BR Povo Itinerante"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRProcedencia",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProcedencia",
+    "title" : "BRProcedencia",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProcedencia.html" : "BR Procedencia"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRProgramaSaude",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRProgramaSaude",
+    "title" : "BRProgramaSaude",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProgramaSaude.html" : "BR Programa Saude"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRRegistroOrigem",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRRegistroOrigem",
+    "title" : "BRRegistroOrigem",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRRegistroOrigem.html" : "BR Registro Origem"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRResponsabilidadeParticipante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRResponsabilidadeParticipante",
+    "title" : "BRResponsabilidadeParticipante",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRResponsabilidadeParticipante.html" : "BR Responsabilidade Participante"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRServicoEspecializado",
+    "title" : "BRServicoEspecializado",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRServicoEspecializado.html" : "BR Servico Especializado"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubGrupoTabelaSUS",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRSubGrupoTabelaSUS",
+    "title" : "BRSubGrupoTabelaSUS",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCategoriaProcedimento.html" : "BR Categoria Procedimento"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAleitamentoMaterno",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoAleitamentoMaterno",
+    "title" : "BRTipoAleitamentoMaterno",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoAleitamentoMaterno.html" : "BR Tipo Aleitamento Materno"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAmostraGAL",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoAmostraGAL",
+    "title" : "BRTipoAmostraGAL",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoAmostra.html" : "BR Tipo Amostra"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoEstabelecimentoSaude",
+    "title" : "BRTipoEstabelecimentoSaude",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoEstabelecimentoSaude.html" : "BR Tipo Estabelecimento Saude"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoIdentificador",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoIdentificador",
+    "title" : "BRTipoIdentificador",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoDocumentoIndividuo.html" : "BR Tipo Documento Individuo"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoParticipante",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRTipoParticipante",
+    "title" : "BRTipoParticipante",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTipoParticipante.html" : "BR Tipo Participante"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRViaAdministracao",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BRViaAdministracao",
+    "title" : "BRViaAdministracao",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRViaAdministracao.html" : "BR Via Administracao"
+  },
+  {
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/TipoConvenio",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "TipoConvenio",
+    "title" : "TipoConvenio",
+    "description" : "",
+    "uses" : {
+    },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-TipoConvenio.html" : "Tipo Convenio"
+  }]
+}

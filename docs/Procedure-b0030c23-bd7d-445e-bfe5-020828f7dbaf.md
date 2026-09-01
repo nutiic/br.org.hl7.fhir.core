@@ -1,0 +1,149 @@
+# BR.GOV.SAUDE.BR-CORE.FHIR\Exemplo de procedimento de saúde. - FHIR v4.0.1
+
+* [**Table of Contents**](toc.md)
+* [**Lista de artefatos**](artifacts.md)
+* **Exemplo de procedimento de saúde.**
+
+## Example Procedure: Exemplo de procedimento de saúde.
+
+| |
+| :--- |
+|  |
+
+Língua: pt-BR
+
+**status**: Completed
+
+**statusReason**: Procedimento não realizado
+
+**category**: Consulta
+
+**code**: Consulta médica em atenção primária
+
+**subject**: [João Carlos Silva](Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.md)
+
+**encounter**: [Ambulatorial](Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.md)
+
+**performed**: 2023-12-12 09:00:00-0300 --> 2023-12-12 10:30:00-0300
+
+### Performers
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Function** | **Actor** |
+| * | Emergência | [Maria Clara](Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.md) |
+
+**reasonCode**: Hipertensão essencial (primária)
+
+**bodySite**: Sistema Circulatório
+
+**outcome**: Melhora Clínica
+
+**report**: [Relatório consulta](DiagnosticReport-a952a5b4-2bc5-42f8-a3de-af67ec3ea791.md)
+
+**complicationDetail**: [Dispnéia](Condition-91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.md)
+
+**followUp**: Consulta de acompanhamento em 2 semanas
+
+**note**: 
+
+> 
+
+O paciente foi orientado a fazer atividade física.
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Procedure",
+  "id" : "b0030c23-bd7d-445e-bfe5-020828f7dbaf",
+  "language" : "pt-BR",
+  "status" : "completed",
+  "statusReason" : {
+    "coding" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoProcedimentoNaoRealizado",
+      "code" : "03",
+      "display" : "Procedimento não realizado"
+    }]
+  },
+  "category" : {
+    "coding" : [{
+      "system" : "https://fhir.ans.gov.br/CodeSystem/tuss-50",
+      "code" : "04",
+      "display" : "Consulta"
+    }],
+    "text" : "Consulta"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTabelaSUS",
+      "code" : "0301010064",
+      "display" : "CONSULTA MÉDICA EM ATENÇÃO PRIMÁRIA"
+    }],
+    "text" : "Consulta médica em atenção primária"
+  },
+  "subject" : {
+    "reference" : "Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e",
+    "display" : "João Carlos Silva"
+  },
+  "encounter" : {
+    "reference" : "Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df",
+    "display" : "Ambulatorial"
+  },
+  "performedPeriod" : {
+    "start" : "2023-12-12T09:00:00-03:00",
+    "end" : "2023-12-12T10:30:00-03:00"
+  },
+  "performer" : [{
+    "function" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/participant-type",
+        "code" : "emergency",
+        "display" : "Emergency"
+      }],
+      "text" : "Emergência"
+    },
+    "actor" : {
+      "reference" : "Practitioner/d3b61455-f432-48f0-b83b-ba825922d735",
+      "display" : "Maria Clara"
+    }
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10",
+      "code" : "I10",
+      "display" : "Hipertensão essencial (primária)"
+    }],
+    "text" : "Hipertensão essencial (primária)"
+  }],
+  "bodySite" : [{
+    "text" : "Sistema Circulatório"
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento",
+      "code" : "01",
+      "display" : "Melhora Clínica"
+    }],
+    "text" : "Melhora Clínica"
+  },
+  "report" : [{
+    "reference" : "DiagnosticReport/a952a5b4-2bc5-42f8-a3de-af67ec3ea791",
+    "display" : "Relatório consulta"
+  }],
+  "complicationDetail" : [{
+    "reference" : "Condition/91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5",
+    "display" : "Dispnéia"
+  }],
+  "followUp" : [{
+    "text" : "Consulta de acompanhamento em 2 semanas"
+  }],
+  "note" : [{
+    "text" : "O paciente foi orientado a fazer atividade física."
+  }]
+}
+
+```

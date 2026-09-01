@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BR.GOV.SAUDE.BR-CORE.FHIR\Especificação - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - STU1
+
+
+
+  <img alt="Brazil flag" src="assets/images/bra.svg" height="16" title="Brazil"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Início</a></li>
+  <li><a href="toc.html">Índice</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Premissas, princípios e convenções de design<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="premissas.html">Princípios, premissas e convenções de design</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="estrutura.html">O br-core</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modelos.html">Modelos computacionais</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Lista de artefatos</a></li>
+  <li><a href="downloads.html">Baixar</a></li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Especificação</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1 - Compilação de desenvolvimento local (v1.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://br-core.saude.gov.br/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <h2>Especificação</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+    <a name="modelos"> </a>
+    <p align="justify">
+        Os perfis definidos para este guia de implementação estão listados aqui.
+A seguir estão os perfis que foram definidos para cada seção. (R) denota uma seção obrigatória (ou seja, deve estar presente em um IPS), (S) denota uma seção recomendada, as demais são opcionais:            
+    </p>
+
+    <table>
+        <tbody>
+        <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-allergyintolerance.html"
+                        title="StructureDefinition/br-core-allergyintolerance.fsh">br-core-allergyintolerance</a>
+                </td>
+                <td>
+                    <p>Este perfil define as características mínimas para o recurso br-core-allergyintolerance registrar, pesquisar e buscar alergias/reações adversas associadas a um paciente.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-address.html"
+                        title="StructureDefinition/br-core-address.fsh">br-core-address</a>
+                </td>
+                <td>
+                    <p>Este perfil define o tipo de dado Address para uso no contexto brasileiro, incluindo extensões para aldeia, DSEI e polo base.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-appointment.html"
+                        title="StructureDefinition/br-core-appointment.fsh">br-core-appointment</a>
+                </td>
+                <td>
+                    <p>Este perfil descreve o agendamento de atendimentos e procedimentos, incluindo status, participantes, horários e justificativas clínicas.</p>
+                </td>
+            </tr>
+<tr>
+                <td>
+                    <a href="StructureDefinition-br-core-capacidadefuncional.html"
+                        title="StructureDefinition/br-core-capacidadefuncional.fsh">br-core-capacidadefuncional</a>
+                </td>
+                <td>
+                    <p>Este perfil é utilizado para registrar informações detalhadas sobre a condição, problema, diagnóstico ou outro evento, situação, problema ou conceito clínico que caracteriza a incapacidade funcional do paciente.</p>
+                </td>
+            </tr>
+  <tr>
+  <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-careplan.html"
+                        title="StructureDefinition/br-core-careplan.fsh">br-core-careplan</a>
+                </td>
+                <td>
+                    <p>Este perfil descreve a intenção de como um ou mais profissionais pretendem prestar cuidados a um determinado paciente, grupo ou comunidade por um período de tempo, possivelmente limitado ao cuidado de uma condição específica ou conjunto de condições.</p>
+                </td>
+            </tr>
+  <tr>
+  <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-careteam.html"
+                        title="StructureDefinition/br-core-careteam.fsh">br-core-careteam</a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso CareTeam que inclui todas as pessoas e organizações que planejam participar da coordenação e prestação de cuidados a um paciente.</p>
+                </td>
+            </tr>
+  <tr>
+  <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-composition.html"
+                        title="StructureDefinition/br-core-composition.fsh">br-core-composition</a>
+                </td>
+                <td>
+                    <p>Este perfil representa conjunto de informações relacionadas aos cuidados em sáude que são reunidas em um único bundle lógico que estabelece seu próprio contexto e atesta quem está fazendo a declaração. Uma Composição define a estrutura e o conteúdo narrativo necessários para um documento. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-condition.html"
+                        title="StructureDefinition/br-core-condition.fsh">br-core-condition</a>
+                </td>
+                <td>
+                    <p>Este perfil é utilizado para registrar informações detalhadas sobre uma condição, problema, diagnóstico ou outro evento, situação, problema ou conceito clínico que atingiu um nível de preocupação.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-consent.html"
+                        title="StructureDefinition/br-core-consent.fsh">br-core-consent</a>
+                </td>
+                <td>
+                    <p>Este perfil define as características mínimas para registrar consentimentos de tratamento de dados pessoais em conformidade com a LGPD.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-diagnosticreport.html"
+                        title="StructureDefinition/br-core-diagnosticreport.fsh">br-core-diagnosticreport</a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso DiagnosticReport  que representa as descobertas e a interpretação de testes diagnósticos realizados em pacientes, grupos de pacientes, dispositivos e locais, e/ou amostras derivadas destes.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-encounter.html"
+                        title="StructureDefinition/br-core-encounter.fsh">br-core-encounter</a>
+                </td>
+                <td>
+                    <p>Este perfil descreve uma interação entre um paciente e o(s) prestador(es) de  serviços saúde com a finalidade de fornecer serviço(s) de saúde ou avaliar o estado de saúde de um paciente.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-healthcareservice.html"
+                        title="StructureDefinition/br-core-healthcareservice.fsh">br-core-healthcareservice </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso HealthcareService que representa os detalhes de um serviço de saúde disponível em um local.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-immunization.html"
+                        title="StructureDefinition/br-core-immunization.fsh">br-core-immunization </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Immunization que descreve o evento em que um paciente recebe uma vacina ou um registro de uma imunização conforme relatado por um paciente, um médico ou outra parte.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-location.html"
+                        title="StructureDefinition/br-core-location.fsh">br-core-location </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Location que aborda detalhes e informações da posição de um local físico onde os serviços são fornecidos e os recursos e participantes podem ser armazenados, encontrados, contidos ou acomodados.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-medication.html"
+                        title="StructureDefinition/br-core-medication.fsh">br-core-medication </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR Medication e identifica um medicamento para fins de prescrição, dispensação e administração de um medicamento, bem como para fazer declarações sobre medicamentos no Brasil.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-medicationrequest.html"
+                        title="StructureDefinition/br-core-medicationrequest.fsh">br-core-medicationrequest </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR MedicationRequest e descreve uma solicitação para fornecimento instruções para administração de um medicamento ao paciente.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-medicationadministration.html"
+                        title="StructureDefinition/br-core-medicationadministration.fsh">br-core-medicationadministration </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR MedicationAdministration e descreve o evento de um paciente consumindo ou de algum medicamento sendo administrado a um paciente. Isso pode ser tão simples quanto engolir um comprimido ou pode ser uma infusão de longa duração. Recursos relacionados vinculam esse evento à prescrição de autorização e ao atendimento specífco entre o paciente e o profissional de saúde.</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-medicationdispense.html"
+                        title="StructureDefinition/br-core-medicationdispense.fsh">br-core-medicationdispense </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR MedicationDispense e descreve que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um  pedido de medicamentos feito por um sistema de informações.  </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-medicationstatement.html"
+                        title="StructureDefinition/br-core-medicationstatement.fsh">br-core-medicationstatement </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR R4 MedicationStatement e descreve uma declaração de um paciente, um prestador de serviços de saúde ou outra parte de que um medicamento é tomado, foi tomado ou deve ser tomado por um paciente. </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observation.html"
+                        title="StructureDefinition/br-core-observation.fsh">br-core-observation </a>
+                </td>
+                <td>
+                    <p>Este rperfil restringe o recurso FHIR R4 Observation e registra medidas e declarações simples feitas sobre um paciente, dispositivo ou outro assunto. </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationalcoholuse.html"
+                        title="StructureDefinition/br-core-observationalcoholuse.fsh">br-core-observationalcohooluse </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso FHIR Observation, projetado para documentar a avaliação do uso de álcool em um resumo de paciente.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationbreastfeedingstatus.html"
+                        title="StructureDefinition/br-core-observationbreastfeedingstatus.fsh">br-core-observationbreastfeedingstatus </a>
+                </td>
+                <td>
+                    <p>Esse perfil restringe o recurso Observation para registrar informações sobre o tipo de aleitamento materno do paciente nos seus primeiros anos de vida  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationpregnancyedd.html"
+                        title="StructureDefinition/br-core-observationpregnancyedd.fsh">br-core-obserobservationpregnancyedd </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Observation para representar a data prevista para o parto.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationpregnancyoutcome.html"
+                        title="StructureDefinition/br-core-observationpregnancyoutcome.fsh">br-core-pbservationpregnancyoutcome </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Observation para representar a data prevista para o parto.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationpregnancystatus.html"
+                        title="StructureDefinition/br-core-observationpregnancystatus.fsh">br-core-observationpregnancystatus </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Observation para representar o histórico resumido dos resultados da gravidez.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-observationtobaccouse.html"
+                        title="StructureDefinition/br-core-observationtobaccouse.fsh">br-core-observationtobaccouse </a>
+                </td>
+                <td>
+                    <p>Este perfil restringe o recurso Observation para representar a avaliação sobre tabagismo em um registro de atendimento clínico ou em um sumário do paciente.  </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-organization.html"
+                        title="StructureDefinition/br-core-organization.fsh">br-core-organization </a>
+                </td>
+                <td>
+                    <p>Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros.  </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-patient.html"
+                        title="StructureDefinition/br-core-patient.fsh">br-core-patient </a>
+                </td>
+                <td>Este perfil representa todas as informações demográficas e administrativas necessárias para descrever um paciente no Brasil, com as respectivas legislações dos elementos e domínios obrigatórios conforme abaixo.  O perfil br-core-patient herda do recurso FHIR R4 Patient para definições de escopo e uso. Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros.  </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-practitioner.html"
+                        title="StructureDefinition/br-core-practitioner.fsh">br-core-practitioner </a>
+                </td>
+                <td> Este perfil representa uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente. </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-practitionerrole.html"
+                        title="StructureDefinition/br-core-practitionerrole.fsh">br-core-practitionerrole </a>
+                </td>
+                <td> Este perfil representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.  </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-procedure.html"
+                        title="StructureDefinition/br-core-procedure.fsh">br-core-procedure </a>
+                </td>
+                <td> Este perfil descreve uma ação que é ou foi realizada em ou para um paciente. Pode ser uma intervenção física como uma operação, ou menos invasiva como serviços de longo prazo, aconselhamento ou hipnoterapia. </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-registroatendimentoclinico.html"
+                        title="StructureDefinition/br-core-registroatendimentoclinico.fsh">br-core-registroatendimentoclinico </a>
+                </td>
+                <td> Esse perfil representa um documento clínico, o registro de atendimento clínico, definido pela PORTARIA Nº 234, DE 18 DE JULHO DE 2022, que institui o Modelo de Informação (MI) Registro de Atendimento Clínico (RAC). </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-relatedperson.html"
+                        title="StructureDefinition/br-core-relatedperson.fsh">br-core-relatedperson </a>
+                </td>
+                <td> Este perfil contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-servicerequest.html"
+                        title="StructureDefinition/br-core-servicerequest.fsh">br-core-servicerequest </a>
+                </td>
+                <td> Este perfil representa  uma solicitação de serviço, como investigações diagnósticas, tratamentos ou operações a serem realizadas.  </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-schedule.html"
+                        title="StructureDefinition/br-core-schedule.fsh">br-core-schedule </a>
+                </td>
+                <td> Este perfil representa agendas e disponibilidades de profissionais, serviços ou locais de saúde para suporte ao processo de agendamento. </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-slot.html"
+                        title="StructureDefinition/br-core-slot.fsh">br-core-slot </a>
+                </td>
+                <td> Este perfil representa blocos de tempo disponíveis ou reservados em uma agenda para marcação de consultas e procedimentos. </p>
+            </tr>
+            <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-specimen.html"
+                        title="StructureDefinition/br-core-specimen.fsh">br-core-specimen </a>
+                </td>
+                <td> Este perfil representa as características de amostras biológicas no contexto de resultados laboratoriais.   </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-sumarioalta.html"
+                        title="StructureDefinition/br-core-sumarioalta.fsh">br-core-sumarioalta </a>
+                </td>
+                <td> Este perfil representa as informações da alta hospitalar, conforme a PORTARIA Nº 701, DE 29 DE SETEMBRO DE 2022.   </p>
+            </tr>
+             <tr>
+                <td>
+                    <a href="StructureDefinition-br-core-vitalsigns.html"
+                        title="StructureDefinition/br-core-vitalsigns.fsh">br-core-vitalsigns </a>
+                </td>
+                <td> Este perfil representa medidas de sinais vitais. O perfil especifica quais elementos principais, extensões, vocabulários e conjuntos de valores DEVEM estar presentes no recurso e restringe como os elementos são usados.   </p>
+            </tr>
+  </p>
+           
+        </tbody>
+    </table>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gov.br/saude">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.br-core.fhir#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 1, 2026 10:20-0400">2026-09-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

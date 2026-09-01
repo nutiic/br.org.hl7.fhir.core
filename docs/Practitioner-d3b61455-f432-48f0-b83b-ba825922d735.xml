@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="d3b61455-f432-48f0-b83b-ba825922d735"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Practitioner d3b61455-f432-48f0-b83b-ba825922d735</b></p><a name="d3b61455-f432-48f0-b83b-ba825922d735"> </a><a name="hcd3b61455-f432-48f0-b83b-ba825922d735"> </a><p><b>identifier</b>: Cartão nacional de saúde/123456789101112 (utilização: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Maria Clara Oliveira (Official)</p><p><b>telecom</b>: <a href="tel:+552198765-4321">+55 21 98765-4321</a>, <a href="mailto:maria.oliveira@example.com">maria.oliveira@example.com</a></p><p><b>address</b>: Av. Central, 456, Bairro Centro, Rio de Janeiro, RJ, 20000-000(work)</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style="display: none">*</td><td><a href="file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cns.html" title="CARTÃO NACIONAL DE SAÚDE">NamingSystemCNS</a>/225125789542376</td><td><span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 225125}">MEDICO CLINICO</span></td><td>2010-01-01 --&gt; (em curso)</td><td><a href="Organization-1428c345-c221-411f-880f-6fb163817387.html">Hospital Sírio-Libanês</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="HC"/>
+        <display value="Health Card Number"/>
+      </coding>
+      <text value="Cartão nacional de saúde"/>
+    </type>
+    <system value="https://saude.gov.br/fhir/sid/cns"/>
+    <value value="123456789101112"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Oliveira"/>
+    <given value="Maria"/>
+    <given value="Clara"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+55 21 98765-4321"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="maria.oliveira@example.com"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <text value="Av. Central, 456, Bairro Centro, Rio de Janeiro, RJ, 20000-000"/>
+    <line value="Av. Central, 456"/>
+    <city value="Rio de Janeiro"/>
+    <state value="RJ"/>
+    <postalCode value="20000-000"/>
+    <country value="Brasil"/>
+  </address>
+  <qualification>
+    <identifier>
+      <system value="https://saude.gov.br/fhir/sid/cns"/>
+      <value value="225125789542376"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+        <code value="225125"/>
+        <display value="MEDICO CLINICO"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2010-01-01"/>
+    </period>
+    <issuer>
+      <reference value="Organization/1428c345-c221-411f-880f-6fb163817387"/>
+      <display value="Hospital Sírio-Libanês"/>
+    </issuer>
+  </qualification>
+</Practitioner>

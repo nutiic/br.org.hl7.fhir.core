@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="2f42ddad-b9bb-4f68-b5b9-426054529f31"/>
+  <implicitRules value="http://example.org/rules"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Specimen 2f42ddad-b9bb-4f68-b5b9-426054529f31</b></p><a name="2f42ddad-b9bb-4f68-b5b9-426054529f31"> </a><a name="hc2f42ddad-b9bb-4f68-b5b9-426054529f31"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR; </p><p style="margin-bottom: 0px"><b>Aplicam-se regras especiais: http://example.org/rules!</b></p></div><p><b>identifier</b>: <code>http://hospital.example.org/specimens</code>/SP-12345</p><p><b>accessionIdentifier</b>: <code>http://lab.example.org/accessions</code>/ACC-67890</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAmostraGAL SGHEM}">Sangue</span></p><p><b>subject</b>: <a href="Patient-b2f63a4c-ddaa-4652-8481-ac1ff473104e.html">João Carlos</a></p><p><b>receivedTime</b>: 2024-06-18 14:00:00+0000</p><p><b>request</b>: <a href="ServiceRequest-d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85.html">Eletrocardiograma</a></p><blockquote><p><b>collection</b></p><blockquote><p><b>id</b></p>collection001</blockquote><p><b>collector</b>: <a href="Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.html">Maria Clara</a></p><p><b>collected</b>: 2024-06-18 13:45:00+0000</p><h3>Durations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Unit</b></td></tr><tr><td style="display: none">*</td><td>5</td><td>minutos</td></tr></table><p><b>quantity</b>: 10 mL</p><p><b>method</b>: <span title="Códigos:{http://snomed.info/sct 88010007}">Estrutura venosa superficial do membro superior</span></p><p><b>bodySite</b>: <span title="Códigos:{http://snomed.info/sct 129316008}">Aspiração</span></p><p><b>fastingStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v2-0916 F}">O paciente estava em jejum antes do procedimento.</span></p></blockquote><blockquote><p><b>processing</b></p><blockquote><p><b>id</b></p>processing001</blockquote><p><b>description</b>: Centrifugação para separação do plasma</p><p><b>procedure</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v2-0373 FILT}">Filtração</span></p><p><b>time</b>: 2024-06-18 14:10:00+0000</p></blockquote><h3>Containers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>Type</b></td><td><b>Capacity</b></td><td><b>SpecimenQuantity</b></td><td><b>Additive[x]</b></td></tr><tr><td style="display: none">*</td><td>Tubo de coleta com EDTA</td><td><span title="Códigos:">Tubo de coleta de sangue não evacuado, K3EDTA</span></td><td>10 mL</td><td>10 mL</td><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/v2-0371 EDTK}">Potassium/K EDTA</span></td></tr></table><p><b>condition</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v2-0493 CFU}">Centrifugado</span></p><p><b>note</b>: </p><blockquote><div><p>Amostra coletada sem intercorrências.</p>
+</div></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://hospital.example.org/specimens"/>
+    <value value="SP-12345"/>
+  </identifier>
+  <accessionIdentifier>
+    <system value="http://lab.example.org/accessions"/>
+    <value value="ACC-67890"/>
+  </accessionIdentifier>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoAmostraGAL"/>
+      <code value="SGHEM"/>
+      <display value="Sangue"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/b2f63a4c-ddaa-4652-8481-ac1ff473104e"/>
+    <display value="João Carlos"/>
+  </subject>
+  <receivedTime value="2024-06-18T14:00:00Z"/>
+  <request>
+    <reference value="ServiceRequest/d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85"/>
+    <display value="Eletrocardiograma"/>
+  </request>
+  <collection id="collection001">
+    <collector>
+      <reference value="Practitioner/d3b61455-f432-48f0-b83b-ba825922d735"/>
+      <display value="Maria Clara"/>
+    </collector>
+    <collectedDateTime value="2024-06-18T13:45:00Z"/>
+    <duration>
+      <value value="5"/>
+      <unit value="minutos"/>
+    </duration>
+    <quantity>
+      <value value="10"/>
+      <unit value="mL"/>
+    </quantity>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="88010007"/>
+        <display value="Structure of superficial venous system of upper extremity"/>
+      </coding>
+      <text value="Estrutura venosa superficial do membro superior"/>
+    </method>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="129316008"/>
+        <display value="Aspiration - action (qualifier value)"/>
+      </coding>
+      <text value="Aspiração"/>
+    </bodySite>
+    <fastingStatusCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0916"/>
+        <code value="F"/>
+        <display value="Patient was fasting prior to the procedure."/>
+      </coding>
+      <text value="O paciente estava em jejum antes do procedimento."/>
+    </fastingStatusCodeableConcept>
+  </collection>
+  <processing id="processing001">
+    <description value="Centrifugação para separação do plasma"/>
+    <procedure>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0373"/>
+        <code value="FILT"/>
+        <display value="Filtration"/>
+      </coding>
+      <text value="Filtração"/>
+    </procedure>
+    <timeDateTime value="2024-06-18T14:10:00Z"/>
+  </processing>
+  <container>
+    <description value="Tubo de coleta com EDTA"/>
+    <type>
+      <text value="Tubo de coleta de sangue não evacuado, K3EDTA"/>
+    </type>
+    <capacity>
+      <value value="10"/>
+      <unit value="mL"/>
+    </capacity>
+    <specimenQuantity>
+      <value value="10"/>
+      <unit value="mL"/>
+    </specimenQuantity>
+    <additiveCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0371"/>
+        <code value="EDTK"/>
+        <display value="Potassium/K EDTA"/>
+      </coding>
+    </additiveCodeableConcept>
+  </container>
+  <condition>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0493"/>
+      <code value="CFU"/>
+      <display value="Centrifuged"/>
+    </coding>
+    <text value="Centrifugado"/>
+  </condition>
+  <note>
+    <text value="Amostra coletada sem intercorrências."/>
+  </note>
+</Specimen>

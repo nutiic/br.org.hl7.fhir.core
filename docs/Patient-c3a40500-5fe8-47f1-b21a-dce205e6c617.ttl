@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "c3a40500-5fe8-47f1-b21a-dce205e6c617"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Patient c3a40500-5fe8-47f1-b21a-dce205e6c617</b></p><a name=\"c3a40500-5fe8-47f1-b21a-dce205e6c617\"> </a><a name=\"hcc3a40500-5fe8-47f1-b21a-dce205e6c617\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Maria Fernanda Souza (official) Female, DoB: 1992-07-15 ( Health Card Number: NamingSystemCNS#876543210987654 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Tax ID number/23456789012 (utilização: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\"><ul><li><a href=\"tel:+552199876-5432\">+55 21 99876-5432</a></li><li><a href=\"mailto:maria.fernanda@example.com\">maria.fernanda@example.com</a></li><li>Avenida Atlântica, 1702, Copacabana, Rio de Janeiro, RJ, 22021-001(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Rio de Janeiro RJ Brasil </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define a raça do indivíduo\"><a href=\"https://ips.saude.gov.br/fhir/v1.0.0/StructureDefinition-raca-br-ips.html\">Raça BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 03}\">Parda</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define o sexo no nascimento do paciente\"><a href=\"https://ips.saude.gov.br/fhir/v1.0.0/StructureDefinition-sexo-nascimento-br-ips.html\">Sexo no nascimento BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{http://hl7.org/fhir/administrative-gender female}\">Female</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Address.city [ fhir:value "Rio de Janeiro" ] ;
+       fhir:Address.state [ fhir:value "RJ" ] ;
+       fhir:Address.country [ fhir:value "Brasil" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor" ] ;
+         fhir:Coding.code [ fhir:value "03" ] ;
+         fhir:Coding.display [ fhir:value "Parda" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://ips.saude.gov.br/fhir/StructureDefinition/sexo-nascimento-br-ips" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ] ;
+         fhir:Coding.code [ fhir:value "female" ] ;
+         fhir:Coding.display [ fhir:value "Female" ]
+       ]
+     ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ] ;
+         fhir:Coding.display [ fhir:value "Tax ID number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cpf" ] ;
+     fhir:Identifier.value [ fhir:value "23456789012" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "HC" ] ;
+         fhir:Coding.display [ fhir:value "Health Card Number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cns" ] ;
+     fhir:Identifier.value [ fhir:value "876543210987654" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Souza" ] ;
+     fhir:HumanName.given [
+       fhir:value "Maria" ;
+       fhir:index 0
+     ], [
+       fhir:value "Fernanda" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55 21 99876-5432" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "maria.fernanda@example.com" ] ;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1992-07-15"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.text [ fhir:value "Avenida Atlântica, 1702, Copacabana, Rio de Janeiro, RJ, 22021-001" ] ;
+     fhir:Address.line [
+       fhir:value "Avenida Atlântica, 1702" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Rio de Janeiro" ] ;
+     fhir:Address.state [ fhir:value "RJ" ] ;
+     fhir:Address.postalCode [ fhir:value "22021-001" ] ;
+     fhir:Address.country [ fhir:value "Brasil" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://br-core.saude.gov.br/fhir/Patient/c3a40500-5fe8-47f1-b21a-dce205e6c617.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
