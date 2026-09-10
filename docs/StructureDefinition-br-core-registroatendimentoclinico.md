@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-registroatendimentoclinico | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreRegistroAtendimentoClinico |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreRegistroAtendimentoClinico |
 
  
 Esse perfil restringe o perfil [br-core-composition](https://br-core/saude.gov.br/fhir/StructureDefinition/br-core-composition.html) para especificar um documento clínico, o registro de atendimento clínico, definido pela [PORTARIA Nº 234, DE 18 DE JULHO DE 2022](https://www.cosemssp.org.br/wp-content/uploads/2022/07/PORTARIA-No-234-DE-18-DE-JULHO-DE-2022-PORTARIA-No-234-DE-18-DE-JULHO-DE-2022-DOU-Imprensa-Nacional.pdf), que institui o Modelo de Informação (MI) Registro de Atendimento Clínico (RAC). Este modelo compreende um conjunto essencial de elementos e dados administrativos e clínicos que fornecem um instantâneo (snapshot) das informações de uma consulta realizada a um indivíduo no âmbito da atenção básica, especializada ou domiciliar (atendimento diário). Apresenta informações relacionadas ao acompanhamento do indivíduo como medições, observações, diagnósticos e/ou problemas, exames, procedimentos, pequenas cirurgias e desfecho 
@@ -253,7 +253,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-registroate
   "name" : "BRCoreRegistroAtendimentoClinico",
   "title" : "br-core-registroatendimentoclinico",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

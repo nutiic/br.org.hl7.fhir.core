@@ -62,7 +62,7 @@
   <dependsOn id="br_gov_saude_terminologia_fhir">
     <uri value="https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir"/>
     <packageId value="br.gov.saude.terminologia.fhir"/>
-    <version value="dev"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <dependsOn id="br_gov_saude_ips_fhir">
     <uri value="https://ips.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.ips.fhir"/>

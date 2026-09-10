@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCorePatient |
+| Active as of 2026-09-10 | *Nome computável*:BRCorePatient |
 
  
 Este perfil representa o perfil [br-core-patient](StructureDefinition-br-core-patient.md) com todas as informações demográficas e administrativas necessárias para descrever um paciente no Brasil, com as respectivas legislações dos elementos e domínios obrigatórios conforme abaixo. O perfil [br-core-patient](StructureDefinition-br-core-patient.md) herda do recurso FHIR R4 [Patient](https://hl7.org/fhir/R4B/patient.html) para definições de escopo e uso. Este perfil define expectativas mínimas para o recurso [br-core-patient](StructureDefinition-br-core-patient.md) registrar, pesquisar e buscar dados demográficos básicos e outras informações administrativas sobre um paciente individual. Ele especifica quais elementos principais, extensões, vocabulários e conjuntos de valores DEVEM estar presentes e restringe como os elementos são usados. 
@@ -201,7 +201,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-patient.csv
   "version" : "1.1.0",
   "name" : "BRCorePatient",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

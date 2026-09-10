@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-schedule | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreSchedule |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreSchedule |
 
  
 Perfil brasileiro do recurso FHIR R4 Schedule, utilizado para representar agendas e disponibilidades de profissionais, serviços ou locais de saúde no contexto da RNDS e sistemas de interoperabilidade, incluindo suporte a teleconsultas e telecolposcopia. 
@@ -101,7 +101,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-schedule.cs
   "name" : "BRCoreSchedule",
   "title" : "br-core-schedule",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

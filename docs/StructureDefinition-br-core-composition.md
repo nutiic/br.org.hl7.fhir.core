@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreComposition |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreComposition |
 
  
 Um conjunto de informações relacionadas aos cuidados em sáude que são reunidas em um único bundle lógico que estabelece seu próprio contexto e atesta quem está fazendo a declaração. Uma Composition define a estrutura e o conteúdo narrativo necessários para um documento. No entanto, uma Composition sozinha não constitui um documento. Em vez disso, a Composition deve ser a primeira entrada em um Bundle onde Bundle.type=document, e quaisquer outros recursos referenciados da Composition devem ser incluídos como entradas subsequentes no Bundle (por exemplo, Patient, Practitioner, Encounter, etc.) 
@@ -196,7 +196,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-composition
   "name" : "BRCoreComposition",
   "title" : "br-core-composition",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationalcoholuse | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreObservationAlcoholUse |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreObservationAlcoholUse |
 
  
 O perfil [br-core-observationalcoholuse](StructureDefinition-br-core-observationalcoholuse.md) herda do recurso FHIR [Observation](https://hl7.org/fhir/R4/observation.html), projetado para documentar a avaliação do uso de álcool em um resumo de paciente 
@@ -121,7 +121,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-observation
   "version" : "1.1.0",
   "name" : "BRCoreObservationAlcoholUse",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

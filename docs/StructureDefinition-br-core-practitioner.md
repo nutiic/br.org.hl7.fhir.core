@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCorePractitioner |
+| Active as of 2026-09-10 | *Nome computável*:BRCorePractitioner |
 
  
 O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente 
@@ -185,7 +185,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-practitione
   "version" : "1.1.0",
   "name" : "BRCorePractitioner",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

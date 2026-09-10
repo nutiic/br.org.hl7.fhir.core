@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-condition | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreCondition |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreCondition |
 
  
 Este perfil representa as restrições aplicadas ao recurso FHIR R4 [Condition](http://hl7.org/fhir/R4/condition.html) 
@@ -129,7 +129,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-condition.c
   "version" : "1.1.0",
   "name" : "BRCoreCondition",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

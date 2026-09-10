@@ -93,7 +93,7 @@
        fhir:link <https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "br.gov.saude.terminologia.fhir" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "dev" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
   ], [
      fhir:index 3 ;
      fhir:Element.id [ fhir:value "br_gov_saude_ips_fhir" ] ;

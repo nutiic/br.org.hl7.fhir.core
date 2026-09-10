@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreHealthcareService |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreHealthcareService |
 
  
 Este perfil restringe o recurso [HealthcareService](https://hl7.org/fhir/R4/healthcareservice.html) que representa os detalhes de um serviço de saúde disponível em um local 
@@ -143,7 +143,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-healthcares
   "name" : "BRCoreHealthcareService",
   "title" : "br-core-healthcareservice",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

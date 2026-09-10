@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-appointment | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreAppointment |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreAppointment |
 
  
 Perfil brasileiro do recurso FHIR R4 Appointment, utilizado para agendamento de atendimentos, procedimentos e interações de cuidado no contexto do SUS, RNDS, saúde suplementar e privada, incluindo marcação, remarcação e cancelamento, bem como gestão de participantes, datas/horários e justificativas. 
@@ -105,7 +105,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-appointment
   "name" : "BRCoreAppointment",
   "title" : "br-core-appointment",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

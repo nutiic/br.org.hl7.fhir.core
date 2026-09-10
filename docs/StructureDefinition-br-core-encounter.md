@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-encounter | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreEncounter |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreEncounter |
 
  
 Uma interação entre um paciente e o(s) prestador(es) de serviços saúde com a finalidade de fornecer serviço(s) de saúde ou avaliar o estado de saúde de um paciente 
@@ -157,7 +157,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-encounter.c
   "name" : "BRCoreEncounter",
   "title" : "br-core-encounter",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

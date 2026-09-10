@@ -1,11 +1,11 @@
 BRCORE : Validation Results
 =========================================
 
-err = 13, warn = 141, info = 148
-IG Publisher Version: 2.3.3
-Generated Tue Sep 01 10:25:30 AMT 2026. FHIR version 4.0.1 for br.gov.saude.br-core.fhir#1.1.0 (canonical = https://br-core.saude.gov.br/fhir)
+err = 13, warn = 142, info = 148
+IG Publisher Version: 2.3.4
+Generated Thu Sep 10 12:31:54 AMT 2026. FHIR version 4.0.1 for br.gov.saude.br-core.fhir#1.1.0 (canonical = https://br-core.saude.gov.br/fhir)
  Build Errors : 0 / 65 / 1
- /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir : 0 / 0 / 3
+ /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir : 0 / 1 / 3
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address : 0 / 1 / 3
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address-aldeia : 0 / 1 / 3
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address-dsei : 0 / 1 / 3
@@ -162,6 +162,7 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir.json ==
+WARNING: ImplementationGuide/br.gov.saude.br-core.fhir: ImplementationGuide.dependsOn[3]: O Guia de Implementação utiliza o pacote br.gov.saude.ips.fhir#1.0.0 lançado em 2025-07-17, mas a versão apropriada mais recente é 1.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
 INFORMATION: Resource: The resource ImplementationGuide/br.gov.saude.br-core.fhir could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-br-core-address.json ==
 INFORMATION: Resource: The resource StructureDefinition/br-core-address could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

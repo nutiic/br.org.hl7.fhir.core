@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationrequest | *Versão*:1.1.0 |
-| Active as of 2026-09-01 | *Nome computável*:BRCoreMedicationRequest |
+| Active as of 2026-09-10 | *Nome computável*:BRCoreMedicationRequest |
 
  
 Um pedido ou solicitação para fornecimento do medicamento e instruções para administração do medicamento a um paciente. O recurso é chamado de ‘MedicationRequest’ em vez de ‘MedicationPrescription’ ou ‘MedicationOrder’ para generalizar o uso em ambientes de internação e ambulatorial, incluindo planos de cuidados, etc., e para harmonizar com padrões de fluxo de trabalho 
@@ -174,7 +174,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-medicationr
   "name" : "BRCoreMedicationRequest",
   "title" : "br-core-medicationrequest",
   "status" : "active",
-  "date" : "2026-09-01T10:20:38-04:00",
+  "date" : "2026-09-10T12:27:48-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

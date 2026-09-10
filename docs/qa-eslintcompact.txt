@@ -67,6 +67,7 @@ Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir.json: line 1, col 2500, Warning - O Guia de Implementação utiliza o pacote br.gov.saude.ips.fhir#1.0.0 lançado em 2025-07-17, mas a versão apropriada mais recente é 1.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
 /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir.json: line 0, col 0, Info - The resource ImplementationGuide/br.gov.saude.br-core.fhir could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address.json: line 0, col 0, Info - The resource StructureDefinition/br-core-address could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
@@ -304,5 +305,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/ServiceRequest-d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85.json: line 14, col 8, Warning - Não foi possível encontrar uma definição para o CodeSystem 'https://fhir.ans.gov.br/CodeSystem/tuss-50', pelo que o código não pode ser validado (NOTFOUND)
 /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/ServiceRequest-d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85.json: line 26, col 6, Warning - A definition for CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRTabelaSUS' could not be found, so the code cannot be validated (NOTFOUND)
 
-err = 13, warn = 141, info = 148
-IG Publisher Version: 2.3.3
+err = 13, warn = 142, info = 148
+IG Publisher Version: 2.3.4
