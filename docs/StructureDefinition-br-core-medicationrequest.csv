@@ -27,7 +27,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationRequest.identifier","MedicationRequest.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+"MedicationRequest.identifier","MedicationRequest.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identificadores para este recurso","Identificadores para este recurso","This is a business identifier, not a resource identifier.","","","","","","","","",,,,,"",,,,"MedicationRequest.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.identifier","Message/Header/PrescriberOrderNumber",".id","FiveWs.identifier","ORC-2-Placer Order Number / ORC-3-Filler Order Number"
 "MedicationRequest.status","MedicationRequest.status","","","",1,1,"","Y","Y","code {[]} {[]}

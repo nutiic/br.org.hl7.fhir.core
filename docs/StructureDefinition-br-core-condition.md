@@ -129,7 +129,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-condition.c
   "version" : "1.1.0",
   "name" : "BRCoreCondition",
   "status" : "active",
-  "date" : "2026-09-10T12:27:48-04:00",
+  "date" : "2026-09-10T13:05:34-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

@@ -81,7 +81,7 @@ Esta estrutura é derivada de [MedicationRequest](http://hl7.org/fhir/R4/medicat
 
 ** Resumo **
 
-Obrigatório: 3 elementos(3 aninhado obrigatoriamente elementos)
+Obrigatório: 2 elementos(3 aninhado obrigatoriamente elementos)
  Proibido: 1 elemento
 
 **Estruturas**
@@ -130,7 +130,7 @@ Esta estrutura é derivada de [MedicationRequest](http://hl7.org/fhir/R4/medicat
 
 ** Resumo **
 
-Obrigatório: 3 elementos(3 aninhado obrigatoriamente elementos)
+Obrigatório: 2 elementos(3 aninhado obrigatoriamente elementos)
  Proibido: 1 elemento
 
 **Estruturas**
@@ -174,7 +174,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-medicationr
   "name" : "BRCoreMedicationRequest",
   "title" : "br-core-medicationrequest",
   "status" : "active",
-  "date" : "2026-09-10T12:27:48-04:00",
+  "date" : "2026-09-10T13:05:34-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -291,9 +291,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-medicationr
       "id" : "MedicationRequest.identifier",
       "path" : "MedicationRequest.identifier",
       "short" : "Identificadores para este recurso",
-      "definition" : "Identificadores para este recurso",
-      "min" : 1,
-      "max" : "1"
+      "definition" : "Identificadores para este recurso"
     },
     {
       "id" : "MedicationRequest.status",

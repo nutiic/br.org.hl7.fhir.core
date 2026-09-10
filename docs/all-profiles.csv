@@ -2652,7 +2652,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "br-core-medicationrequest","MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas","","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"br-core-medicationrequest","MedicationRequest.identifier","MedicationRequest.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+"br-core-medicationrequest","MedicationRequest.identifier","MedicationRequest.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Identificadores para este recurso","Identificadores para este recurso","This is a business identifier, not a resource identifier.","","","","","","","","",,,,,"",,,,"MedicationRequest.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "br-core-medicationrequest","MedicationRequest.status","MedicationRequest.status","","","",1,1,"","Y","Y","code {[]} {[]}
