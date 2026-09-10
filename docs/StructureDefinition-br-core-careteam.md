@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam | *Versão*:1.1.1 |
 | Active as of 2026-09-10 | *Nome computável*:BRCoreCareTeam |
 
  
@@ -140,11 +140,11 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-careteam.cs
   "resourceType" : "StructureDefinition",
   "id" : "br-core-careteam",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreCareTeam",
   "title" : "br-core-careteam",
   "status" : "active",
-  "date" : "2026-09-10T13:05:34-04:00",
+  "date" : "2026-09-10T13:58:29-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

@@ -67,12 +67,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
     "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest"
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -402,8 +402,8 @@
     "systems" : ["http://standardterms.edqm.eu"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
     "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance"
   },
@@ -443,8 +443,8 @@
     "sources" : ["2.16.840.1.113883.21.181"],
     "uses" : {
     },
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
@@ -548,9 +548,9 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
     "uses" : {
     },
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
@@ -721,8 +721,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRFormaOrganizacaoTabelaSUS"],
     "uses" : {
     },
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFreqUsoSubstancia",
@@ -782,11 +782,11 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial"],
     "uses" : {
     },
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
     "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho",
@@ -822,14 +822,14 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"],
     "uses" : {
     },
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
     "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
@@ -877,8 +877,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProcedencia",
@@ -902,9 +902,9 @@
     "systems" : ["https://fhir.ans.gov.br/CodeSystem/tuss-22"],
     "uses" : {
     },
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest"
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProgramaSaude",
@@ -976,10 +976,10 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado"],
     "uses" : {
     },
-    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
     "StructureDefinition-br-core-location.html" : "br-core-location",
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRSinaisVitais",
@@ -1041,8 +1041,8 @@
     "http://terminology.hl7.org/CodeSystem/v2-0203"],
     "uses" : {
     },
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
-    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoEstabelecimentoSaude",
@@ -1054,8 +1054,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"],
     "uses" : {
     },
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization"
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoParticipante",

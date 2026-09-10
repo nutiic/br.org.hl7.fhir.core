@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd | *Versão*:1.1.1 |
 | Active as of 2026-01-10 | *Nome computável*:BRBaseLegalLGPD |
 | **Copyright/Legal**: CC-01 | |
 
@@ -74,7 +74,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-base-legal-
   "resourceType" : "StructureDefinition",
   "id" : "br-core-base-legal-lgpd",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRBaseLegalLGPD",
   "title" : "Extensão do perfil BRCoreConsent define extensões específicas para atender aos requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)",
   "status" : "active",

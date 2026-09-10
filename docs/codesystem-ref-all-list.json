@@ -478,8 +478,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.114"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
-    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent"
   },
   {
     "url" : "http://hl7.org/fhir/request-priority",
@@ -491,8 +491,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.116"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCaraterAtendimentoMIRA.html" : "BR Carater Atendimento MIRA"
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCaraterAtendimentoMIRA.html" : "BR Carater Atendimento MIRA",
+    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
   },
   {
     "url" : "http://hl7.org/fhir/request-status",
@@ -515,9 +515,9 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
     "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind"
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://hl7.org/fhir/slotstatus",
@@ -553,19 +553,19 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-edd-method-uv-ips.html" : "Pregnancy Expected Delivery Date Method - IPS",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
-    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRFreqUsoSubstancia.html" : "BRFreqUsoSubstancia",
-    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
     "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancy-status-uv-ips.html" : "Pregnancy Status - IPS",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancies-summary-uv-ips.html" : "Pregnancies Summary - IPS",
+    "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRSinaisVitais.html" : "BR Sinais Vitais",
-    "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs"
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-edd-method-uv-ips.html" : "Pregnancy Expected Delivery Date Method - IPS",
+    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancies-summary-uv-ips.html" : "Pregnancies Summary - IPS",
+    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -577,34 +577,34 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
     "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
-    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
     "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes "
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
@@ -1059,8 +1059,8 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -1171,8 +1171,8 @@
     "oids" : ["2.16.840.1.113883.5.8"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
   },
   {
@@ -1233,8 +1233,8 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -1294,9 +1294,9 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
@@ -1412,10 +1412,10 @@
     "description" : "",
     "uses" : {
     },
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCID10.html" : "BRCID 10",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProblemaDiagnostico.html" : "BR Problema Diagnostico",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTerminologiaSuspeitaDiagnostica.html" : "BR Terminologia Suspeita Diagnostica",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReasonEncounter.html" : "BR Reason Encounter"
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCID10.html" : "BRCID 10",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReasonEncounter.html" : "BR Reason Encounter",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProblemaDiagnostico.html" : "BR Problema Diagnostico"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCaraterAtendimento",
@@ -1448,11 +1448,11 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil"
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento",
@@ -1518,8 +1518,8 @@
     "description" : "",
     "uses" : {
     },
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRImunobiologico.html" : "BR Imunobiologico",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAlergenos.html" : "BR Alergenos"
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRAlergenos.html" : "BR Alergenos",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRImunobiologico.html" : "BR Imunobiologico"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRInstalacoesFisicas",

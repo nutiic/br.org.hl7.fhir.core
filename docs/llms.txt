@@ -1,4 +1,4 @@
-# br.gov.saude.br-core.fhir#1.1.0: Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1
+# br.gov.saude.br-core.fhir#1.1.1: Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1
 
 ## Pages
 

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei | *Versão*:1.1.1 |
 | Active as of 2025-10-30 | *Nome computável*:DSEI |
 | **Copyright/Legal**: Copyright © 2025 HL7 Brasil | |
 
@@ -74,7 +74,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-address-dse
   "resourceType" : "StructureDefinition",
   "id" : "br-core-address-dsei",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "DSEI",
   "title" : "Distrito Sanitário Especial Indígena (DSEI)",
   "status" : "active",

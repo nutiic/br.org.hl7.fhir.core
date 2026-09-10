@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir | *Versão*:1.1.1 |
 | Active as of 2023-05-08 | *Nome computável*:BRCORE |
 
 ### Introdução

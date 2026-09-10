@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide br.gov.saude.br-core.fhir</b></p><a name=\"br.gov.saude.br-core.fhir\"> </a><a name=\"hcbr.gov.saude.br-core.fhir\"> </a><h2>BRCORE</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir</pre><div><p>Guia de Implementação Core de Interoperabilidade em Saúde Digital do Brasil.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir"] ;
-  fhir:ImplementationGuide.version [ fhir:value "1.1.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "1.1.1"] ;
   fhir:ImplementationGuide.name [ fhir:value "BRCORE"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;

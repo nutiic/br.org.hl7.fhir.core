@@ -9,7 +9,7 @@
   "resourceType" : "ImplementationGuide",
   "id" : "br.gov.saude.br-core.fhir",
   "url" : "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCORE",
   "title" : "Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1",
   "status" : "active",

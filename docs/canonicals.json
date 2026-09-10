@@ -2,335 +2,335 @@
   "id" : "br.gov.saude.br-core.fhir",
   "type" : "ImplementationGuide",
   "url" : "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCORE"
 },
 {
   "id" : "br-core-address",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreAddress"
 },
 {
   "id" : "br-core-address-aldeia",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-aldeia",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "Aldeia"
 },
 {
   "id" : "br-core-address-dsei",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-dsei",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "DSEI"
 },
 {
   "id" : "br-core-address-polo",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "PoloBase"
 },
 {
   "id" : "br-core-allergyintolerance",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreAllergyIntolerance"
 },
 {
   "id" : "br-core-appointment",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-appointment",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreAppointment"
 },
 {
   "id" : "br-core-base-legal-lgpd",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRBaseLegalLGPD"
 },
 {
   "id" : "br-core-capacidadefuncional",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-capacidadefuncional",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreCapacidadeFuncional"
 },
 {
   "id" : "br-core-careplan",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careplan",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreCarePlan"
 },
 {
   "id" : "br-core-careteam",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careteam",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreCareTeam"
 },
 {
   "id" : "br-core-composition",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreComposition"
 },
 {
   "id" : "br-core-condition",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-condition",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreCondition"
 },
 {
   "id" : "br-core-consent",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreConsent"
 },
 {
   "id" : "br-core-diagnosticreport",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreDiagnosticReport"
 },
 {
   "id" : "br-core-diagnosticreport-conduta",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport-conduta",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreDiagnosticReportConduta"
 },
 {
   "id" : "br-core-encounter",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-encounter",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreEncounter"
 },
 {
   "id" : "br-core-healthcareservice",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreHealthcareService"
 },
 {
   "id" : "br-core-immunization",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-immunization",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreImmunization"
 },
 {
   "id" : "br-core-location",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreLocation"
 },
 {
   "id" : "br-core-medication",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreMedication"
 },
 {
   "id" : "br-core-medicationadministration",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationadministration",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreMedicationAdministration"
 },
 {
   "id" : "br-core-medicationdispense",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationdispense",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreMedicationDispense"
 },
 {
   "id" : "br-core-medicationrequest",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationrequest",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreMedicationRequest"
 },
 {
   "id" : "br-core-medicationstatement",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationstatement",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRMedicationStatement"
 },
 {
   "id" : "br-core-observation",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observation",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservation"
 },
 {
   "id" : "br-core-observationalcoholuse",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationalcoholuse",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationAlcoholUse"
 },
 {
   "id" : "br-core-observationbreastfeedingstatus",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationbreastfeedingstatus",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationBreastfeedingStatus"
 },
 {
   "id" : "br-core-observationpregnancyedd",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyedd",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationPregnancyEDD"
 },
 {
   "id" : "br-core-observationpregnancyoutcome",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationPregnancyOutcome"
 },
 {
   "id" : "br-core-observationpregnancystatus",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancystatus",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationPregnancyStatus"
 },
 {
   "id" : "br-core-observationtobaccouse",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationtobaccouse",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreObservationTobaccoUse"
 },
 {
   "id" : "br-core-organization",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreOrganization"
 },
 {
   "id" : "br-core-patient",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePatient"
 },
 {
   "id" : "br-core-pesquisaclinica",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePesquisaClinica"
 },
 {
   "id" : "br-core-populacaotradicional",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePopulacaoTradicional"
 },
 {
   "id" : "br-core-povoitinerante",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePovoItinerante"
 },
 {
   "id" : "br-core-practitioner",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePractitioner"
 },
 {
   "id" : "br-core-practitionerrole",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePractitionerRole"
 },
 {
   "id" : "br-core-procedure",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-procedure",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreProcedure"
 },
 {
   "id" : "br-core-registroatendimentoclinico",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-registroatendimentoclinico",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreRegistroAtendimentoClinico"
 },
 {
   "id" : "br-core-relatedperson",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreRelatedPerson"
 },
 {
   "id" : "br-core-schedule",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-schedule",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreSchedule"
 },
 {
   "id" : "br-core-servicerequest",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-servicerequest",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreServiceRequest"
 },
 {
   "id" : "br-core-slot",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-slot",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreSlot"
 },
 {
   "id" : "br-core-specimen",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-specimen",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreSpecimen"
 },
 {
   "id" : "br-core-sumarioalta",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-sumarioalta",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreSumarioAlta"
 },
 {
   "id" : "br-core-vitalsigns",
   "type" : "StructureDefinition",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-vitalsigns",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreVitalSigns"
 }]

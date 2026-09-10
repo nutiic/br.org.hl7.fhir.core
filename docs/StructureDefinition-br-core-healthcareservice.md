@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice | *Versão*:1.1.1 |
 | Active as of 2026-09-10 | *Nome computável*:BRCoreHealthcareService |
 
  
@@ -139,11 +139,11 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-healthcares
   "resourceType" : "StructureDefinition",
   "id" : "br-core-healthcareservice",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreHealthcareService",
   "title" : "br-core-healthcareservice",
   "status" : "active",
-  "date" : "2026-09-10T13:05:34-04:00",
+  "date" : "2026-09-10T13:58:29-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

@@ -7,7 +7,7 @@
 </div></div>
   </text>
   <url value="https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir"/>
-  <version value="1.1.0"/>
+  <version value="1.1.1"/>
   <name value="BRCORE"/>
   <title value="Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1"/>
   <status value="active"/>

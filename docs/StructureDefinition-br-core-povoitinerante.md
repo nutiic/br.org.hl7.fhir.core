@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante | *Versão*:1.1.1 |
 | Active as of 2024-07-24 | *Nome computável*:BRCorePovoItinerante |
 | **Copyright/Legal**: CC-01 | |
 
@@ -76,7 +76,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-povoitinera
   "resourceType" : "StructureDefinition",
   "id" : "br-core-povoitinerante",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCorePovoItinerante",
   "title" : "Extensão de povo itinerante do Core do Brasil",
   "status" : "active",

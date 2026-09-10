@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent | *Versão*:1.1.0 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent | *Versão*:1.1.1 |
 | Active as of 2026-09-10 | *Nome computável*:BRCoreConsent |
 
  
@@ -115,11 +115,11 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-consent.csv
   "resourceType" : "StructureDefinition",
   "id" : "br-core-consent",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "BRCoreConsent",
   "title" : "br-core-consent",
   "status" : "active",
-  "date" : "2026-09-10T13:05:34-04:00",
+  "date" : "2026-09-10T13:58:29-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
