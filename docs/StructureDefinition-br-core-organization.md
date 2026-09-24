@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreOrganization |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreOrganization |
 
  
 Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros 
@@ -135,10 +135,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-organizatio
   "resourceType" : "StructureDefinition",
   "id" : "br-core-organization",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreOrganization",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

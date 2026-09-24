@@ -165,14 +165,14 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancies-summary-uv-ips.html" : "Pregnancies Summary - IPS",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRFreqUsoSubstancia.html" : "BRFreqUsoSubstancia",
     "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancy-status-uv-ips.html" : "Pregnancy Status - IPS",
-    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRSinaisVitais.html" : "BR Sinais Vitais",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
     "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-edd-method-uv-ips.html" : "Pregnancy Expected Delivery Date Method - IPS"
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-edd-method-uv-ips.html" : "Pregnancy Expected Delivery Date Method - IPS",
+    "http://hl7.org/fhir/uv/ips/STU1.1/ValueSet-pregnancies-summary-uv-ips.html" : "Pregnancies Summary - IPS",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRSinaisVitais.html" : "BR Sinais Vitais"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -184,9 +184,9 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
@@ -295,7 +295,7 @@
     "oids" : ["2.16.840.1.113883.18.169"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
@@ -319,7 +319,7 @@
     "oids" : ["2.16.840.1.113883.18.317"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -331,8 +331,8 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
@@ -399,9 +399,9 @@
     "description" : "",
     "uses" : {
     },
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReasonEncounter.html" : "BR Reason Encounter",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRTerminologiaSuspeitaDiagnostica.html" : "BR Terminologia Suspeita Diagnostica",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCID10.html" : "BRCID 10",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRReasonEncounter.html" : "BR Reason Encounter",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRProblemaDiagnostico.html" : "BR Problema Diagnostico"
   },
   {
@@ -436,10 +436,10 @@
     "uses" : {
     },
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
     "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
-    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil"
+    "file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRDesfechoProcedimento",

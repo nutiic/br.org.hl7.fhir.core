@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional | *Versão*:1.1.1 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional | *Versão*:1.1.2 |
 | Active as of 2024-11-19 | *Nome computável*:BRCorePopulacaoTradicional |
 | **Copyright/Legal**: CC-01 | |
 
@@ -76,7 +76,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-populacaotr
   "resourceType" : "StructureDefinition",
   "id" : "br-core-populacaotradicional",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCorePopulacaoTradicional",
   "title" : "Extensão de populacao tradicional do Core do Brasil",
   "status" : "active",

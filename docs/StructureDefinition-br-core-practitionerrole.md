@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCorePractitionerRole |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCorePractitionerRole |
 
  
 Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo 
@@ -147,10 +147,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-practitione
   "resourceType" : "StructureDefinition",
   "id" : "br-core-practitionerrole",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCorePractitionerRole",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

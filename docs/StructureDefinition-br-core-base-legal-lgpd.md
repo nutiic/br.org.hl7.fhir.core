@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd | *Versão*:1.1.1 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd | *Versão*:1.1.2 |
 | Active as of 2026-01-10 | *Nome computável*:BRBaseLegalLGPD |
 | **Copyright/Legal**: CC-01 | |
 
@@ -20,7 +20,7 @@ Elemento que deve ser utilizado para atender aos requisitos da Lei Geral de Prot
 
 Esta extensão pode ser usada no seguinte elemento(s):
 
-* Element ID Patient
+* Element ID Consent
 
 **Informações de uso**
 
@@ -74,7 +74,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-base-legal-
   "resourceType" : "StructureDefinition",
   "id" : "br-core-base-legal-lgpd",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-base-legal-lgpd",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRBaseLegalLGPD",
   "title" : "Extensão do perfil BRCoreConsent define extensões específicas para atender aos requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)",
   "status" : "active",
@@ -119,7 +119,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-base-legal-
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "Patient"
+    "expression" : "Consent"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

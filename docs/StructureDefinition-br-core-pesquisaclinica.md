@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica | *Versão*:1.1.1 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica | *Versão*:1.1.2 |
 | Active as of 2025-02-25 | *Nome computável*:BRCorePesquisaClinica |
 | **Copyright/Legal**: CC-01 | |
 
@@ -75,7 +75,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-pesquisacli
   "resourceType" : "StructureDefinition",
   "id" : "br-core-pesquisaclinica",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-pesquisaclinica",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCorePesquisaClinica",
   "title" : "Extensão de pesquisa clínica do Core do Brasil",
   "status" : "active",

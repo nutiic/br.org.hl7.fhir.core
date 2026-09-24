@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo | *Versão*:1.1.1 |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo | *Versão*:1.1.2 |
 | Active as of 2025-10-30 | *Nome computável*:PoloBase |
 | **Copyright/Legal**: Copyright © 2025 HL7 Brasil | |
 
@@ -74,7 +74,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-address-pol
   "resourceType" : "StructureDefinition",
   "id" : "br-core-address-polo",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-address-polo",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "PoloBase",
   "title" : "Polo Base",
   "status" : "active",

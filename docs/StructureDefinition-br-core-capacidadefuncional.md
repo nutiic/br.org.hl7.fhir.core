@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-capacidadefuncional | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreCapacidadeFuncional |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-capacidadefuncional | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreCapacidadeFuncional |
 
  
 Este perfil herda do recurso [br-core-condition](StructureDefinition-br-core-condition.md) 
@@ -93,10 +93,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-capacidadef
   "resourceType" : "StructureDefinition",
   "id" : "br-core-capacidadefuncional",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-capacidadefuncional",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreCapacidadeFuncional",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

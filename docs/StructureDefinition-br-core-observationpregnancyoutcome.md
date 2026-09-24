@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreObservationPregnancyOutcome |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreObservationPregnancyOutcome |
 
  
 Este perfil restringe o recurso [Observation](https://hl7.org/fhir/R4/observation.html) para representar o histórico resumido dos resultados da gravidez. 
@@ -128,10 +128,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-observation
   "resourceType" : "StructureDefinition",
   "id" : "br-core-observationpregnancyoutcome",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationpregnancyoutcome",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreObservationPregnancyOutcome",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

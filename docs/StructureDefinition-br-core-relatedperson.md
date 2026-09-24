@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreRelatedPerson |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreRelatedPerson |
 
  
 O recurso [br-core-relatedperson](StructureDefinition-br-core-relatedperson.md) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. 
@@ -120,10 +120,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-relatedpers
   "resourceType" : "StructureDefinition",
   "id" : "br-core-relatedperson",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreRelatedPerson",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

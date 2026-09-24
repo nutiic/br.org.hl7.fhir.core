@@ -9,7 +9,7 @@
   "resourceType" : "ImplementationGuide",
   "id" : "br.gov.saude.br-core.fhir",
   "url" : "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCORE",
   "title" : "Guia de implementação do Core do Brasil: Release 1 - BR Realm | STU1",
   "status" : "active",
@@ -53,7 +53,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",

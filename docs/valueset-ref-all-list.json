@@ -26,8 +26,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.69"],
     "uses" : {
     },
-    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -41,8 +41,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.67"],
     "uses" : {
     },
-    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-address.html" : "Endereço Brasileiro"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -57,8 +57,8 @@
     "uses" : {
     },
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -73,8 +73,8 @@
     "uses" : {
     },
     "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -200,21 +200,21 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
     "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
+    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
-    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
-    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -312,9 +312,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.232"],
     "uses" : {
     },
-    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
     "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
-    "StructureDefinition-br-core-careteam.html" : "br-core-careteam"
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -328,9 +328,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.238"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -344,9 +344,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.241"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -374,8 +374,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.164"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -403,8 +403,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.168"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -418,8 +418,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.170"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -433,8 +433,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.171"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -448,8 +448,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.166"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/consent-action",
@@ -636,14 +636,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -657,10 +657,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.512"],
     "uses" : {
     },
-    "StructureDefinition-br-core-location.html" : "br-core-location",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -730,9 +730,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.237"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
@@ -746,9 +746,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.240"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
@@ -762,9 +762,9 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -778,9 +778,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.244"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
@@ -926,10 +926,10 @@
     "uses" : {
     },
     "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
     "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
     "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
-    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
@@ -1000,44 +1000,44 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
-    "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
-    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
     "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
-    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
-    "StructureDefinition-br-core-consent.html" : "br-core-consent",
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen",
-    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
-    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
-    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
-    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
-    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-location.html" : "br-core-location",
-    "StructureDefinition-br-core-medication.html" : "br-core-medication",
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-composition.html" : "br-core-composition",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
     "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
+    "StructureDefinition-br-core-medication.html" : "br-core-medication",
+    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
+    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
+    "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
+    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
+    "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
+    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen",
+    "StructureDefinition-br-core-consent.html" : "br-core-consent",
+    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1065,9 +1065,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.322"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -1081,9 +1081,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.318"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -1139,8 +1139,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.169"],
     "uses" : {
     },
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional"
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -1226,12 +1226,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.375"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-medication.html" : "br-core-medication",
-    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
     "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
+    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
+    "StructureDefinition-br-core-medication.html" : "br-core-medication"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
@@ -1428,14 +1428,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1449,13 +1449,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -1469,14 +1469,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1490,14 +1490,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1511,14 +1511,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -1715,14 +1715,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1736,14 +1736,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
     "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
     "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus"
+    "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -1814,8 +1814,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan",
-    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest"
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-careplan.html" : "BRCoreCarePlan"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -1829,28 +1829,28 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-consent.html" : "br-core-consent",
-    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen",
-    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
-    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
-    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
-    "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
-    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
-    "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
-    "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
     "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
+    "StructureDefinition-br-core-observationalcoholuse.html" : "BRCoreObservationAlcoholUse",
+    "StructureDefinition-br-core-observationpregnancyedd.html" : "BRCoreObservationPregnancyEDD",
+    "StructureDefinition-br-core-patient.html" : "BRCorePatient",
+    "StructureDefinition-br-core-composition.html" : "br-core-composition",
+    "StructureDefinition-br-core-specimen.html" : "BRCoreSpecimen",
+    "StructureDefinition-br-core-capacidadefuncional.html" : "BRCoreCapacidadeFuncional",
+    "StructureDefinition-br-core-consent.html" : "br-core-consent",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-observation.html" : "BRCoreObservation",
+    "StructureDefinition-br-core-observationbreastfeedingstatus.html" : "BRCoreObservationBreastfeedingStatus",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-observationpregnancyoutcome.html" : "BRCoreObservationPregnancyOutcome",
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-observationtobaccouse.html" : "BRCoreObservationTobaccoUse",
     "StructureDefinition-br-core-observationpregnancystatus.html" : "BRCoreObservationPregnancyStatus",
-    "StructureDefinition-br-core-patient.html" : "BRCorePatient"
+    "StructureDefinition-br-core-condition.html" : "BRCoreCondition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -2064,10 +2064,10 @@
     "systems" : ["http://standardterms.edqm.eu"],
     "uses" : {
     },
+    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
     "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance"
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
   },
   {
     "url" : "http://hl7.org/fhir/uv/ips/ValueSet/pregnancies-summary-uv-ips",
@@ -2133,8 +2133,8 @@
     "sources" : ["2.16.840.1.113883.21.181"],
     "uses" : {
     },
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
@@ -2188,9 +2188,9 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -2232,8 +2232,8 @@
     "sources" : ["2.16.840.1.113883.1.11.16621"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -2247,9 +2247,9 @@
     "sources" : ["2.16.840.1.113883.1.11.10228"],
     "uses" : {
     },
+    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico",
     "StructureDefinition-br-core-composition.html" : "br-core-composition",
-    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta",
-    "StructureDefinition-br-core-registroatendimentoclinico.html" : "br-core-registroatendimentoclinico"
+    "StructureDefinition-br-core-sumarioalta.html" : "br-core-sumarioalta"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
@@ -2291,8 +2291,8 @@
     "sources" : ["2.16.840.1.113883.1.11.19377"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest"
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-medicationdispense.html" : "br-core-medicationdispense"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRAlergenos",
@@ -2342,9 +2342,9 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"],
     "uses" : {
     },
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
@@ -2442,8 +2442,8 @@
     "https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubGrupoTabelaSUS"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
-    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest"
+    "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCondutaColposcopia",
@@ -2515,8 +2515,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRFormaOrganizacaoTabelaSUS"],
     "uses" : {
     },
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule"
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFreqUsoSubstancia",
@@ -2576,11 +2576,11 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial"],
     "uses" : {
     },
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
     "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule"
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho",
@@ -2617,13 +2617,13 @@
     "uses" : {
     },
     "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
     "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
     "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+    "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
@@ -2696,9 +2696,9 @@
     "systems" : ["https://fhir.ans.gov.br/CodeSystem/tuss-22"],
     "uses" : {
     },
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
     "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProgramaSaude",
@@ -2770,10 +2770,10 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRServicoEspecializado"],
     "uses" : {
     },
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
     "StructureDefinition-br-core-location.html" : "br-core-location",
     "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRSinaisVitais",
@@ -2848,8 +2848,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice"
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-organization.html" : "BRCoreOrganization"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoParticipante",

@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreLocation |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreLocation |
 
  
 Este perfil restringe o recurso [Location](https://hl7.org/fhir/R4/location.html) que aborda detalhes e informações da posição de um local físico onde os serviços são fornecidos e os recursos e participantes podem ser armazenados, encontrados, contidos ou acomodados 
@@ -158,11 +158,11 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-location.cs
   "resourceType" : "StructureDefinition",
   "id" : "br-core-location",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreLocation",
   "title" : "br-core-location",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

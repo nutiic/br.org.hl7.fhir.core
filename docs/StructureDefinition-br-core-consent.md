@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreConsent |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreConsent |
 
  
 Este perfil define as características mínimas para o recurso [br-core-consent](StructureDefinition-br-core-consent.md) registrar, pesquisar e buscar consentimentos para tratamento de dados pessoais conforme Lei Geral de Proteção de Dados (LGPD) - Lei nº 13.709/2018. O perfil especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes e restringe como os elementos são usados. Além disso, fornece a base para o desenvolvimento de padrões para casos de uso específicos promove a interoperabilidade e a adoção. 
@@ -115,11 +115,11 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-consent.csv
   "resourceType" : "StructureDefinition",
   "id" : "br-core-consent",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-consent",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreConsent",
   "title" : "br-core-consent",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

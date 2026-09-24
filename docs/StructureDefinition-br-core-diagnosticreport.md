@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport | *Versão*:1.1.1 |
-| Active as of 2026-09-10 | *Nome computável*:BRCoreDiagnosticReport |
+| *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport | *Versão*:1.1.2 |
+| Active as of 2026-09-24 | *Nome computável*:BRCoreDiagnosticReport |
 
  
 Este perfil restringe o recurso [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) que representa as descobertas e a interpretação de testes diagnósticos realizados em pacientes, grupos de pacientes, dispositivos e locais, e/ou espécimes derivados destes. O relatório inclui contexto clínico, como solicitação e informações do provedor, e alguma mistura de resultados atômicos, imagens, interpretações textuais e codificadas, e representação formatada de relatórios diagnósticos 
@@ -178,10 +178,10 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-diagnosticr
   "resourceType" : "StructureDefinition",
   "id" : "br-core-diagnosticreport",
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport",
-  "version" : "1.1.1",
+  "version" : "1.1.2",
   "name" : "BRCoreDiagnosticReport",
   "status" : "active",
-  "date" : "2026-09-10T13:58:29-04:00",
+  "date" : "2026-09-24T08:49:20-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

@@ -13,7 +13,7 @@ Description: "Este perfil de extensão representa um povo itinerante com a qual 
 * ^purpose = "Elemento que deve ser utilizado para atender aos requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)"
 * ^copyright = "CC-01"
 * ^context.type = #element
-* ^context.expression = "Patient"
+* ^context.expression = "Consent"
 * . 0..1
 * . ^short = "Extensão de brcoreconsent para LGPD"
 * . ^definition = "Conceitos que definem os requisitos da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)"
