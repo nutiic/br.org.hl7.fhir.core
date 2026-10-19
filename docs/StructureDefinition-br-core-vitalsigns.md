@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-vitalsigns | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreVitalSigns |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreVitalSigns |
 
  
 Este perfil é baseado no perfil [VitalSigns](http://hl7.org/fhir/R4/observation-vitalsigns.html) e define restrições adicionais no recurso Observation para representar Observation de sinais vitais. Ele especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes no recurso e restringe como os elementos são usados. 
@@ -192,7 +192,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-vitalsigns.
   "version" : "1.1.2",
   "name" : "BRCoreVitalSigns",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

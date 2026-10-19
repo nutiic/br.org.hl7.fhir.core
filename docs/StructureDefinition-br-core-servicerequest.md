@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-servicerequest | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreServiceRequest |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreServiceRequest |
 
  
 Este recurso restringe o recurso [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) que registra uma solicitação de serviço, como investigações diagnósticas, tratamentos ou operações a serem realizadas 
@@ -190,7 +190,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-servicerequ
   "version" : "1.1.2",
   "name" : "BRCoreServiceRequest",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

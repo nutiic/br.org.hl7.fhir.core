@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-specimen | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreSpecimen |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreSpecimen |
 
  
 Este perfil restringe o recurso Specimen para representar as características de amostras biológicas no contexto de resultados laboratoriais integrados a um Sumário do Paciente. O recurso Specimen descreve uma amostra utilizada para análise laboratorial 
@@ -157,7 +157,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-specimen.cs
   "version" : "1.1.2",
   "name" : "BRCoreSpecimen",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

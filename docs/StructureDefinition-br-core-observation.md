@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observation | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreObservation |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreObservation |
 
  
 O recurso [br-core-Observation](StructureDefinition-br-core-observation.md) herda do recurso FHIR R4 [observation](https://hl7.org/fhir/R4B/observation.html) e registra medidas e resumo simples feitas sobre um paciente, dispositivo ou outro assunto 
@@ -212,7 +212,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-observation
   "version" : "1.1.2",
   "name" : "BRCoreObservation",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

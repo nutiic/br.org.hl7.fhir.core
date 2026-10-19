@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-careplan | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreCarePlan |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreCarePlan |
 
  
 Este perfil restringe o recurso [CarePlan](https://hl7.org/fhir/R4/careplan.html) que descreve a intenção de como um ou mais profissionais pretendem prestar cuidados a um determinado paciente, grupo ou comunidade por um período de tempo, possivelmente limitado ao cuidado de uma condição específica ou conjunto de condições 
@@ -170,7 +170,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-careplan.cs
   "version" : "1.1.2",
   "name" : "BRCoreCarePlan",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

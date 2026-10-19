@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-allergyintolerance | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreAllergyIntolerance |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreAllergyIntolerance |
 
  
 Este perfil define as características mínimas para o recurso [br-core-allergyintolerance](StructureDefinition-br-core-allergyintolerance.md) registrar, pesquisar e buscar alergias/reações adversas associadas a um paciente. O perfil especifica quais elementos principais, extensões, vocabulários e conjuntos de valores **DEVEM** estar presentes e restringe como os elementos são usados. Além disso, fornece a base para o desenvolvimento de padrões para casos de uso específicos promove a interoperabilidade e a adoção. 
@@ -157,7 +157,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-allergyinto
   "name" : "BRCoreAllergyIntolerance",
   "title" : "br-core-allergyintolerance",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

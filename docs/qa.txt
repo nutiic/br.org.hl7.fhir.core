@@ -1,9 +1,9 @@
 BRCORE : Validation Results
 =========================================
 
-err = 13, warn = 142, info = 148
-IG Publisher Version: 2.3.4
-Generated Thu Sep 24 08:53:17 AMT 2026. FHIR version 4.0.1 for br.gov.saude.br-core.fhir#1.1.2 (canonical = https://br-core.saude.gov.br/fhir)
+err = 12, warn = 142, info = 148
+IG Publisher Version: 2.3.4 Out of date - current version is 3.0.1
+Generated Mon Oct 19 13:55:23 AMT 2026. FHIR version 4.0.1 for br.gov.saude.br-core.fhir#1.1.2 (canonical = https://br-core.saude.gov.br/fhir)
  Build Errors : 0 / 65 / 1
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/ImplementationGuide-br.gov.saude.br-core.fhir : 0 / 1 / 3
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/fsh-generated/resources/StructureDefinition-br-core-address : 0 / 1 / 3
@@ -88,7 +88,7 @@ Generated Thu Sep 24 08:53:17 AMT 2026. FHIR version 4.0.1 for br.gov.saude.br-c
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/Practitioner-d3b61455-f432-48f0-b83b-ba825922d735 : 1 / 0 / 2
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/PractitionerRole-69ba81d5-37fe-471e-99d8-e53649ccdeed : 2 / 0 / 2
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/Procedure-b0030c23-bd7d-445e-bfe5-020828f7dbaf : 0 / 2 / 1
- /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/RegistroAtendimentoClinico-7681618d-399d-4291-b321-32ce6d645088 : 2 / 0 / 5
+ /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/RegistroAtendimentoClinico-7681618d-399d-4291-b321-32ce6d645088 : 1 / 0 / 5
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/RelatedPerson-f48ffa19-7af8-4377-aab8-2c98ca1ce07b : 0 / 0 / 4
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/ServiceRequest-d70c3a7e-abf0-44ab-ab0b-8c59ffee8f85 : 0 / 2 / 2
  /home/raphael/Codigo/git/br.org.hl7.fhir.core/input/examples/Specimen-2f42ddad-b9bb-4f68-b5b9-426054529f31 : 0 / 0 / 3
@@ -418,23 +418,23 @@ WARNING: CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532: CarePlan.activity[0].det
 WARNING: CarePlan/1ed343f2-5231-40d6-a6ea-4428105b7532: CarePlan.activity[0].detail.code.coding[0].system: A definition for CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubgrupoTabelaSUS' could not be found, so the code cannot be validated
 == input/examples/CareTeam-0af04a2a-5174-438d-85ae-fc83df65541e.json ==
 INFORMATION: CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e: CareTeam.participant[0].role[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PRF para a(s) língua(s) 'pt-BR'. O ecrã é 'performer', o ecrã da língua predefinida
-ERROR: CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e: CareTeam.participant[1].role[0].coding[0].code: Código desconhecido '225125' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
+ERROR: CareTeam/0af04a2a-5174-438d-85ae-fc83df65541e: CareTeam.participant[1].role[0].coding[0].code: Código desconhecido '225125' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
 == input/examples/Composition-5c0878bd-a787-489d-82aa-82f4fb55909e.json ==
 == input/examples/Condition-91d8d24f-a70d-4ebf-8dea-71cf92ce1bd5.json ==
 == input/examples/DiagnosticReport-a952a5b4-2bc5-42f8-a3de-af67ec3ea791.json ==
 == input/examples/Encounter-c6d553d8-cce0-404b-9d1f-eeffbf7fc6df.json ==
 INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.class.display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB para a(s) língua(s) 'pt-BR'. O ecrã é 'Ambulatory', o ecrã da língua predefinida
 INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.class: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB para a(s) língua(s) 'pt-BR'. O ecrã é 'Ambulatory', o ecrã da língua predefinida
-INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.class: A codificação fornecida (http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB) não foi encontrada no conjunto de valores 'BR Modalidade Assistencial' (https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial|1.1.0) especificado numa ligação adicional e recomenda-se que um código provenha deste conjunto de valores.  (error message = Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB para a(s) língua(s) 'pt-BR'. O ecrã é 'Ambulatory', o ecrã da língua predefinida; The provided code 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB: 'Ambulatory'' was not found in the value set 'https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial|1.1.0')
+INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.class: A codificação fornecida (http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB) não foi encontrada no conjunto de valores 'BR Modalidade Assistencial' (https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial|1.1.1) especificado numa ligação adicional e recomenda-se que um código provenha deste conjunto de valores.  (error message = Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB para a(s) língua(s) 'pt-BR'. O ecrã é 'Ambulatory', o ecrã da língua predefinida; The provided code 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB: 'Ambulatory'' was not found in the value set 'https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial|1.1.1')
 INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.priority.coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActPriority#R para a(s) língua(s) 'pt-BR'. O ecrã é 'routine', o ecrã da língua predefinida
 INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.participant[0].type[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ParticipationType#ADM para a(s) língua(s) 'pt-BR'. O ecrã é 'admitter', o ecrã da língua predefinida
-INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.reasonCode[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BR Reason Encounter' (https://terminologia.saude.gov.br/fhir/ValueSet/BRReasonEncounter|1.1.0), pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#R06.0)
-INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.reasonCode[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BRCIAP 2' (https://terminologia.saude.gov.br/fhir/ValueSet/BRCIAP2|1.1.0) especificado numa ligação adicional, pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#R06.0)
+INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.reasonCode[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BR Reason Encounter' (https://terminologia.saude.gov.br/fhir/ValueSet/BRReasonEncounter|1.1.1), pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#R06.0)
+INFORMATION: Encounter/c6d553d8-cce0-404b-9d1f-eeffbf7fc6df: Encounter.reasonCode[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BRCIAP 2' (https://terminologia.saude.gov.br/fhir/ValueSet/BRCIAP2|1.1.1) especificado numa ligação adicional, pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#R06.0)
 == input/examples/HealthCareService-58a7b01f-72e8-411a-b1c0-5f7728ab7c51.json ==
 INFORMATION: HealthcareService/58a7b01f-72e8-411a-b1c0-5f7728ab7c51: HealthcareService.text.div: O esquema de hiperligação 'file' em 'file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cnes.html' em 'div/p/a' para 'NamingSystemCNES' não é um protocolo amplamente suportado e deve ser verificado
 == input/examples/Immunization-714819de-cd07-4423-94ea-7057504a2cc8.json ==
 ERROR: Immunization/714819de-cd07-4423-94ea-7057504a2cc8: Immunization.reportOrigin.coding[0].display: Wrong Display Name 'Vaccination abroad' for https://terminologia.saude.gov.br/fhir/CodeSystem/BRRegistroOrigem#2. Valid display is 'Vacina no Exterior' (for the language(s) 'pt-BR')
-ERROR: Immunization/714819de-cd07-4423-94ea-7057504a2cc8: Immunization.performer[0].function.coding[0].code: Código desconhecido '223505' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
+ERROR: Immunization/714819de-cd07-4423-94ea-7057504a2cc8: Immunization.performer[0].function.coding[0].code: Código desconhecido '223505' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
 == input/examples/Location-9fea09cf-0529-4f7d-bad0-80cd5fd00cba.json ==
 == input/examples/Medication-3a46210c-7eb3-48ec-aa67-db7e7ee18864.json ==
 ERROR: Medication/3a46210c-7eb3-48ec-aa67-db7e7ee18864: Medication.code.coding[0].display: Wrong Display Name 'levofloxacino' for http://www.whocc.no/atc#J01MA12. Valid display is 'levofloxacin' (for the language(s) 'pt-BR')
@@ -444,7 +444,7 @@ ERROR: MedicationAdministration/c2a71a42-d3cd-4be8-8bf4-fdddea59034f: Medication
 ERROR: MedicationDispense/80589c80-643e-43ea-801b-5f32616e9a27: MedicationDispense.medication.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'glicosamina' for http://www.whocc.no/atc#M01AX05. Valid display is 'glucosamine' (for the language(s) 'pt-BR')
 WARNING: MedicationDispense/80589c80-643e-43ea-801b-5f32616e9a27: MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity).system: Não foi possível encontrar uma definição para o valor URL 'http://standardterms.edqm.eu'
 == input/examples/MedicationRequest-1f311b28-03d5-411d-90a6-84edf417e01a.json ==
-ERROR: MedicationRequest/1f311b28-03d5-411d-90a6-84edf417e01a: MedicationRequest.performerType.coding[0].code: Código desconhecido '225130' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
+ERROR: MedicationRequest/1f311b28-03d5-411d-90a6-84edf417e01a: MedicationRequest.performerType.coding[0].code: Código desconhecido '225130' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
 INFORMATION: MedicationRequest/1f311b28-03d5-411d-90a6-84edf417e01a: MedicationRequest.substitution.reason.coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActReason#CT para a(s) língua(s) 'pt-BR'. O ecrã é 'continuing therapy', o ecrã da língua predefinida
 == input/examples/MedicationStatement-82c41d7b-b125-49ae-825e-8918885ba234.json ==
 == input/examples/MedicationStatement-9d15b978-0743-4a5b-af6f-aac73c027f16.json ==
@@ -467,16 +467,15 @@ INFORMATION: Patient/b1997888-85fd-41b6-bf94-6242cf3c8265: Patient.contact[0].re
 == input/examples/Patient-c3a40500-5fe8-47f1-b21a-dce205e6c617.json ==
 == input/examples/Practitioner-d3b61455-f432-48f0-b83b-ba825922d735.json ==
 INFORMATION: Practitioner/d3b61455-f432-48f0-b83b-ba825922d735: Practitioner.text.div: O esquema de hiperligação 'file' em 'file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cns.html' em 'div/table/tr/td/a' para 'NamingSystemCNS' não é um protocolo amplamente suportado e deve ser verificado
-ERROR: Practitioner/d3b61455-f432-48f0-b83b-ba825922d735: Practitioner.qualification[0].code.coding[0].code: Código desconhecido '225125' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
+ERROR: Practitioner/d3b61455-f432-48f0-b83b-ba825922d735: Practitioner.qualification[0].code.coding[0].code: Código desconhecido '225125' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
 == input/examples/PractitionerRole-69ba81d5-37fe-471e-99d8-e53649ccdeed.json ==
-ERROR: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.code[0].coding[0].code: Código desconhecido '225120' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
-ERROR: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.specialty[0].coding[0].code: Código desconhecido '225120' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.0'
-INFORMATION: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.specialty[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BR Ocupacao' (https://terminologia.saude.gov.br/fhir/ValueSet/BROcupacao|1.1.0), pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#225120)
+ERROR: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.code[0].coding[0].code: Código desconhecido '225120' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
+ERROR: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.specialty[0].coding[0].code: Código desconhecido '225120' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO' versão '1.1.1'
+INFORMATION: PractitionerRole/69ba81d5-37fe-471e-99d8-e53649ccdeed: PractitionerRole.specialty[0]: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'BR Ocupacao' (https://terminologia.saude.gov.br/fhir/ValueSet/BROcupacao|1.1.1), pelo que se recomenda que uma codificação provenha deste conjunto de valores (códigos = https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#225120)
 == input/examples/Procedure-b0030c23-bd7d-445e-bfe5-020828f7dbaf.json ==
 WARNING: Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf: Procedure.category.coding[0].system: A definition for CodeSystem 'https://fhir.ans.gov.br/CodeSystem/tuss-50' could not be found, so the code cannot be validated
 WARNING: Procedure/b0030c23-bd7d-445e-bfe5-020828f7dbaf: Procedure.code.coding[0].system: A definition for CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRTabelaSUS' could not be found, so the code cannot be validated
 == input/examples/RegistroAtendimentoClinico-7681618d-399d-4291-b321-32ce6d645088.json ==
-ERROR: Composition/7681618d-399d-4291-b321-32ce6d645088: Composition.section[3].code.coding[0].code: Código desconhecido 'amendoim' no CodeSystem 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRAlergenosCBARA' versão '1.1.0'
 ERROR: Composition/7681618d-399d-4291-b321-32ce6d645088: Composition.section[4].code.coding[0].display: Wrong Display Name 'levofloxacino' for http://www.whocc.no/atc#J01MA12. Valid display is 'levofloxacin' (for the language(s) 'pt-BR')
 == input/examples/RelatedPerson-f48ffa19-7af8-4377-aab8-2c98ca1ce07b.json ==
 INFORMATION: RelatedPerson/f48ffa19-7af8-4377-aab8-2c98ca1ce07b: RelatedPerson.text.div: O esquema de hiperligação 'file' em 'file:///home/raphael/Codigo/git/br.org.hl7.terminologia/output/NamingSystem-cns.html' em 'div/p/a' para 'NamingSystemCNS' não é um protocolo amplamente suportado e deve ser verificado

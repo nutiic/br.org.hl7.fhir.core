@@ -67,12 +67,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
-    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
-    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration",
     "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
     "StructureDefinition-br-core-condition.html" : "BRCoreCondition",
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-vitalsigns.html" : "BRCoreVitalSigns",
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -402,9 +402,9 @@
     "systems" : ["http://standardterms.edqm.eu"],
     "uses" : {
     },
-    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
-    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-medicationstatement.html" : "br-core-medicationstatement",
+    "StructureDefinition-br-core-allergyintolerance.html" : "br-core-allergyintolerance",
     "StructureDefinition-br-core-medicationadministration.html" : "br-core-medicationadministration"
   },
   {
@@ -443,8 +443,8 @@
     "sources" : ["2.16.840.1.113883.21.181"],
     "uses" : {
     },
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
@@ -502,7 +502,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRAlergenos",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRAlergenos",
     "title" : "BR Alergenos",
@@ -516,7 +516,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRAtendimentoPrestado",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRAtendimentoPrestado",
     "title" : "BR Atendimento Prestado",
@@ -528,7 +528,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCIAP2",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCIAP2",
     "title" : "BRCIAP 2",
@@ -540,7 +540,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCID10",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCID10",
     "title" : "BRCID 10",
@@ -549,12 +549,12 @@
     "uses" : {
     },
     "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization"
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "draft",
     "name" : "BRCOREN",
     "title" : "Conselhos regionais de Enfermagem do Brasil",
@@ -566,7 +566,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "draft",
     "name" : "BRCRF",
     "title" : "Conselhos regionais de Farmácia do Brasil",
@@ -578,7 +578,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "draft",
     "name" : "BRCRM",
     "title" : "Conselhos regionais de Medicina do Brasil",
@@ -590,7 +590,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "draft",
     "name" : "BRCRO",
     "title" : "Conselhos regionais de Odontologia do Brasil",
@@ -602,7 +602,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCaraterAtendimento",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCaraterAtendimento",
     "title" : "BR Carater Atendimento",
@@ -614,7 +614,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCaraterAtendimentoMIRA",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCaraterAtendimentoMIRA",
     "title" : "BR Carater Atendimento MIRA",
@@ -626,7 +626,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCategoriaDiagnostico",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCategoriaDiagnostico",
     "title" : "BR Categoria Diagnostico",
@@ -638,7 +638,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCategoriaProcedimento",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCategoriaProcedimento",
     "title" : "BR Categoria Procedimento",
@@ -653,7 +653,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCondutaColposcopia",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRCondutaColposcopia",
     "title" : "BRCondutaColposcopia",
@@ -665,7 +665,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRDesfechoProcedimento",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRDesfechoProcedimento",
     "title" : "BR Desfecho Procedimento",
@@ -677,7 +677,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRDose",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRDose",
     "title" : "BR Dose",
@@ -689,7 +689,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRElegibilidadeImunobiologico",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRElegibilidadeImunobiologico",
     "title" : "BR Elegibilidade Imunobiologico",
@@ -701,7 +701,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BREstrategiaVacinacao",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BREstrategiaVacinacao",
     "title" : "BR Estrategia Vacinacao",
@@ -713,7 +713,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFormaOrganizacaoTabelaSUS",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRFormaOrganizacaoTabelaSUS",
     "title" : "BRFormaOrganizacaoTabelaSUS",
@@ -721,12 +721,12 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRFormaOrganizacaoTabelaSUS"],
     "uses" : {
     },
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRFreqUsoSubstancia",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRFreqUsoSubstancia",
     "title" : "BRFreqUsoSubstancia",
@@ -738,7 +738,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRImunobiologico",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRImunobiologico",
     "title" : "BR Imunobiologico",
@@ -750,7 +750,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRInstalacoesFisicas",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRInstalacoesFisicas",
     "title" : "BR Instalacoes Fisicas",
@@ -762,7 +762,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRLocalAplicacao",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRLocalAplicacao",
     "title" : "BR Local Aplicacao",
@@ -774,7 +774,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRModalidadeAssistencial",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRModalidadeAssistencial",
     "title" : "BR Modalidade Assistencial",
@@ -782,15 +782,15 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial"],
     "uses" : {
     },
-    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
     "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
     "StructureDefinition-br-core-slot.html" : "br-core-slot",
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+    "StructureDefinition-br-core-schedule.html" : "br-core-schedule",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRMotivoDesfecho",
     "title" : "BR Motivo Desfecho",
@@ -802,7 +802,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoProcedimentoNaoRealizado",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRMotivoProcedimentoNaoRealizado",
     "title" : "BR Motivo Procedimento Nao Realizado",
@@ -814,7 +814,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROcupacao",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BROcupacao",
     "title" : "BR Ocupacao",
@@ -822,18 +822,18 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
-    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
     "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
-    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
     "StructureDefinition-br-core-practitionerrole.html" : "BRCorePractitionerRole",
-    "StructureDefinition-br-core-slot.html" : "br-core-slot"
+    "StructureDefinition-br-core-careteam.html" : "br-core-careteam",
+    "StructureDefinition-br-core-medicationrequest.html" : "br-core-medicationrequest",
+    "StructureDefinition-br-core-slot.html" : "br-core-slot",
+    "StructureDefinition-br-core-practitioner.html" : "BRCorePractitioner",
+    "StructureDefinition-br-core-immunization.html" : "BRCoreImmunization",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "draft",
     "name" : "BROutrosProfissionais",
     "title" : "Conselhos regionais de outros profissionais da saúde do Brasil",
@@ -845,7 +845,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRPopulacaoTradicional",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRPopulacaoTradicional",
     "title" : "BR Populacao Tradicional",
@@ -857,7 +857,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRPovoItinerante",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRPovoItinerante",
     "title" : "BR Povo Itinerante",
@@ -869,7 +869,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProblemaDiagnostico",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRProblemaDiagnostico",
     "title" : "BR Problema Diagnostico",
@@ -882,7 +882,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProcedencia",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRProcedencia",
     "title" : "BR Procedencia",
@@ -894,7 +894,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProcedimentosNacionais",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRProcedimentosNacionais",
     "title" : "BR Procedimentos Nacionais",
@@ -903,12 +903,12 @@
     "uses" : {
     },
     "StructureDefinition-br-core-servicerequest.html" : "BRCoreServiceRequest",
-    "StructureDefinition-br-core-appointment.html" : "br-core-appointment",
-    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure"
+    "StructureDefinition-br-core-procedure.html" : "BRCoreProcedure",
+    "StructureDefinition-br-core-appointment.html" : "br-core-appointment"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRProgramaSaude",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRProgramaSaude",
     "title" : "BR Programa Saude",
@@ -920,7 +920,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRReacoesAdversasMedDRA",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRReacoesAdversasMedDRA",
     "title" : "BR Reacoes Adversas Med DRA",
@@ -932,7 +932,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRReasonEncounter",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRReasonEncounter",
     "title" : "BR Reason Encounter",
@@ -944,7 +944,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRRegistroOrigem",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRRegistroOrigem",
     "title" : "BR Registro Origem",
@@ -956,7 +956,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRResponsabilidadeParticipante",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRResponsabilidadeParticipante",
     "title" : "BR Responsabilidade Participante",
@@ -968,7 +968,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRServicoEspecializado",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRServicoEspecializado",
     "title" : "BR Servico Especializado",
@@ -977,13 +977,13 @@
     "uses" : {
     },
     "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-br-core-encounter.html" : "br-core-encounter",
     "StructureDefinition-br-core-diagnosticreport.html" : "BRCoreDiagnosticReport",
-    "StructureDefinition-br-core-encounter.html" : "br-core-encounter"
+    "StructureDefinition-br-core-location.html" : "br-core-location"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRSinaisVitais",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRSinaisVitais",
     "title" : "BR Sinais Vitais",
@@ -995,7 +995,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTerminologiaSuspeitaDiagnostica",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTerminologiaSuspeitaDiagnostica",
     "title" : "BR Terminologia Suspeita Diagnostica",
@@ -1007,7 +1007,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoAleitamentoMaterno",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTipoAleitamentoMaterno",
     "title" : "BR Tipo Aleitamento Materno",
@@ -1019,7 +1019,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoAmostra",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTipoAmostra",
     "title" : "BR Tipo Amostra",
@@ -1032,7 +1032,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoDocumentoIndividuo",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTipoDocumentoIndividuo",
     "title" : "BR Tipo Documento Individuo",
@@ -1046,7 +1046,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoEstabelecimentoSaude",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTipoEstabelecimentoSaude",
     "title" : "BR Tipo Estabelecimento Saude",
@@ -1059,7 +1059,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRTipoParticipante",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRTipoParticipante",
     "title" : "BR Tipo Participante",
@@ -1071,7 +1071,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRViaAdministracao",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BRViaAdministracao",
     "title" : "BR Via Administracao",
@@ -1083,7 +1083,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/TipoConvenio",
-    "version" : "1.1.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "TipoConvenio",
     "title" : "Tipo Convenio",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-observationbreastfeedingstatus | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreObservationBreastfeedingStatus |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreObservationBreastfeedingStatus |
 
  
 Esse recurso [br-core-observationbreastfeedingstatus](StructureDefinition-br-core-observationbreastfeedingstatus.md) é uma restrição do perfil Observation para registrar informações sobre o tipo de aleitamento materno do paciente nos seus primeiros anos de vida 
@@ -137,7 +137,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-observation
   "version" : "1.1.2",
   "name" : "BRCoreObservationBreastfeedingStatus",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

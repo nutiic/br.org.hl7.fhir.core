@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-procedure | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreProcedure |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreProcedure |
 
  
 Este recurso descreve uma ação que é ou foi realizada em ou para um paciente. Pode ser uma intervenção física como uma operação, ou menos invasiva como serviços de longo prazo, aconselhamento ou hipnoterapia 
@@ -185,7 +185,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-procedure.c
   "version" : "1.1.2",
   "name" : "BRCoreProcedure",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

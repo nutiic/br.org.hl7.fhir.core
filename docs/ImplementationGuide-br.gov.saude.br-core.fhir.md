@@ -69,7 +69,7 @@
     "id" : "br_gov_saude_terminologia_fhir",
     "uri" : "https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir",
     "packageId" : "br.gov.saude.terminologia.fhir",
-    "version" : "1.1.0"
+    "version" : "1.1.1"
   },
   {
     "id" : "br_gov_saude_ips_fhir",

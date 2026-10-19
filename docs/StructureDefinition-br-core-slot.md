@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-slot | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreSlot |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreSlot |
 
  
 Perfil brasileiro do recurso FHIR R4 Slot, utilizado para representar a disponibilidade e reservas de tempo em sistemas de agendamento, interoperabilidade e integração com a RNDS, permitindo a comunicação entre agendas, prestadores e sistemas de marcação de consultas e procedimentos. 
@@ -97,7 +97,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-slot.csv), 
   "name" : "BRCoreSlot",
   "title" : "br-core-slot",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

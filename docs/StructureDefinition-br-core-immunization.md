@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-immunization | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreImmunization |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreImmunization |
 
  
 Este perfil restringe o recurso [Immunization](https://hl7.org/fhir/R4/immunization.html) que descreve o evento em que um paciente recebe uma vacina ou um registro de uma imunização conforme relatado por um paciente, um médico ou outra parte 
@@ -179,7 +179,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-immunizatio
   "version" : "1.1.2",
   "name" : "BRCoreImmunization",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

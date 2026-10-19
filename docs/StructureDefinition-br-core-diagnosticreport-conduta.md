@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport-conduta | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreDiagnosticReportConduta |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreDiagnosticReportConduta |
 
 Esta extensão representa uma conduta associada ao laudo, fornecendo orientações ou sugestões baseadas nos resultados do diagnóstico para o manejo clínico do paciente.
 
@@ -77,7 +77,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-diagnosticr
   "name" : "BRCoreDiagnosticReportConduta",
   "title" : "BR Core DiagnosticReport Conduta",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

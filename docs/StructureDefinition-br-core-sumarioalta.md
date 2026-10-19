@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-sumarioalta | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreSumarioAlta |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreSumarioAlta |
 
  
 Este perfil representa as informações da alta hospitalar, conforme a [PORTARIA Nº 701, DE 29 DE SETEMBRO DE 2022](https://bvsms.saude.gov.br/bvs/saudelegis/Saes/2022/prt0701_19_10_2022.html). “O Sumário de Alta é um documento essencial para: 
@@ -183,7 +183,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-sumarioalta
   "name" : "BRCoreSumarioAlta",
   "title" : "br-core-sumarioalta",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

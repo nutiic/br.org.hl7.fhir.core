@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medicationdispense | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreMedicationDispense |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreMedicationDispense |
 
  
 Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um pedido de medicamentos feito por um sistema de informações 
@@ -195,7 +195,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-medicationd
   "name" : "BRCoreMedicationDispense",
   "title" : "br-core-medicationdispense",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

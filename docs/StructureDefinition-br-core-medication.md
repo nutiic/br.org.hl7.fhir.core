@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *URL Canônica*:https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication | *Versão*:1.1.2 |
-| Active as of 2026-09-24 | *Nome computável*:BRCoreMedication |
+| Active as of 2026-10-19 | *Nome computável*:BRCoreMedication |
 
  
 Este recurso é uma especialização do recurso FHIR R4 [Medication](https://hl7.org/fhir/R4/medication.html) usado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração de um medicamento, bem como para fazer declarações sobre medicamentos no Brasil 
@@ -151,7 +151,7 @@ Outras representações de perfil: [CSV](StructureDefinition-br-core-medication.
   "name" : "BRCoreMedication",
   "title" : "br-core-medication",
   "status" : "active",
-  "date" : "2026-09-24T08:49:20-04:00",
+  "date" : "2026-10-19T13:51:39-04:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
