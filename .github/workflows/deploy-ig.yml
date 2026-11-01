@@ -1,0 +1,160 @@
+name: Build e deploy do IG no GitHub Pages
+
+on:
+  push:
+    branches: [testing]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita dois deploys simultâneos; não cancela um deploy já em andamento.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Pacotes FHIR que NÃO estão publicados em packages.fhir.org / simplifier.net.
+  # Um por linha. Aceita:
+  #   - URL de um .zip que contenha um package.tgz (ex.: full-ig.zip do IG Publisher)
+  #   - URL direta de um .tgz
+  #   - caminho relativo de um .tgz/.zip versionado neste repositório
+  # O nome/versão são lidos do package.json e o pacote é instalado em
+  # ~/.fhir/packages/<nome>#<versão>, onde SUSHI e IG Publisher o encontram.
+  EXTRA_PACKAGES: |
+    https://nutiic.github.io/br.org.hl7.terminologia/full-ig.zip
+  PUBLISHER_URL: https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+  # Servidor de terminologia (vazio = padrão do IG Publisher, tx.fhir.org).
+  TX_SERVER: ""
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Configurar Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Instalar Jekyll
+        run: gem install jekyll --no-document
+
+      - name: Instalar SUSHI (versão do fsh.ini)
+        run: |
+          SUSHI_VERSION=$(grep -E '^\s*sushi-version' fsh.ini | cut -d= -f2 | tr -d ' \r')
+          echo "SUSHI: ${SUSHI_VERSION:-latest}"
+          npm install -g "fsh-sushi@${SUSHI_VERSION:-latest}"
+          sushi --version
+
+      - name: Instalar pacotes FHIR extras
+        run: |
+          set -euo pipefail
+          PKG_CACHE="$HOME/.fhir/packages"
+          WORK="$(mktemp -d)"
+          mkdir -p "$PKG_CACHE"
+          i=0
+          while IFS= read -r src; do
+            src="$(echo "$src" | xargs)"
+            [ -z "$src" ] && continue
+            i=$((i+1))
+            echo "::group::Pacote extra: $src"
+
+            file="$WORK/src-$i"
+            if [[ "$src" =~ ^https?:// ]]; then
+              curl -fSL --retry 3 --retry-delay 5 -o "$file" "$src"
+            else
+              cp "$src" "$file"
+            fi
+
+            tgz="$WORK/pkg-$i.tgz"
+            if [[ "$src" == *.zip ]]; then
+              # Usa o package.tgz de caminho mais curto dentro do zip (ex.: site/package.tgz)
+              inner=$(unzip -Z1 "$file" | grep -E '(^|/)package\.tgz$' \
+                      | awk '{ print length, $0 }' | sort -n | head -1 | cut -d' ' -f2-)
+              if [ -z "$inner" ]; then
+                echo "::error::Nenhum package.tgz encontrado em $src"
+                exit 1
+              fi
+              echo "Extraindo $inner"
+              unzip -p "$file" "$inner" > "$tgz"
+            else
+              mv "$file" "$tgz"
+            fi
+
+            name=$(tar -xzOf "$tgz" package/package.json | jq -r .name)
+            version=$(tar -xzOf "$tgz" package/package.json | jq -r .version)
+            dest="$PKG_CACHE/${name}#${version}"
+            rm -rf "$dest"
+            mkdir -p "$dest"
+            tar -xzf "$tgz" -C "$dest"
+            echo "Instalado ${name}#${version} em $dest"
+            echo "::endgroup::"
+          done <<< "$EXTRA_PACKAGES"
+          ls -1 "$PKG_CACHE"
+
+      - name: Baixar IG Publisher
+        run: |
+          mkdir -p input-cache
+          curl -fSL --retry 3 -o input-cache/publisher.jar "$PUBLISHER_URL"
+
+      - name: Executar SUSHI
+        run: sushi build .
+
+      - name: Executar IG Publisher
+        env:
+          JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -XX:MaxRAMPercentage=80
+        run: |
+          TX_OPT=""
+          if [ -n "$TX_SERVER" ]; then TX_OPT="-tx $TX_SERVER"; fi
+          java -jar input-cache/publisher.jar -ig . $TX_OPT
+          if [ ! -f output/index.html ]; then
+            echo "::error::IG Publisher não gerou output/index.html"
+            exit 1
+          fi
+
+      - name: Publicar relatório de QA como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-report
+          path: |
+            output/qa.html
+            output/qa.txt
+            output/qa.json
+          if-no-files-found: ignore
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar site para o GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
