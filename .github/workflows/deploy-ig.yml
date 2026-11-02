@@ -25,6 +25,7 @@ env:
   # ~/.fhir/packages/<nome>#<versão>, onde SUSHI e IG Publisher o encontram.
   EXTRA_PACKAGES: |
     https://nutiic.github.io/br.org.hl7.terminologia/full-ig.zip
+    https://ips-brasil.web.app/full-ig.zip
   PUBLISHER_URL: https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
   # Servidor de terminologia (vazio = padrão do IG Publisher, tx.fhir.org).
   TX_SERVER: ""
