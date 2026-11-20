@@ -6,7 +6,7 @@ Description: "Este perfil restringe o recurso [CarePlan](https://hl7.org/fhir/R4
 * id ^short = "Identificador lógico deste artefato"
 * id ^definition = "Identificador lógico deste artefato"
 * meta ^short = "Metadados sobre o recurso"
-* meta ^definition = "Metadados sobre o recurso" 
+* meta ^definition = "Metadados sobre o recurso"
 * implicitRules ^short = "Um conjunto de regras sob as quais este conteúdo foi criado"
 * implicitRules ^definition = "Um conjunto de regras sob as quais este conteúdo foi criado"
 * language ^short = "Idioma do recurso"
@@ -103,7 +103,7 @@ Description: "Este perfil restringe o recurso [CarePlan](https://hl7.org/fhir/R4
 * activity.detail.instantiatesUri ^definition = "Instância protocolo externo ou definição"
 * activity.detail.code ^short = "Código da atividade"
 * activity.detail.code ^definition = "Código da atividade"
-* activity.detail.code from https://terminologia.saude.gov.br/fhir/ValueSet/BRSubgrupoTabelaSUS
+* activity.detail.code from https://terminologia.saude.gov.br/fhir/ValueSet/BRSubGrupoTabelaSUS
 * activity.detail.reasonCode ^short = "Por quê a atividade deve ser feita ou por quê a atividade foi proibida"
 * activity.detail.reasonCode ^definition = "Por quê a atividade deve ser feita ou por quê a atividade foi proibida"
 * activity.detail.reasonReference ^short = "Por quê a atividade é necessária"

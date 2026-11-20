@@ -17,7 +17,7 @@
 ,
 {"severity":"error","code":"required","details":{"text":"Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/BRRacaCor.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[8]"]}
 ,
-{"severity":"error","code":"required","details":{"text":"Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/BRSubgrupoTabelaSUS.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[9]"]}
+{"severity":"error","code":"required","details":{"text":"Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/BRSubGrupoTabelaSUS.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[9]"]}
 ,
 {"severity":"error","code":"required","details":{"text":"Unable to find ImplementationGuide.definition.resource.name for the resource CodeSystem/BRTipoDocumento.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[10]"]}
 ,
