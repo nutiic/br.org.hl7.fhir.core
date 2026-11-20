@@ -124,7 +124,7 @@ jobs:
         run: |
           TX_OPT=""
           if [ -n "$TX_SERVER" ]; then TX_OPT="-tx $TX_SERVER"; fi
-          java -jar input-cache/publisher.jar -ig . $TX_OPT
+          java -jar input-cache/publisher.jar -ig . $TX_OPT -trust-template templates/saudegovbr
           if [ ! -f output/index.html ]; then
             echo "::error::IG Publisher não gerou output/index.html"
             exit 1
