@@ -18,6 +18,7 @@ libs="-packages ../br.org.hl7.terminologia/docs/"
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 publisher=$input_cache_path/$publisher_jar
+echo "java -jar $publisher -ig . $txoption -trust-template templates/saudegovbr $libs $*"
 if test -f "$publisher"; then
 	java -jar $publisher -ig . $txoption -trust-template templates/saudegovbr $libs $*
 
